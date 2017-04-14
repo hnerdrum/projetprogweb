@@ -1,4 +1,4 @@
-# Hello world React app 
+# Todo React app 
 
 ## Development
 1. Install packages with `npm install`
