@@ -8,7 +8,7 @@ class Items extends React.Component {
           return (
             <div key={index}>
               <p>{item.name}</p>
-              <button disabled>Remove</button>
+              <button onClick={() => this.props.removeItem(index)}>Remove</button>
               <button disabled={item.completed} onClick={() => this.props.completeItem(index)}>Complete</button>
             </div>
           );
