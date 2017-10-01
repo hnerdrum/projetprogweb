@@ -50,7 +50,7 @@ body {
      
     display: block ;
     text-decoration: none ;
-    background: url(../Data/social-sprite.png) no-repeat ;
+    background: url(../../Data/social-sprite.png) no-repeat ;
     padding: 25px 0px 0px 25px ;
     
 }
