@@ -19,9 +19,11 @@ header
 
 nav ul
 {
-	
+	position: absolute;
 	list-style-type: none;
 	display: flex;
+	margin-top: 150px;
+	margin-left: 220px;
 }
 nav li
 {
@@ -48,14 +50,95 @@ header nav a:hover
 	box-shadow: 10px 10px 5px grey;
 	width: 168px;
 	height: 200px;
-	margin-top:15px;
 	border: 5px solid red;
 	border-radius: 3px;
-	margin-bottom: 5px;
 	margin-left: 50px;
 	margin-right: 50px;
 
 }
+
+/*searchbar*/
+
+#reseaux ul {
+ 	list-style-type: none ;
+    margin: 5px;
+}
+#reseaux li{
+    float: right ;
+    margin-left: 5px;
+}
+
+#reseaux a {
+     
+    display: block ;
+    text-decoration: none ;
+    background: url('images/social-sprite.png') no-repeat ;
+    padding:25px 0px 0px 25px;
+    
+}
+
+#reseaux #fb{        
+    background-position:0 -275px;
+}
+
+#reseaux #twitter{        
+    background-position:0 -50px;
+}
+   
+#reseaux #it{        
+    background-position:0 -150px;
+}
+#reseaux #insta{        
+    background-position:0 -175px;
+}
+#reseaux #yt{        
+    background-position:0 0;
+}
+.recherche {
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+input {
+    float:right;
+}
+
+input[type="text"] {
+    background: #EEEDEB;
+    border-style:none;
+    padding: 5px;
+    width: 255px;
+
+}
+
+input[type="submit"] {
+    background: url('images/search-icon.png') no-repeat ;
+    margin: 2px 0px 0px 5px;
+    width: 30px;
+    height: 25px;
+    border-style:none;
+    cursor: pointer;
+
+}
+
+.insa {
+    float:left;
+    margin-left: 680px;
+    width: 100%;
+    font-family: roboto, verdana, arial, sans-serif ;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.separateur {
+    float:right;
+    margin: -5px 10px 0;
+}
+
+/* FIN Searchbar*/
+
+
 #rugby_team
 {
 	position: relative;
@@ -136,16 +219,48 @@ h1
 	margin:auto;
 	margin-top: 60px;
 }
-h2
+
+section article h2
 {
+	position: relative;
+	width: 38%;
 	text-align: center;
-	font-size:large;
 	text-decoration: underline;
-	font-family: Time New Roman;
+	font-size: x-large;
+	font-family: Times New Roman, sans-serif;
 	font-style: italic;
 	font-weight: bold;
-	text-shadow: 0px 6px 6px black;
+	box-shadow: 10px 10px 10px grey;
 	margin-top: 100px;
+	margin-left: 310px;
+}
+#partenaires_logo
+{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.actia
+{
+	position: relative;
+	margin-top: 25px;
+	opacity: 0.6;
+}
+
+.viveris
+{
+	position: relative;
+	bottom: 10px;
+	opacity: 0.6;
+}
+.assystem, .lesaffre, .alten
+{
+	opacity: 0.6;
+}
+.assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover
+{
+	opacity: 1;
 }
 footer
 {
@@ -189,75 +304,3 @@ footer nav a:hover
 
 
 
-/*footer
-{
-	position: absolute;
-	display: flex;
-	justify-content: space-around;
-	background-color: rgba(20,20,20,0.8);
-    font-size: 0.8em;
-    list-style-type: none;
-    width:71%;
-}
-footer a
-{
-	position: relative;
-	font-family: Times New Roman, sans-serif;
-	color:white;
-}
-/*footer li
-{
-	margin-right: 20px;
-}
-footer a
-{
-	color: white;
-	text-decoration: none;
-
-}
-
-
-footer p
-{
-	color:white;
-	background-color: black;
-	position: relative;
-	text-align: right;
-
-}*/
-
-/*#searchbar
-{
-    display:flex;
-    float:right;
-
-}
-.text
-{
-    width:20px;
-    height:10px;  
-}
-.champ
-{
-    width:200px;
-    height:15px;
-    margin-left: 18cm;
-    margin-top:1.2cm;
-    margin-right: 0.1cm;
-}
-.bouton
-{
-	background-image: url("images/loupe2.png");
-	width:25px;
-	height:25px;
-	background-color: white;
-	border:solid white;
-	margin-top: 1.2cm;
-	margin-right:8cm;
-	margin-left:0.1cm;
-
-}
-.bouton:hover
-{
-	background-color: grey;
-}*/
