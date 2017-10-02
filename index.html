@@ -1,30 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Associaton Sportive INSA Toulouse</title>
-  </head>
+<head>
+    <meta charset = "utf-8">
+    <title> Association Sportive de l'Insa Toulouse | Accueil </title>
+    <link rel="stylesheet" type="text/css" href="Site/style/styleaccueil.css">
+    <link rel="shortcut icon" href="Data/logo_as_insa.ico">
 
-  <link href="scss/main.scss" rel="stylesheet" type="text/css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
+    <link href="Site/style/style.scss" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="Site/js/main.js"></script>
+
+</head>
+<body>
+<div id="container">
+<header id="header">
+<div class="mini-container"><img class="image" src="Data/logo_as_insa_2015%20-%20Copie.jpg" alt="">
+<p class="insa">INSA Toulouse</p>
+<br>
+<div class="recherche">
+    <form action="/search" id="searchthis" method="get">
+        <div id="reseaux">
+        <ul>
+            <li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+            <li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+            <li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+            <li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+            <li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+        </ul>
+        </div>
+        <img class="separateur" src="Data/separateur.jpg" alt=""/>
+        <input id="search-btn" type="submit" value="" />
+        <input id="search" name="" type="text" placeholder="Rechercher" />
+
+    </form>
+
+</div>
+<br><br>
+<ul id="nav">
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Sports</a></li>
+    <li><a href="#">Résultats</a></li>
+    <li><a href="#">Galerie</a></li>
+    <li><a href="#">Calendrier</a></li>
+    <li><a href="#">Contact</a></li>
+</ul></div>
+</header>
 
 
-  <body>
-    <header>
+<p>TEST blblblblblblblb</p>
+</div>
 
-    </header>
+<div id="slider">
+      <ul class="slides">
+          <li class="slide slide1">slide1</li>
+          <li class="slide slide2">slide2</li>
+          <li class="slide slide3">slide3</li>
+          <li class="slide slide4">slide4</li>
+          <li class="slide slide5">slide5</li>
+          <li class="slide slide1">slide1</li>
+      </ul>
+  </div>
 
-    <div id="slider">
-          <ul class="slides">
-              <li class="slide slide1">slide1</li>
-              <li class="slide slide2">slide2</li>
-              <li class="slide slide3">slide3</li>
-              <li class="slide slide4">slide4</li>
-              <li class="slide slide5">slide5</li>
-              <li class="slide slide1">slide1</li>
-          </ul>
-      </div>
-
-  </body>
-
-</html>
+</body>
