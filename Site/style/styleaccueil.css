@@ -7,7 +7,7 @@ body {
 #header {
     height: 140px;
 }
-        
+
 #header, #nav,#content ,#footer {
     padding: 25px ;
 }
@@ -21,18 +21,18 @@ body {
     /* list-style-type: none ; /*enlève les puces*/
     list-style: none ;
 }
-        
+
 #nav li {
     display: inline ;
     margin: 0 15px ;
         }
 
-#nav a { 
+#nav a {
     color: #323232 ;
     text-decoration: none ; 
-    
+
 }
-        
+
 #nav a:hover {
     color: #f00;
 }
@@ -47,29 +47,29 @@ body {
 }
 
 #reseaux a {
-     
+
     display: block ;
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
     padding: 25px 0px 0px 25px ;
-    
+
 }
 
-#reseaux #fb{        
+#reseaux #fb{
     background-position:0 -275px;
 }
 
-#reseaux #twitter{        
+#reseaux #twitter{
     background-position:0 -50px;
 }
-   
-#reseaux #it{        
+
+#reseaux #it{
     background-position:0 -150px;
 }
-#reseaux #insta{        
+#reseaux #insta{
     background-position:0 -175px;
 }
-#reseaux #yt{        
+#reseaux #yt{
     background-position:0 0;
 }
 .recherche {
@@ -129,7 +129,7 @@ input[type="submit"] {
     margin-left: 35px;
     margin-bottom: 20px;
 }
-    
+
 
 #content {
     margin: auto ;
