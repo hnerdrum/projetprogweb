@@ -1,80 +1,66 @@
-header
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-right: 200px;
-
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
 }
-#bloc_page
-{
-    width: 900px;
-    margin: auto;
-}
-#titre_principal /*très important, les éléments sont stables lors des zooms*/
-{
-    display: flex;
-    flex-direction: column;
+    
+#header, #content ,#footer {
+    padding: 2% ;
 }
 
-nav ul
-{
-	position: absolute;
-	list-style-type: none;
-	display: flex;
-	margin-top: 150px;
-	margin-left: 220px;
-}
-nav li
-{
-	margin-right: 30px;
-	
-}
-header nav a
-{
-	font-size:1.5em;
-	color:#181818;
-	padding-bottom: 3px;
-	text-decoration: none;
-	font-family: Old English Text MT, Times New Roman, sans-serif;
-}
-header nav a:hover
-{
-	font-weight:bold;
-	border-bottom: 3px solid red; 
+#container {
+    width: 80%;
+    max-width: 1175px;
+    height: 563px;
+    margin: auto ;
 }
 
-#logo_as
-{
-	background: url('../../Data/images/logo_as.jpg') no-repeat;
-	box-shadow: 10px 10px 5px grey;
-	width: 168px;
-	height: 200px;
-	border: 5px solid red;
-	border-radius: 3px;
-	margin-left: 50px;
-	margin-right: 50px;
 
+/*Barre de navigation Debut*/
+#nav {
+    margin: 0 ;
+    padding: 0 ;
+    font-size: 1.55vw;
+    font-weight: bold;
+    font-family: roboto, verdana, arial, sans-serif ;
+    list-style: none ;
+}
+        
+#nav li {
+    display: inline ;
+    margin: 0 1.30% ;
 }
 
-/*searchbar*/
+#nav a { 
+    color: #323232 ;
+    text-decoration: none ; 
+}
+        
+#nav a:hover {
+    color: #f00;
+}
+/*Barre de navigation Fin*/
 
+
+
+
+/*Reseaux sociaux Debut*/
 #reseaux ul {
- 	list-style-type: none ;
-    margin: 5px;
+    list-style-type: none ;
+    margin: 0;
 }
+
 #reseaux li{
     float: right ;
-    margin-left: 5px;
+    margin-left: 0.4%;
 }
 
 #reseaux a {
      
     display: block ;
     text-decoration: none ;
-    background: url('../../Data/images/social-sprite.png') no-repeat ;
-    padding:25px 0px 0px 25px;
-    
+    background: url(../../Data/social-sprite.png) no-repeat ;
+    padding: 25px 0px 0px 25px ;  
 }
 
 #reseaux #fb{        
@@ -83,21 +69,28 @@ header nav a:hover
 
 #reseaux #twitter{        
     background-position:0 -50px;
-}
-   
+} 
+
 #reseaux #it{        
     background-position:0 -150px;
 }
+
 #reseaux #insta{        
     background-position:0 -175px;
 }
+
 #reseaux #yt{        
     background-position:0 0;
 }
+/*Reseaux sociaux Fin*/
+
+
+
+
+/*Barre de recherche Debut*/
 .recherche {
-	position: absolute;
-	margin-left: 300px;
-	margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 input {
@@ -109,25 +102,26 @@ input[type="text"] {
     border-style:none;
     padding: 5px;
     width: 255px;
-
 }
 
 input[type="submit"] {
-    background: url('../../Data/images/search-icon.png') no-repeat ;
+    background: url(../../Data/loupe.png) no-repeat ;
     margin: 2px 0px 0px 5px;
     width: 30px;
     height: 25px;
     border-style:none;
     cursor: pointer;
-
 }
+/*Barre de recherche Fin*/
+
+
+
 
 .insa {
-    float:left;
-    margin-left: 680px;
-    width: 100%;
+    margin: 0 1.5% 0 0;
+    float:right;
     font-family: roboto, verdana, arial, sans-serif ;
-    font-size:1em;
+    font-size:0.95vw;
     font-weight: bold;
 }
 
@@ -136,8 +130,21 @@ input[type="submit"] {
     margin: -5px 10px 0;
 }
 
-/* FIN Searchbar*/
 
+.logo_as{
+    float:left;
+    margin-right: 13%;
+    margin-left: 4%;
+    max-width: 9%;
+}
+    
+
+#content {
+    margin: auto ;
+    height: 544px;
+}
+
+/*Fin du Header*/
 
 #rugby_team
 {
@@ -196,6 +203,8 @@ input[type="submit"] {
 	width:106.5%;
 
 }
+
+/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 h1
 {
 	border: 1px solid white;
@@ -219,7 +228,7 @@ h1
 	margin:auto;
 	margin-top: 60px;
 }
-
+/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 section article h2
 {
 	position: relative;
