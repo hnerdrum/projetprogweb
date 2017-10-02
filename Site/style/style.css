@@ -15,6 +15,9 @@ body {
     margin: auto ;
 }
 
+br {
+    margin: 1%;
+}
 
 /*Barre de navigation Debut*/
 #nav {
@@ -43,7 +46,6 @@ body {
 
 
 
-
 /*Reseaux sociaux Debut*/
 #reseaux ul {
     list-style-type: none ;
@@ -60,6 +62,7 @@ body {
     display: block ;
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
+    background-size: 96%;
     padding: 25px 0px 0px 25px ;  
 }
 
@@ -84,41 +87,9 @@ body {
 }
 /*Reseaux sociaux Fin*/
 
-
-
-
-/*Barre de recherche Debut*/
-.recherche {
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-
-input {
-    float:right;
-}
-
-input[type="text"] {
-    background: #EEEDEB;
-    border-style:none;
-    padding: 5px;
-    width: 255px;
-}
-
-input[type="submit"] {
-    background: url(../../Data/loupe.png) no-repeat ;
-    margin: 2px 0px 0px 5px;
-    width: 30px;
-    height: 25px;
-    border-style:none;
-    cursor: pointer;
-}
-/*Barre de recherche Fin*/
-
-
-
-
+/* Autres éléments du header*/
 .insa {
-    margin: 0 1.5% 0 0;
+    margin: 0 1.5% 0.7% 63%;
     float:right;
     font-family: roboto, verdana, arial, sans-serif ;
     font-size:0.95vw;
@@ -130,7 +101,6 @@ input[type="submit"] {
     margin: -5px 10px 0;
 }
 
-
 .logo_as{
     float:left;
     margin-right: 13%;
@@ -139,10 +109,29 @@ input[type="submit"] {
 }
     
 
-#content {
-    margin: auto ;
-    height: 544px;
+/*Barre de recherche Debut*/
+input {
+    float:right;
 }
+
+input[type="text"] {
+    background: #EEEDEB;
+    border-style:none;
+    padding: 0.5%;
+    max-width: 23%;
+    width:100%;
+    height: 100%;
+}
+
+input[type="submit"] {
+    background: url(../../Data/loupe.png) no-repeat ;
+    margin: 2px 0px 0px 5px;
+    width: 30px;
+    height: 25px;
+    border-style:none;
+    cursor: pointer;
+}
+/*Barre de recherche Fin*/
 
 /*Fin du Header*/
 
