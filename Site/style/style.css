@@ -1,3 +1,12 @@
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-right: 200px;
+
+}
+
 .carousel {
   height:100px;
   width:100px;
@@ -36,3 +45,299 @@
 .slide3 {background: green;}
 .slide4 {background: purple;}
 .slide5 {background: pink;}
+
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+#titre_principal /*très important, les éléments sont stables lors des zooms*/
+{
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul
+{
+	position: absolute;
+	list-style-type: none;
+	display: flex;
+	margin-top: 150px;
+	margin-left: 220px;
+}
+nav li
+{
+	margin-right: 30px;
+
+}
+header nav a
+{
+	font-size:1.5em;
+	color:#181818;
+	padding-bottom: 3px;
+	text-decoration: none;
+	font-family: Old English Text MT, Times New Roman, sans-serif;
+}
+header nav a:hover
+{
+	font-weight:bold;
+	border-bottom: 3px solid red;
+}
+
+#logo_as
+{
+	background: url('../../Data/images/logo_as.jpg') no-repeat;
+	box-shadow: 10px 10px 5px grey;
+	width: 168px;
+	height: 200px;
+	border: 5px solid red;
+	border-radius: 3px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+
+/*searchbar*/
+
+#reseaux ul {
+ 	list-style-type: none ;
+    margin: 5px;
+}
+#reseaux li{
+    float: right ;
+    margin-left: 5px;
+}
+
+#reseaux a {
+
+    display: block ;
+    text-decoration: none ;
+    background: url('../../Data/images/social-sprite.png') no-repeat ;
+    padding:25px 0px 0px 25px;
+
+}
+
+#reseaux #fb{
+    background-position:0 -275px;
+}
+
+#reseaux #twitter{
+    background-position:0 -50px;
+}
+
+#reseaux #it{
+    background-position:0 -150px;
+}
+#reseaux #insta{
+    background-position:0 -175px;
+}
+#reseaux #yt{
+    background-position:0 0;
+}
+.recherche {
+	position: absolute;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+input {
+    float:right;
+}
+
+input[type="text"] {
+    background: #EEEDEB;
+    border-style:none;
+    padding: 5px;
+    width: 255px;
+
+}
+
+input[type="submit"] {
+    background: url('../../Data/images/search-icon.png') no-repeat ;
+    margin: 2px 0px 0px 5px;
+    width: 30px;
+    height: 25px;
+    border-style:none;
+    cursor: pointer;
+
+}
+
+.insa {
+    float:left;
+    margin-left: 680px;
+    width: 100%;
+    font-family: roboto, verdana, arial, sans-serif ;
+    font-size:1em;
+    font-weight: bold;
+}
+
+.separateur {
+    float:right;
+    margin: -5px 10px 0;
+}
+
+/* FIN Searchbar*/
+
+
+#rugby_team
+{
+	position: relative;
+	background: url('../../Data/images/rugby_team1.jpg');
+	width: 960px;
+	margin-top:15px;
+	margin-bottom:25px;
+	height:600px;
+	border-radius: 5px;
+}
+#description
+{
+	position: absolute;
+	list-style-type: none;
+	bottom:1px;
+	padding-bottom: 10px;
+	padding-left:130px;
+	border-radius: 0px 0px 5px 5px;
+	width: 86.5%;
+	height: 33px;
+    color: white;
+    font-size: 2em;
+    background-color: rgba(24,24,24,0.8);
+}
+.Team
+{
+    height: 25px;
+    position: absolute;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+
+}
+.Team:hover
+{
+	text-decoration: underline;
+	color: red;
+	opacity: 0.8;
+}
+/*DO NOT TOUCH THE TEXT BEYOND ! SPECIFICALLY: POSITIONING PARAMETERS*/
+
+
+#nos_sports
+{
+	position: relative;
+	width:860px;
+	height:800px;
+	min-width: 430px;
+	min-height: 400px;
+	margin-left:auto;
+}
+.Fb
+{
+	margin:auto;
+	width:106.5%;
+
+}
+h1
+{
+	border: 1px solid white;
+	background-color: red;
+	color:white;
+	height:90px;
+	margin-top:60px;
+	padding-top:3px;
+	position: relative;
+	justify-content: center;
+	width: 106.5%;
+	min-width: 500px;
+	margin:auto;
+	font-size:70px;
+	font-family:Roboto Condensed, sans-serif;
+	text-align:center;
+}
+.Facebook
+{
+	background-color: #3b5998; /*#6d84b4*/
+	margin:auto;
+	margin-top: 60px;
+}
+
+section article h2
+{
+	position: relative;
+	width: 38%;
+	text-align: center;
+	text-decoration: underline;
+	font-size: x-large;
+	font-family: Times New Roman, sans-serif;
+	font-style: italic;
+	font-weight: bold;
+	box-shadow: 10px 10px 10px grey;
+	margin-top: 100px;
+	margin-left: 310px;
+}
+#partenaires_logo
+{
+	display: flex;
+	position: relative;
+	justify-content: space-between;
+}
+
+.actia
+{
+	position: relative;
+	margin-top: 25px;
+	opacity: 0.6;
+}
+
+.viveris
+{
+	position: relative;
+	bottom: 10px;
+	opacity: 0.6;
+}
+.assystem, .lesaffre, .alten
+{
+	opacity: 0.6;
+}
+.assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover
+{
+	opacity: 1;
+}
+footer
+{
+	background-color: rgba(20,20,20,0.8);
+	width:106.5%;
+}
+#footer-nav #footer-menu
+{
+	margin-top: 20px;
+}
+footer ul
+{
+	position: relative;
+	list-style-type: none;
+	margin:auto;
+	padding:auto;
+}
+footer nav a
+{
+	display: flex;
+	font-size:1em;
+	color:#FFFFFF;
+	padding-top: 20px;
+	text-decoration: none;
+	font-family: Old English Text MT, Times New Roman, sans-serif;
+}
+footer nav a:hover
+{
+
+	border-bottom: 3px solid red;
+}
+.foot
+{
+	color:white;
+	padding-top: 23px;
+	padding-left: 39px;
+	padding-bottom: 20px;
+	margin:auto;
+	position: relative;
+}

@@ -1,65 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <meta charset = "utf-8">
-    <title> Association Sportive de l'Insa Toulouse | Accueil </title>
-    <link rel="stylesheet" type="text/css" href="Site/style/styleaccueil.css">
-    <link rel="shortcut icon" href="Data/logo_as_insa.ico">
-
-    <link href="Site/style/style.css" rel="stylesheet" type="text/css"/>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="Site/style/style.css" />
+    <link rel="stylesheet" type="text/css" href="Site/style/styleaccueil.css" />
+		<link rel="shortcut icon" type="icon" href="Data/images/logo_as_insa.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="Site/js/main.js"></script>
-
-</head>
+    <script type="text/javascript" src="js/main.js"></script>
+		<title>Association Sportive de l'INSA</title>
+	</head>
 <body>
-<div id="container">
-<header id="header">
-<div class="mini-container"><img class="image" src="Data/logo_as_insa_2015%20-%20Copie.jpg" alt="">
-<p class="insa">INSA Toulouse</p>
-<br>
-<div class="recherche">
-    <form action="/search" id="searchthis" method="get">
-        <div id="reseaux">
-        <ul>
-            <li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
-            <li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
-            <li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
-            <li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
-            <li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
-        </ul>
-        </div>
-        <img class="separateur" src="Data/separateur.jpg" alt=""/>
-        <input id="search-btn" type="submit" value="" />
-        <input id="search" name="" type="text" placeholder="Rechercher" />
+	<div id="bloc_page">
+    <header id="header">
+    <div class="mini-container"><img class="image" src="Data/logo_as_insa_2015%20-%20Copie.jpg" alt="">
+    <p class="insa">INSA Toulouse</p>
+    <br>
+    <div class="recherche">
+        <form action="/search" id="searchthis" method="get">
+            <div id="reseaux">
+            <ul>
+                <li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+                <li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+                <li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+                <li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+                <li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+            </ul>
+            </div>
+            <img class="separateur" src="Data/separateur.jpg" alt=""/>
+            <input id="search-btn" type="submit" value="" />
+            <input id="search" name="" type="text" placeholder="Rechercher" />
 
-    </form>
+        </form>
 
-</div>
-<br><br>
-<ul id="nav">
-    <li><a href="#">Accueil</a></li>
-    <li><a href="#">Sports</a></li>
-    <li><a href="#">Résultats</a></li>
-    <li><a href="#">Galerie</a></li>
-    <li><a href="#">Calendrier</a></li>
-    <li><a href="#">Contact</a></li>
-</ul></div>
-</header>
+    </div>
+    <br><br>
+    <ul id="nav">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Résultats</a></li>
+        <li><a href="#">Galerie</a></li>
+        <li><a href="#">Calendrier</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul></div>
+    </header>
 
-<div class="carousel" id="slider">
-      <ul class="slides">
-          <li class="slide slide1">slide1</li>
-          <li class="slide slide2">slide2</li>
-          <li class="slide slide3">slide3</li>
-          <li class="slide slide4">slide4</li>
-          <li class="slide slide5">slide5</li>
-          <li class="slide slide1">slide1</li>
-      </ul>
-  </div>
+    <div class="carousel" id="slider">
+          <ul class="slides">
+              <li class="slide slide1">slide1</li>
+              <li class="slide slide2">slide2</li>
+              <li class="slide slide3">slide3</li>
+              <li class="slide slide4">slide4</li>
+              <li class="slide slide5">slide5</li>
+              <li class="slide slide1">slide1</li>
+          </ul>
+      </div>
 
-<p>TEST blblblblblblblb</p>
-</div>
+		<div id="rugby_team">
+			<div id="description">
+			<a href="#" class="Team" title="Best Team Ever !">Rugby: l'INSA, championne de France universitaires</a>
+			</div>
+		</div>
 
 
 
+
+
+		<section>
+			<article>
+				<h1 class="nos_sports">Nos Sports</h1>
+			<img id="nos_sports" src="Data/images/nos_sports.jpg" alt="liste des sports" title="liste des sports" />
+		</article>
+		</section>
+
+		<section>
+			<article>
+				<h1 class="Facebook">Facebook</h1>
+				<img class="Fb" src="Data/images/Fb.png" alt="Facebook" title="Facebook" />
+			</article>
+		</section>
+
+		<section>
+			<article>
+
+				<h2>NOS PARTENAIRES MAJEURS</h2>
+
+				<div id="partenaires">
+					<nav id="partenaires_logo">
+
+							<div class="assystem"><a href="http://www.assystem.com/fr/accueil.html" ><img src="Data/images/partenaires/assystem.png" alt="" title="Assystem" /></a></div>
+							<div class="alten"><a href="http://www.alten.fr/" ><img src="Data/images/partenaires/alten.png" alt="" title="Alten" /></a></div>
+							<div class="actia"><a href="http://actia.com/fr/" ><img src="Data/images/partenaires/actia.png" alt="" title="Actia" /></a></div>
+							<div class="lesaffre"><a href="http://www.lesaffre.com/fr/" ><img src="Data/images/partenaires/lesaffre.png" alt="" title="Lesaffre" /></a></div>
+							<div class="viveris"><a href="https://www.viveris.fr/" ><img src="Data/images/partenaires/viveris.png" alt="" title="Viveris" /></a></div>
+
+					</nav>
+				</div>
+			</article>
+		</section>
+
+		<footer>
+			<nav id="footer-nav">
+				<ul id="footer-menu">
+					<li class="first"><a href="#">Plan d'accès</a></li>
+					<li><a href="#">Mentions légales</a></li>
+					<li><a href="#">Plan du site</a></li>
+					<li><a href="#">Nous contacter</a></li>
+					<li class="last"><a href="#">À propos du site</a></li>
+
+				</ul>
+				<p class="foot">2017 © INSA de Toulouse - Conception : Service communication Insa de Toulouse / Anyware Services</p>
+
+			</nav>
+
+
+		</footer>
+	</div>
 </body>
+
+</html>
