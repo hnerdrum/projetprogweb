@@ -1,4 +1,4 @@
-header
+/*header
 {
     display: flex;
     justify-content: space-between;
@@ -6,7 +6,7 @@ header
     margin-right: 200px;
 
 }
-
+*/
 .carousel {
   height:100px;
   width:100px;
@@ -57,7 +57,7 @@ header
     flex-direction: column;
 }
 
-nav ul
+/*nav ul
 {
 	position: absolute;
 	list-style-type: none;
@@ -82,7 +82,7 @@ header nav a:hover
 {
 	font-weight:bold;
 	border-bottom: 3px solid red;
-}
+}*/
 
 #logo_as
 {
@@ -99,7 +99,7 @@ header nav a:hover
 
 /*searchbar*/
 
-#reseaux ul {
+/*#reseaux ul {
  	list-style-type: none ;
     margin: 5px;
 }
@@ -174,7 +174,7 @@ input[type="submit"] {
 .separateur {
     float:right;
     margin: -5px 10px 0;
-}
+}*/
 
 /* FIN Searchbar*/
 
