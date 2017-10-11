@@ -1,12 +1,80 @@
+/* CSS RESET Source: http://cssreset.com/scripts/eric-meyer-reset-css/ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	      content: '';
+	      content: none;
+          }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Fin CSS RESET */
+
+/* centrer la page */
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* font universel pour le site */
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
 .carousel {
-  height:100px;
-  width:100px;
-  border-radius:5px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: middle;
-  font-family: Verdana, Arial, Sans-Serif;
-  margin-right:5px;
+    height:100px;
+    width:100px;
+    border-radius:5px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Verdana, Arial, Sans-Serif;
+    margin-right:5px;
 }
 
 #slider {
@@ -48,16 +116,9 @@ body {
     width: 900px;
     margin: auto;
 }
-    
+
 #header, #content ,#footer {
     padding: 2% ;
-}
-
-#container {
-    width: 80%;
-    max-width: 1175px;
-    height: 563px;
-    margin: auto ;
 }
 
 br {
@@ -73,7 +134,7 @@ br {
     font-family: roboto, verdana, arial, sans-serif ;
     list-style: none ;
 }
-        
+
 #nav li {
     display: inline ;
     margin: 0 1.30% ;
@@ -83,7 +144,7 @@ br {
     color: #323232 ;
     text-decoration: none ; 
 }
-        
+
 #nav a:hover {
     color: #f00;
 }
@@ -103,7 +164,7 @@ br {
 }
 
 #reseaux a {
-     
+    
     display: block ;
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
@@ -152,7 +213,7 @@ br {
     margin-left: 4%;
     max-width: 9%;
 }
-    
+
 
 /*Barre de recherche Debut*/
 input {
@@ -182,24 +243,24 @@ input[type="submit"] {
 
 #rugby_team
 {
-	position: relative;
-	background: url('../../Data/images/rugby_team1.jpg');
-	width: 960px;
-	margin-top:15px;
-	margin-bottom:25px;
-	height:600px;
-	border-radius: 5px;
+    position: relative;
+    background: url('../../Data/images/rugby_team1.jpg');
+    width: 960px;
+    margin-top:15px;
+    margin-bottom:25px;
+    height:600px;
+    border-radius: 5px;
 }
 #description
 {
-	position: absolute;
-	list-style-type: none;
-	bottom:1px;
-	padding-bottom: 10px;
-	padding-left:130px;
-	border-radius: 0px 0px 5px 5px;
-	width: 86.5%;
-	height: 33px;
+    position: absolute;
+    list-style-type: none;
+    bottom:1px;
+    padding-bottom: 10px;
+    padding-left:130px;
+    border-radius: 0px 0px 5px 5px;
+    width: 86.5%;
+    height: 33px;
     color: white;
     font-size: 2em;
     background-color: rgba(24,24,24,0.8);
@@ -214,142 +275,129 @@ input[type="submit"] {
 
 }
 .Team:hover
+          {
+	      text-decoration: underline;
+	      color: red;
+	      opacity: 0.8;
+          }
+
+#img_sports
 {
-	text-decoration: underline;
-	color: red;
-	opacity: 0.8;
+    position: relative;
+    width:860px;
+    height:800px;
+    min-width: 430px;
+    min-height: 400px;
+    margin-left:auto;
 }
 
-#nos_sports
-{
-	position: relative;
-	width:860px;
-	height:800px;
-	min-width: 430px;
-	min-height: 400px;
-	margin-left:auto;
+#nos_sports {
+    background-color: red;
 }
 
-.Fb
-{
-	margin:auto;
-	width:106.5%;
 
-}
 
 /* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
-h1
-{
-	border: 1px solid white;
-	background-color: red;
-	color:white;
-	height:90px;
-	margin-top:60px;
-	padding-top:3px;
-	position: relative;
-	justify-content: center;
-	width: 106.5%;
-	min-width: 500px;
-	margin:auto;
-	font-size:70px;
-	font-family:Roboto Condensed, sans-serif;
-	text-align:center;
+h1 {
+    color:white;
+    position: relative;
+    text-align:center;
+    font-size: 2em;
+    padding: 2%;
+    margin-top: 20px;
 }
 
-.Facebook
+#Facebook
 {
-	background-color: #3b5998; /*#6d84b4*/
-	margin:auto;
-	margin-top: 60px;
+    background-color: #3b5998; /*#6d84b4*/
+    width: 100%;
 }
 /* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 section article h2
 {
-	position: relative;
-	width: 38%;
-	text-align: center;
-	text-decoration: underline;
-	font-size: x-large;
-	font-family: Times New Roman, sans-serif;
-	font-style: italic;
-	font-weight: bold;
-	box-shadow: 10px 10px 10px grey;
-	margin-top: 100px;
-	margin-left: 310px;
+    text-align: center;
+    font-weight: bold; 
 }
 
 #partenaires_logo
 {
-	display: flex;
-	position: relative;
-	justify-content: space-between;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
 }
 
 .actia
 {
-	position: relative;
-	margin-top: 25px;
-	opacity: 0.6;
+    position: relative;
+    margin-top: 25px;
+    opacity: 0.6;
 }
 
 .viveris
 {
-	position: relative;
-	bottom: 10px;
-	opacity: 0.6;
+    position: relative;
+    bottom: 10px;
+    opacity: 0.6;
 }
 
 .assystem, .lesaffre, .alten
 {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 
 .assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover
 {
-	opacity: 1;
+    opacity: 1;
 }
 
 footer
 {
-	background-color: rgba(20,20,20,0.8);
-	width:106.5%;
-}
-
-#footer-nav #footer-menu
-{
-	margin-top: 20px;
+    background-color: rgba(20,20,20,0.8);
+    width:100%;
 }
 
 footer ul
 {
-	position: relative;
-	list-style-type: none;
-	margin:auto;
-	padding:auto;
+    list-style-type: none;
+    text-align: center;
+    padding: 2%;
+}
+
+/* menu horizontal */
+footer ul li {
+    margin: auto;
+    text-align: center;
+    display: inline;
+    padding: 4px;
 }
 
 footer nav a
 {
-	display: flex;
-	font-size:1em;
-	color:#FFFFFF;
-	padding-top: 20px;
-	text-decoration: none;
-	font-family: Old English Text MT, Times New Roman, sans-serif;
+    font-size: 1.2em;
+    color:#FFFFFF;
+    text-decoration: none;
+    padding: 0;
 }
+
 
 footer nav a:hover
 {
-
-	border-bottom: 3px solid red;
+    border-bottom: 3px solid red;
 }
 
-.foot
+#mentions
 {
-	color:white;
-	padding-top: 23px;
-	padding-left: 39px;
-	padding-bottom: 20px;
-	margin:auto;
-	position: relative;
+    color:white;
+    text-align: center;
+    clear: both;
+    padding: 1%;
+    font-size: 0.8em;
+}
+
+#bottomcontainer {
+    overflow: hidden;
+}
+
+#secpart {
+    padding: 2%;
 }
