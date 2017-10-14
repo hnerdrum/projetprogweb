@@ -411,6 +411,7 @@ footer nav a:hover
         margin-top: 0 ;
         padding: 10px 20px;
         line-height: 18px;
+        text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}  
