@@ -402,9 +402,10 @@ footer nav a:hover
     }
     .row div{
         float: left ;
-        width: 300px ; 
         margin-left: 20px ;
     }
+    .Colonne1,.Colonne2 {width: 370px ; }
+    
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
