@@ -307,8 +307,7 @@ section article h2
 #partenaires_logo
 {
     display: flex;
-    position: relative;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .actia
@@ -349,21 +348,6 @@ footer ul li {
     text-align: center;
     display: inline;
 }
-
-/*footer nav a
-{
-    font-size: 1.2em;
-    color:#FFFFFF;
-    text-decoration: none;
-    padding: 0;
-}
-
-
-footer nav a:hover
-{
-    border-bottom: 3px solid red;
-}
-*/
 
 /*Ligne avec copyright et auteur*/
 #mentions{
@@ -447,4 +431,12 @@ footer nav a:hover
 
 #secpart {
     padding: 2%;
+}
+
+#secpart img {
+    margin: 20px;   
+}
+
+#secpart div {
+    margin: auto;
 }
