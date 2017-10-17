@@ -27,10 +27,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
-
 ol, ul {
     list-style: none;
 }
@@ -50,6 +46,13 @@ table {
     border-spacing: 0;
 }
 
+
+body {
+    background: #FFF;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
 
 /* Fin CSS RESET */
 
@@ -83,11 +86,7 @@ html {
     overflow: hidden;
 }
 
-body {
-    background: #FFF;
-    margin: 0;
-    padding: 0;
-}
+
 
 #slider .slides {
     display: block;
@@ -172,25 +171,11 @@ br {
     padding: 25px 0px 0px 25px ;  
 }
 
-#reseaux #fb{        
-    background-position:0 -275px;
-}
-
-#reseaux #twitter{        
-    background-position:0 -50px;
-} 
-
-#reseaux #it{        
-    background-position:0 -150px;
-}
-
-#reseaux #insta{        
-    background-position:0 -175px;
-}
-
-#reseaux #yt{        
-    background-position:0 0;
-}
+#reseaux #fb{background-position:0 -275px;}
+#reseaux #twitter{background-position:0 -50px;} 
+#reseaux #it{background-position:0 -150px;}
+#reseaux #insta{background-position:0 -175px;}
+#reseaux #yt{background-position:0 0;}
 /*Reseaux sociaux Fin*/
 
 /* Autres éléments du header*/
@@ -209,7 +194,7 @@ br {
 
 .logo_as{
     float:left;
-    margin-right: 13%;
+    margin-right: 10%;
     margin-left: 4%;
     max-width: 9%;
 }
@@ -340,20 +325,15 @@ section article h2
     opacity: 0.6;
 }
 
-.assystem, .lesaffre, .alten
-{
-    opacity: 0.6;
-}
-
-.assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover
-{
-    opacity: 1;
-}
+.assystem, .lesaffre, .alten{opacity: 0.6;}
+.assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover{opacity: 1;}
 
 footer
 {
     background-color: rgba(20,20,20,0.8);
     width:100%;
+    display: table;
+    height: 1px;
 }
 
 footer ul
@@ -368,10 +348,9 @@ footer ul li {
     margin: auto;
     text-align: center;
     display: inline;
-    padding: 4px;
 }
 
-footer nav a
+/*footer nav a
 {
     font-size: 1.2em;
     color:#FFFFFF;
@@ -384,18 +363,86 @@ footer nav a:hover
 {
     border-bottom: 3px solid red;
 }
+*/
 
-#mentions
-{
+/*Ligne avec copyright et auteur*/
+#mentions{
     color:white;
     text-align: center;
     clear: both;
     padding: 1%;
     font-size: 0.8em;
 }
+#mentions li::after{
+    content: "•";
+    margin: 0 6px 0 8px;
+}
+#mentions li.last::after{
+    content: " ";
+}
+#mentions a {
+    text-decoration: none;
+    color: white;
+}
+#mentions a:hover {
+    text-decoration: none;
+    color: red;
+}
 
-#bottomcontainer {
-    overflow: hidden;
+/*Footer A propos, plan du site et contact -footer responsive*/
+@media all and (min-width: 1000px){
+    .clear {clear: both ;} 
+    .row p.clear{padding-top: 0;}
+    .row br{margin:0;}
+    .row{
+        height: auto;
+        margin: auto ;
+        padding-top: 20px ;
+        width: 980px
+    }
+    .row div{
+        float: left ;
+        margin-left: 20px ;
+    }
+    .Colonne1,.Colonne2 {width: 370px ; }
+    
+    .row h4, .row p, .Colonne2 a{
+        color: #FFF;
+        margin-top: 0 ;
+        padding: 10px 20px;
+        line-height: 18px;
+        text-decoration: none;
+    }
+    .row h4 {font-size: 18px ;}
+    .row p,.Colonne2 a {font-size: 12px ;}  
+   
+}
+@media all and (min-width: 500px)and (max-width: 1000px){
+    .clear {clear: both ;}
+    .row p.clear{padding-top: 0;}
+    .row br{margin:0;}
+    .row{
+        height: auto;
+        margin: auto ;
+        padding-top: 20px ;
+        width: 500px
+    }
+    .row div{
+        width: 100% ; 
+        margin-bottom: 20px;
+    }
+    .row h4, .row p, .Colonne2 a{
+        color: #FFF;
+        margin-top: 0 ;
+        padding: 10px 20px;
+        line-height: 18px;
+        text-align: justify ;
+    }   
+    .row h4 {font-size: 18px ;}
+    .row p,.Colonne2 a {font-size: 12px ;}
+}
+@media all and (max-width: 500px){
+    .row{display: none;}
 }
 
 #secpart {
