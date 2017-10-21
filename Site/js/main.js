@@ -1,13 +1,7 @@
-$(document).ready(function() {
-    $('#test').fadeOut(1000);
-});
-
 'use strict';
 
 $(function() {
-
     //variables pour le carousel
-    var width = 720;
     var animationSpeed = 1000;
     var pause = 5000;
     var currentSlide = 1;
@@ -15,6 +9,17 @@ $(function() {
     var $slider = $('#slider');
     var $slideContainer = $('.slides', $slider);
     var $slides = $('.slide', $slider);
+
+    var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
+
+    window.onresize = function() {
+        width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
+        currentSlide = 1;
+        $slideContainer.css('margin-left', 0);
+    };
+
+
+
 
     var interval;
 
