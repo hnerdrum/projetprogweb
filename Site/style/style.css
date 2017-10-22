@@ -224,16 +224,6 @@ input[type="submit"] {
 
 /*Fin du Header*/
 
-#rugby_team
-{
-    position: relative;
-    background: url('../../Data/images/rugby_team1.jpg');
-    width: 960px;
-    margin-top:15px;
-    margin-bottom:25px;
-    height:600px;
-    border-radius: 5px;
-}
 #description
 {
     position: absolute;
@@ -247,31 +237,6 @@ input[type="submit"] {
     color: white;
     font-size: 2em;
     background-color: rgba(24,24,24,0.8);
-}
-.Team
-{
-    height: 25px;
-    position: absolute;
-    padding: 3px 8px 0px 8px;
-    color: white;
-    text-decoration: none;
-
-}
-.Team:hover
-          {
-	      text-decoration: underline;
-	      color: red;
-	      opacity: 0.8;
-          }
-
-#img_sports
-{
-    position: relative;
-    width:860px;
-    height:800px;
-    min-width: 430px;
-    min-height: 400px;
-    margin-left:auto;
 }
 
 #nos_sports {
@@ -437,4 +402,13 @@ footer ul li {
 
 #secpart div {
     margin: auto;
+}
+
+#pluginFB2 {
+    margin: auto;
+    display: block;
+}
+
+#FacebookWrap {
+    background-color: rgba(20,20,20,0.8);
 }
