@@ -87,8 +87,6 @@ html {
     overflow: hidden;
 }
 
-
-
 #slider .slides {
     display: block;
     width: 600%;
@@ -106,7 +104,6 @@ html {
     padding-bottom: 50%;
 }
 
-
 .slide1 {background: red;}
 .slide2 {background: blue;}
 .slide3 {background: green;}
@@ -118,18 +115,15 @@ html {
     padding: 2% ;
 }
 
-br {
-    margin: 1%;
-}
-
 /*Barre de navigation Debut*/
 #nav {
-    margin: 0 ;
-    padding: 0 ;
-    font-size: 1.55vw;
-    font-weight: bold;
-    font-family: roboto, verdana, arial, sans-serif ;
-    list-style: none ;
+	margin-top: 40px;
+	padding: 0;
+	font-size: 35px;
+	font-weight: bold;
+	font-family: roboto, verdana, arial, sans-serif ;
+	list-style: none ;
+	text-align: center;
 }
 
 #nav li {
@@ -148,8 +142,8 @@ br {
 /*Barre de navigation Fin*/
 
 
-
 /*Reseaux sociaux Debut*/
+#reseaux {margin-top:10px;}
 #reseaux ul {
     list-style-type: none ;
     margin: 0;
@@ -161,7 +155,6 @@ br {
 }
 
 #reseaux a {
-    
     display: block ;
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
@@ -178,11 +171,11 @@ br {
 
 /* Autres éléments du header*/
 .insa {
-    margin: 0 1.5% 0.7% 63%;
-    float:right;
-    font-family: roboto, verdana, arial, sans-serif ;
-    font-size:0.95vw;
-    font-weight: bold;
+	float:right;
+	font-size: 18px;
+	font-family: roboto, verdana, arial, sans-serif ;
+	font-weight: bold;
+	margin-right: 20px;
 }
 
 .separateur {
@@ -192,11 +185,19 @@ br {
 
 .logo_as{
     float:left;
-    margin-right: 10%;
-    margin-left: 4%;
-    max-width: 9%;
+		margin-left: 20px;
+		margin-bottom: 30px;
 }
 
+.logo_asbis{
+    float:left;
+		margin-bottom: 2%;
+}
+
+.menu-respo{
+	float:right;
+	margin: 25px 0px 0px 10px;
+}
 
 /*Barre de recherche Debut*/
 input {
@@ -206,7 +207,7 @@ input {
 input[type="text"] {
     background: #EEEDEB;
     border-style:none;
-    padding: 0.5%;
+    padding: 5px;
     max-width: 23%;
     width:100%;
     height: 100%;
@@ -336,8 +337,12 @@ footer ul li {
     color: red;
 }
 
-/*Footer A propos, plan du site et contact -footer responsive*/
-@media all and (min-width: 1000px){
+/*Responsive*/
+@media all and (min-width: 1000px){ /*Ordi*/
+	/*Header*/
+		.menu-portable,.menu-tablette{display: none}
+	
+	/*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -364,7 +369,13 @@ footer ul li {
     .row p,.Colonne2 a {font-size: 12px ;}  
    
 }
-@media all and (min-width: 500px)and (max-width: 1000px){
+@media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
+		/*Header*/
+		.menu-portable,.menu-ordi{display: none}
+		#nav {
+			font-size: 22px;
+	}
+		/*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -388,9 +399,17 @@ footer ul li {
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
 }
-@media all and (max-width: 500px){
+@media all and (max-width: 720px){ /*Portable*/
+		/*Header*/
+		.menu-ordi,.menu-tablette{display: none;}
+		.menu-portable{display: inline;}
+		input[type="submit"] {margin: 22px 0px 0px 5px;}
+		/*Footer*/
     .row{display: none;}
 }
+
+
+
 
 #secpart {
     padding: 2%;
