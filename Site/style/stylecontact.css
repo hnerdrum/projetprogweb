@@ -188,8 +188,13 @@ h1 {
 
 .contact{
 	background-color: #434343;
+	padding-bottom: 1px;
+
 }
 
+.contact a{
+	color: red;
+}
 .mini-container {
 	height: 270px;
 	background-image: url(../../Data/bg%20contact%20as.png);
@@ -199,15 +204,7 @@ h1 {
 	border-spacing: 17px ;
 }
 
-#bureau_as_title{
-	font-size: 2.5vw;
-	margin: 15px 250px 25px
-}
 
-#bureau_as_text{
-	margin: 25px 250px 35px;
-	font-size: 1.5vw;
-}
 #as_contact_container{
 	width: 70%;
 	padding: 35px;
@@ -217,14 +214,50 @@ h1 {
 	color:#B3B3B3
 }
 
+
 table {
-	border-spacing: 12px;
+
 	font-size: 20px;
 	margin : auto;
 	background-color: white;	
 	margin: 45px auto;
+	border-collapse:collapse;
+}
+
+
+td{
+
+	border-color: #737373;
+	border-width:1px;
+	border-style:solid; 
+	padding: 12px;
+}
+
+th{
+	background-color: #777;
+	color: white;
+	padding: 7px;
+}
+#bloc3{
+		background-color: bisque;
+		height : 100px ;
+		width: 100%;
 
 }
+
+#bloc1{
+		background-color: aquamarine;
+		width: 55%;
+	float: left;
+}
+#bloc2{
+		background-color: aquamarine;
+		margin-left: 5px;
+		margin-top: 50px;
+		width: 300px;
+	float: right;
+}
+
 
 #partenaires_logo{
     display: flex;
@@ -292,7 +325,18 @@ footer ul li {
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
 	/*Header*/
-		.menu-portable,.menu-tablette{display: none}
+		.menu-portable,.menu-tablette,#ascodebanniereportable,#textportable{display: none}
+	
+		/*Bannière bureau AS*/
+		#bureau_as_title{
+			font-size: 2.5vw;
+			margin: 15px 250px 25px
+		}
+
+		#bureau_as_text{
+			margin: 25px 250px 35px;
+			font-size: 1.5vw;
+		}
 	
 	/*Footer*/
     .clear {clear: both ;} 
@@ -323,10 +367,23 @@ footer ul li {
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 		/*Header*/
-		.menu-portable,.menu-ordi{display: none}
+		.menu-portable,.menu-ordi,#ascodebanniereportable,#textportable{display: none}
 		#nav {
 			font-size: 22px;
 	}
+	
+		/*Bannière bureau AS*/
+		#bureau_as_title{
+			font-size: 5vw;
+			margin-bottom: 35px;
+		}
+
+		#bureau_as_text{
+			font-size: 2.5vw;
+			margin-right: 220px;
+		}
+		#aslogobanniere{display: none;}
+	
 		/*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
@@ -353,9 +410,22 @@ footer ul li {
 }
 @media all and (max-width: 720px){ /*Portable*/
 		/*Header*/
-		.menu-ordi,.menu-tablette{display: none;}
+		.menu-ordi,.menu-tablette,#bureau_as_title,#bureau_as_text,#ascodebanniere,#aslogobanniere{display: none;}
 		.menu-portable{display: inline;}
 		input[type="submit"] {margin: 22px 0px 0px 5px;}
+	
+		/*Bannière bureau AS*/
+	#textportable{ 
+		font-size: 34px;		
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	#as_contact_container{padding: 15px;}
+		#ascodebanniereportable{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
 		/*Footer*/
     .row{display: none;}
 }
