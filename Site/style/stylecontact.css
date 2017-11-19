@@ -183,13 +183,14 @@ h1 {
     position: relative;
     text-align:center;
     font-size: 60px;
-	padding: 20px;
+		padding: 20px;
+		padding-bottom: 0;
 }
 
 .contact{
 	background-color: #434343;
 	padding-bottom: 1px;
-
+	padding-top: 30px;
 }
 
 .contact a{
@@ -216,7 +217,6 @@ h1 {
 
 
 table {
-
 	font-size: 20px;
 	margin : auto;
 	background-color: white;	
@@ -226,7 +226,6 @@ table {
 
 
 td{
-
 	border-color: #737373;
 	border-width:1px;
 	border-style:solid; 
@@ -238,27 +237,42 @@ th{
 	color: white;
 	padding: 7px;
 }
-#bloc3{
-		background-color: bisque;
-		height : 100px ;
-		width: 100%;
 
+#entetecontact{
+	height: 75px;
+	width: 100%;
 }
 
-#bloc1{
-		background-color: aquamarine;
-		width: 55%;
+#title{
+	background-color: #434343;
+	width: 55%;
 	float: left;
-}
-#bloc2{
-		background-color: aquamarine;
-		margin-left: 5px;
-		margin-top: 50px;
-		width: 300px;
-	float: right;
+	box-shadow: 1px 2px 12px #434343;
 }
 
+#entetetxt{
+	margin: 12px;
+}
 
+.contactfb{
+	background-color: #2F56A8;
+	margin-left: 55px;
+	font-size: 2vw;
+	width: 30%;
+	float: left;
+	color: white;
+	text-align: center;
+}
+
+.contactfbportable{
+	width: 30%;
+	float: left;
+	text-align: center;
+}
+
+#arrowbuttonfb{
+	    padding: 9px;
+}
 #partenaires_logo{
     display: flex;
     flex-wrap: wrap;
@@ -325,7 +339,7 @@ footer ul li {
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
 	/*Header*/
-		.menu-portable,.menu-tablette,#ascodebanniereportable,#textportable{display: none}
+		.menu-portable,.menu-tablette,#ascodebanniereportable,#textportable,.contactfbportable{display: none}
 	
 		/*Bannière bureau AS*/
 		#bureau_as_title{
@@ -367,7 +381,7 @@ footer ul li {
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 		/*Header*/
-		.menu-portable,.menu-ordi,#ascodebanniereportable,#textportable{display: none}
+		.menu-portable,.menu-ordi,#ascodebanniereportable,#textportable,.contactfbportable{display: none}
 		#nav {
 			font-size: 22px;
 	}
@@ -410,7 +424,7 @@ footer ul li {
 }
 @media all and (max-width: 720px){ /*Portable*/
 		/*Header*/
-		.menu-ordi,.menu-tablette,#bureau_as_title,#bureau_as_text,#ascodebanniere,#aslogobanniere{display: none;}
+		.menu-ordi,.menu-tablette,#bureau_as_title,#bureau_as_text,#ascodebanniere,#aslogobanniere,.contactfb{display: none;}
 		.menu-portable{display: inline;}
 		input[type="submit"] {margin: 22px 0px 0px 5px;}
 	
