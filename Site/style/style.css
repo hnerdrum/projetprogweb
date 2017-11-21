@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -104,6 +104,35 @@ html {
     padding-bottom: 50%;
 }
 
+.arrows {
+  background-color: black;
+  color: white;
+  width: 5%;
+  height: 7%;
+  border-radius: 80%;
+  position: absolute;
+  bottom: 40%;
+  padding: 0.5%;
+  opacity: 0.8;
+}
+
+.arrows p {
+  font-size: 2.5vw;
+  top: 20%;
+  right: 50%;
+  position: absolute;
+}
+
+#arrow-left {
+  left: 20%;
+  bottom: 40%;
+}
+
+#arrow-right {
+  right: 20%;
+  bottom: 40%;
+}
+
 .slide1 {background: red;}
 .slide2 {background: blue;}
 .slide3 {background: green;}
@@ -131,9 +160,9 @@ html {
     margin: 0 1.30% ;
 }
 
-#nav a { 
+#nav a {
     color: #323232 ;
-    text-decoration: none ; 
+    text-decoration: none ;
 }
 
 #nav a:hover {
@@ -159,11 +188,11 @@ html {
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
     background-size: 96%;
-    padding: 25px 0px 0px 25px ;  
+    padding: 25px 0px 0px 25px ;
 }
 
 #reseaux #fb{background-position:0 -275px;}
-#reseaux #twitter{background-position:0 -50px;} 
+#reseaux #twitter{background-position:0 -50px;}
 #reseaux #it{background-position:0 -150px;}
 #reseaux #insta{background-position:0 -175px;}
 #reseaux #yt{background-position:0 0;}
@@ -265,7 +294,7 @@ h1 {
 section article h2
 {
     text-align: center;
-    font-weight: bold; 
+    font-weight: bold;
 }
 
 #partenaires_logo
@@ -341,9 +370,9 @@ footer ul li {
 @media all and (min-width: 1000px){ /*Ordi*/
 	/*Header*/
 		.menu-portable,.menu-tablette{display: none}
-	
+
 	/*Footer*/
-    .clear {clear: both ;} 
+    .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
     .row{
@@ -357,7 +386,7 @@ footer ul li {
         margin-left: 20px ;
     }
     .Colonne1,.Colonne2 {width: 370px ; }
-    
+
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
@@ -366,8 +395,8 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;}  
-   
+    .row p,.Colonne2 a {font-size: 12px ;}
+
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 		/*Header*/
@@ -386,7 +415,7 @@ footer ul li {
         width: 500px
     }
     .row div{
-        width: 100% ; 
+        width: 100% ;
         margin-bottom: 20px;
     }
     .row h4, .row p, .Colonne2 a{
@@ -395,7 +424,7 @@ footer ul li {
         padding: 10px 20px;
         line-height: 18px;
         text-align: justify ;
-    }   
+    }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
 }
@@ -416,7 +445,7 @@ footer ul li {
 }
 
 #secpart img {
-    margin: 20px;   
+    margin: 20px;
 }
 
 #secpart div {
