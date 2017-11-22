@@ -69,6 +69,10 @@ html {
     font-family: 'Roboto', 'Oswald', sans-serif;
 }
 
+.wrapscarousel {
+
+}
+
 .carousel {
     height:100px;
     width:100px;
@@ -78,6 +82,7 @@ html {
     vertical-align: middle;
     font-family: Verdana, Arial, Sans-Serif;
     margin-right:5px;
+    position: relative;
 }
 
 #slider {
@@ -107,30 +112,31 @@ html {
 .arrows {
   background-color: black;
   color: white;
-  width: 5%;
-  height: 7%;
-  border-radius: 80%;
+  width: 6%;
+  height: 10%;
+  border-radius: 50%;
   position: absolute;
-  bottom: 40%;
+  top: 40%;
   padding: 0.5%;
   opacity: 0.8;
+  z-index: 1;
+  display: block;
+  text-align: center;
 }
 
 .arrows p {
-  font-size: 2.5vw;
+  font-size: 3vw;
   top: 20%;
-  right: 50%;
+  left: 30%;
   position: absolute;
 }
 
 #arrow-left {
-  left: 20%;
-  bottom: 40%;
+  left: 15%;
 }
 
 #arrow-right {
-  right: 20%;
-  bottom: 40%;
+  right: 15%;
 }
 
 .slide1 {background: red;}
