@@ -255,13 +255,19 @@ input[type="text"] {
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-    margin: 2px 0px 0px 5px;
+
     width: 30px;
     height: 25px;
     border-style:none;
     cursor: pointer;
 }
+
+.recherche #search-btn{
+    margin: 3px 12px 0px 6px;
+}
 /*Barre de recherche Fin*/
+
+
 
 /*Fin du Header*/
 
@@ -282,6 +288,7 @@ input[type="submit"] {
 
 #nos_sports {
     background-color: red;
+
 }
 
 
@@ -294,12 +301,14 @@ h1 {
     font-size: 2em;
     padding: 2%;
     margin-top: 20px;
+    z-index: 1;
 }
 
 #Facebook
 {
     background-color: #3b5998; /*#6d84b4*/
     width: 100%;
+
 }
 /* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 section article h2
@@ -380,7 +389,7 @@ footer ul li {
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
 	/*Header*/
-		.menu-portable,.menu-tablette{display: none}
+	.menu-portable,.menu-tablette,.menu-hamburger{display: none}
 
 	/*Footer*/
     .clear {clear: both ;}
@@ -410,12 +419,13 @@ footer ul li {
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
-		/*Header*/
-		.menu-portable,.menu-ordi{display: none}
-		#nav {
-			font-size: 22px;
+	/*Header*/
+	.menu-portable,.menu-ordi,.menu-hamburger{display: none}
+	#nav {
+		font-size: 22px;
 	}
-		/*Footer*/
+
+	/*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -440,14 +450,119 @@ footer ul li {
     .row p,.Colonne2 a {font-size: 12px ;}
 }
 @media all and (max-width: 720px){ /*Portable*/
-		/*Header*/
-		.menu-ordi,.menu-tablette{display: none;}
-		.menu-portable{display: inline;}
-		input[type="submit"] {margin: 22px 0px 0px 5px;}
+/*Header*/
+	.menu-ordi,.menu-tablette{display: none;}
+	.menu-portable, .menu-hamburger{display: inline;}
+	input[type="submit"] {margin: 22px 0px 0px 5px;}
+
+	.recherche #search-btn{margin: 25px 12px 0px 6px;}
+/*Début Menu Hamburger*/
+    #fullcontainer
+    {
+        width: auto;
+        height: 100%;
+    }
+
+    .hamburger
+    {
+        position: fixed;
+        text-align: left;
+        top:0;
+        right:0;
+        /*left:0;*/
+		background-color: rgba(85,85,85,1);
+        min-width: 20%;
+        width: 20%;/*100%*/
+        /*text-align: center;*/
+        height: 100%;
+        padding: 0px 0px 0px 70px; /*0px 0px 0px 280px*/
+        z-index: 19;
+
+        transition: transform .6s ease-in-out;
+        -webkit-transition: transform .6s ease-in-out;
+
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+
+    }
+
+    .hamburger.isOpen{
+        transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+
+    }
+
+    header nav ul
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 40px 0px 0px -50px;
+        position: absolute;
+        top: 50%;
+        font-size: 1.7em;
+        font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+
+    }
+    header nav li
+    {
+        padding-bottom: 10px;
+        display: inline ;
+        margin: 0 1.30% ;
+    }
+
+    header nav a:hover
+    {
+        border-bottom: 2px solid red;
+    }
+
+    .menu-hamburger nav ul li a
+    {
+        letter-spacing: 0.05em;
+        color: #FFFFFF ;
+        text-decoration: none ;
+    }
+
+    .btn-navigation{
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        z-index: 20;
+        cursor: pointer;
+        transition: background .6s ease-in-out;
+        -webkit-transition: background .6s ease-in-out;
+    }
+
+    .btn-navigation .barre{
+        width: 30px;
+        height: 6px;
+        background:#858585;
+        margin-top: 3px;
+        border: 1px solid black;
+    }
+    .menu-hamburger #search-btn{
+    	position: absolute;
+        margin: 37px 0px 0px -50px;
+    }
+    .btn-navigation .barre.white{
+        background: #FFFFFF;
+    }
+
+    input[type="submit1"] {
+    background: url(../../Data/loupe1.png) no-repeat ;
+    width: 23px;
+    height: 20px;
+    border-style:none;
+    cursor: pointer;
+}
+/*Fin Menu Hamburger*/
+
 		/*Footer*/
     .row{display: none;}
 }
-
 
 
 
