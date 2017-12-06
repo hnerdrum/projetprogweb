@@ -106,50 +106,43 @@ html {
 }
 
 .slides img {
-  width: 100%;
+    width: 100%;
 }
 
 .arrows {
-  background-color: #696a77;
-  color: #191a21;
-  width: 6%;
-  height: 10%;
-  border-radius: 50%;
-  position: absolute;
-  top: 40%;
-  padding: 0.5%;
-  opacity: 0.8;
-  z-index: 1;
-  display: block;
-  text-align: center;
+    background-color: #696a77;
+    color: #191a21;
+    width: 6%;
+    height: 10%;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    padding: 0.5%;
+    opacity: 0.8;
+    z-index: 1;
+    display: block;
+    text-align: center;
 }
 
 .arrows:hover {
-  cursor: pointer;
-  opacity: 1;
+    cursor: pointer;
+    opacity: 1;
 }
 
 .arrows p {
-  font-size: 3vw;
-  top: 20%;
-  left: 30%;
-  position: absolute;
+    font-size: 3vw;
+    top: 20%;
+    left: 30%;
+    position: absolute;
 }
 
 #arrow-left {
-  left: 15%;
+    left: 15%;
 }
 
 #arrow-right {
-  right: 15%;
+    right: 15%;
 }
-
-/*.slide1 {background: red;}
-.slide2 {background: blue;}
-.slide3 {background: green;}
-.slide4 {background: purple;}
-.slide5 {background: pink;}
-*/
 
 #header, #content ,#footer {
     padding: 2% ;
@@ -157,13 +150,13 @@ html {
 
 /*Barre de navigation Debut*/
 #nav {
-	margin-top: 40px;
-	padding: 0;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	list-style: none ;
-	text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    list-style: none ;
+    text-align: center;
 }
 
 #nav li {
@@ -211,11 +204,11 @@ html {
 
 /* Autres éléments du header*/
 .insa {
-	float:right;
-	font-size: 18px;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	font-weight: bold;
-	margin-right: 20px;
+    float:right;
+    font-size: 18px;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .separateur {
@@ -225,18 +218,18 @@ html {
 
 .logo_as{
     float:left;
-		margin-left: 20px;
-		margin-bottom: 30px;
+    margin-left: 20px;
+    margin-bottom: 30px;
 }
 
 .logo_asbis{
     float:left;
-		margin-bottom: 2%;
+    margin-bottom: 2%;
 }
 
 .menu-respo{
-	float:right;
-	margin: 25px 0px 0px 10px;
+    float:right;
+    margin: 25px 0px 0px 10px;
 }
 
 /*Barre de recherche Debut*/
@@ -388,10 +381,10 @@ footer ul li {
 
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
-	/*Header*/
-	.menu-portable,.menu-tablette,.menu-hamburger{display: none}
+    /*Header*/
+    .menu-portable,.menu-tablette,.menu-hamburger{display: none}
 
-	/*Footer*/
+    /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -416,16 +409,20 @@ footer ul li {
     }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
+    .sport-tiles {
+        width: 20%;
+        padding-bottom: 10vw;
+    }
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
-	/*Header*/
-	.menu-portable,.menu-ordi,.menu-hamburger{display: none}
-	#nav {
-		font-size: 22px;
-	}
+    /*Header*/
+    .menu-portable,.menu-ordi,.menu-hamburger{display: none}
+    #nav {
+	font-size: 22px;
+    }
 
-	/*Footer*/
+    /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -448,15 +445,19 @@ footer ul li {
     }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
+    .sport-tiles {
+        width: 25%;
+        padding-bottom: 12.5vw;
+    }
 }
 @media all and (max-width: 720px){ /*Portable*/
-/*Header*/
-	.menu-ordi,.menu-tablette{display: none;}
-	.menu-portable, .menu-hamburger{display: inline;}
-	input[type="submit"] {margin: 22px 0px 0px 5px;}
+    /*Header*/
+    .menu-ordi,.menu-tablette{display: none;}
+    .menu-portable, .menu-hamburger{display: inline;}
+    input[type="submit"] {margin: 22px 0px 0px 5px;}
 
-	.recherche #search-btn{margin: 25px 12px 0px 6px;}
-/*Début Menu Hamburger*/
+    .recherche #search-btn{margin: 25px 12px 0px 6px;}
+    /*Début Menu Hamburger*/
     #fullcontainer
     {
         width: auto;
@@ -470,7 +471,7 @@ footer ul li {
         top:0;
         right:0;
         /*left:0;*/
-		background-color: rgba(85,85,85,1);
+	background-color: rgba(85,85,85,1);
         min-width: 20%;
         width: 20%;/*100%*/
         /*text-align: center;*/
@@ -515,9 +516,9 @@ footer ul li {
     }
 
     header nav a:hover
-    {
-        border-bottom: 2px solid red;
-    }
+                     {
+                         border-bottom: 2px solid red;
+                     }
 
     .menu-hamburger nav ul li a
     {
@@ -552,16 +553,21 @@ footer ul li {
     }
 
     input[type="submit1"] {
-    background: url(../../Data/loupe1.png) no-repeat ;
-    width: 23px;
-    height: 20px;
-    border-style:none;
-    cursor: pointer;
-}
-/*Fin Menu Hamburger*/
+        background: url(../../Data/loupe1.png) no-repeat ;
+        width: 23px;
+        height: 20px;
+        border-style:none;
+        cursor: pointer;
+    }
+    /*Fin Menu Hamburger*/
 
-		/*Footer*/
+    /*Footer*/
     .row{display: none;}
+
+    .sport-tiles {
+        width: 50%;
+        height: 25vw;
+    }
 }
 
 
@@ -585,4 +591,57 @@ footer ul li {
 
 #FacebookWrap {
     background-color: rgba(20,20,20,0.8);
+}
+
+
+#infos_sports {
+    background-color: rgba(20,20,20,0.8);
+    width: 100%;
+    display: inline-block;
+}
+
+.sport-button {
+    background-color: red;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    position: relative;
+    margin: 0px 5px 5px;
+    float: left;
+}
+
+.arrow-sports {
+    margin: -6% 29%;
+    font-size: 40px;
+}
+
+#sport-search {
+    max-width: 100px;
+    float: left;
+    margin: 15px 15px;
+}
+
+#sport-control {
+    display: flex;
+    background-color: chartreuse;
+    width: 100%;
+}
+
+#sport-list {
+    position: relative;
+    background-color: pink;
+    width: 100%;
+    /*height: 0;*/
+    display: flex;
+    /*padding-bottom: 60%;*/
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.sport-tiles {
+    border: 2px solid black;
+    box-sizing: border-box;
+    position: relative;
 }
