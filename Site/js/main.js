@@ -11,6 +11,8 @@ $(function() {
     var $slides = $('.slide', $slider);
     var $arrow_left = $('#arrow-left');
     var $arrow_right = $('#arrow-right');
+    var $arrows = $('.arrows');
+    var $sld = $('.sld');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
 
@@ -39,8 +41,26 @@ $(function() {
         clearInterval(interval);
     }
 
-    $('.arrows')
-        .on('mouseenter', pauseSlider)
+    $(function() {
+      $slideContainer.hover(function() {
+        $arrows.css('opacity', '0.8');
+      }, function() {
+        // on mouseout, reset the background colour
+        $arrows.css('opacity', '0');
+      });
+  });
+
+  $(function() {
+    $arrows.hover(function() {
+      $arrows.css('opacity', '1');
+    }, function() {
+      // on mouseout, reset the background colour
+      $arrows.css('opacity', '0');
+    });
+});
+
+    $arrows
+        .on('mouseenter', pauseSlider,)
         .on('mouseleave', startSlider);
 
 
