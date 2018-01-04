@@ -566,7 +566,7 @@ footer ul li {
 
     .sport-tiles {
         width: 50%;
-        height: 25vw;
+        padding-bottom: 25vw;
     }
 }
 
@@ -627,13 +627,13 @@ footer ul li {
 
 #sport-control {
     display: flex;
-    background-color: chartreuse;
+    background-color: rgba(20,20,20,0.8);
     width: 100%;
 }
 
 #sport-list {
     position: relative;
-    background-color: pink;
+    background-color: red;
     width: 100%;
     /*height: 0;*/
     display: flex;
@@ -648,7 +648,20 @@ footer ul li {
     position: relative;
 }
 
+.sport-tiles:hover {
+    background-color: #CD290C;
+}
 .sport-title {
     text-align: center;
     background-color: white;
+}
+
+#close-sport {
+    width: 50px;
+    height: 50px;
+    float: right;
+    font-size: 40px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
 }
