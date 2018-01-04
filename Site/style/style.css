@@ -405,7 +405,11 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;} 
+    .row p,.Colonne2 a {font-size: 12px ;}
+    .sport-tiles {
+        width: 20%;
+        padding-bottom: 5vw;
+    }
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
@@ -440,6 +444,10 @@ footer ul li {
     }   
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
+    .sport-tiles {
+        width: 25%;
+        padding-bottom: 12.5vw;
+    }
 }
 
 @media all and (max-width: 720px){ /*Portable*/
@@ -640,6 +648,10 @@ footer ul li {
     /*Fin Menu Hamburger*/
     /*Footer*/
     .row{display: none;}
+    .sport-tiles {
+        width: 50%;
+        padding-bottom: 25vw;
+    }
 }
 
 
