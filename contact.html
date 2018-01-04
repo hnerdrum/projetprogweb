@@ -5,8 +5,9 @@
         <title> Association Sportive de l'Insa Toulouse | Accueil </title>
         <link rel="stylesheet" type="text/css" href="Site/style/stylecontact.css"> 
         <link rel="shortcut icon" href="Data/logo_as_insa.ico">
-				<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">  
+		<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">  
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="Site/js/main.js"></script>
     </head>
     
@@ -14,6 +15,11 @@
     <body>
         <div id="fullcontainer">
             <div id="container">
+            	<div class="btn-navigation">
+					<div class="barre1"></div>
+					<div class="barre2"></div>
+					<div class="barre3"></div>
+				</div>
 							<header id="header">
 								<div class="menu-ordi">
 									<img class="logo_as" src="Data/logo_as.jpg" alt="">
@@ -42,7 +48,7 @@
 									<ul id="nav">
 										<li><a href="index.html">Accueil</a></li>        
 										<li><a href="#">Sports</a></li>         
-										<li><a href="#">Résultats</a></li>        
+										<li><a href="resultats.html">Résultats</a></li>        
 										<li><a href="#">Galerie</a></li> 
 										<li><a href="#">Calendrier</a></li> 
 										<li><a href="contact.html">Contact</a></li>    
@@ -76,16 +82,15 @@
 									<ul id="nav">
 										<li><a href="index.html">Accueil</a></li>        
 										<li><a href="#">Sports</a></li>         
-										<li><a href="#">Résultats</a></li>        
+										<li><a href="resultats.html">Résultats</a></li>        
 										<li><a href="#">Galerie</a></li> 
 										<li><a href="#">Calendrier</a></li> 
 										<li><a href="contact.html">Contact</a></li>    
 									</ul>
-									<!-- Fin Barre de navigation-->  
+									<!--Fin Barre de navigation-->  
 								</div>								
 								<div class="menu-portable">
 									<img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
-										<img class="menu-respo" src="Data/menu-responsif.png">
 									<div class="recherche">
 										<form action="/search" id="searchthis" method="get">
 											<input id="search-btn" type="submit" value="" />
@@ -93,6 +98,25 @@
 										</form>
 									</div>
 								
+								</div>
+								<div class="menu-hamburger">
+									<nav class="hamburger">
+										<form action="/search" id="searchthis" method="get">
+											<input id="search-btn" type="submit1" value="" />
+										</form>
+										<ul>
+
+											<li><a href="index.html">Accueil</a></li>        
+											<li><a href="#">Sports</a></li>         
+											<li><a href="resultats.html">Résultats</a></li>        
+											<li><a href="#">Galerie</a></li> 
+											<li><a href="#">Calendrier</a></li> 
+											<li><a href="contact.html">Contact</a></li>    
+
+
+										</ul>
+									</nav>
+									<div class="hamburger-overlay"></div>
 								</div>
 							</header>
  						</div>

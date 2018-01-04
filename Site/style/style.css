@@ -287,7 +287,7 @@ input[type="submit"] {
 
 
 
-/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
+
 h1 {
     color:white;
     position: relative;
@@ -304,12 +304,7 @@ h1 {
     width: 100%;
 
 }
-/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
-section article h2
-{
-    text-align: center;
-    font-weight: bold;
-}
+
 
 #partenaires_logo
 {
@@ -388,7 +383,6 @@ footer ul li {
 	
 	/*Footer*/
     .clear {clear: both ;} 
-
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
     .row{
@@ -402,7 +396,7 @@ footer ul li {
         margin-left: 20px ;
     }
     .Colonne1,.Colonne2 {width: 370px ; }
-
+    
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
@@ -411,11 +405,7 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;}
-    .sport-tiles {
-        width: 20%;
-        padding-bottom: 5vw;
-    }
+    .row p,.Colonne2 a {font-size: 12px ;} 
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
@@ -438,7 +428,7 @@ footer ul li {
         width: 500px
     }
     .row div{
-        width: 100% ;
+        width: 100% ; 
         margin-bottom: 20px;
     }
     .row h4, .row p, .Colonne2 a{
@@ -447,13 +437,9 @@ footer ul li {
         padding: 10px 20px;
         line-height: 18px;
         text-align: justify ;
-    }
+    }   
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
-    .sport-tiles {
-        width: 25%;
-        padding-bottom: 12.5vw;
-    }
 }
 
 @media all and (max-width: 720px){ /*Portable*/
@@ -464,12 +450,14 @@ footer ul li {
 	input[type="submit"] {margin: 22px 0px 0px 5px;}
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
+
     /*Début Menu Hamburger*/
     #fullcontainer
     {
         width: auto;
         height: 100%;
     }
+
 
     .hamburger
     {
@@ -502,7 +490,6 @@ footer ul li {
         
     }
 
-    }
     .hamburger-overlay{
         display:none; 
         position: fixed;
@@ -540,10 +527,9 @@ footer ul li {
         margin: 20 1.30% ;
     }
 
-    header nav a:hover
-                     {
-                         border-bottom: 2px solid red;
-                     }
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
 
     header nav ul li:before{
         content: ' ';
@@ -552,25 +538,6 @@ footer ul li {
         height: 15px;
         margin: 0px 10px 0px 0px;
  
-    }
-
-    header nav ul li: first-child:before{
-
-    }
-    header nav ul li: nth-child(2):before{
-
-    }
-    header nav ul li: nth-child(3):before{
-
-    }
-    header nav ul li: nth-child(4):before{
-
-    }
-    header nav ul li: nth-child(5):before{
-
-    }
-    header nav ul li: last-child:before{
-
     }
 
     header nav a:hover{
@@ -663,11 +630,6 @@ footer ul li {
         transition: background 0.5s linear;
     }
 
-
-
-    .svg.On{
-        stroke-dashoffset:0;
-    }
     input[type="submit1"] {
         background: url(../../Data/loupe1.png) no-repeat ;
         width: 23px;
@@ -676,14 +638,8 @@ footer ul li {
         cursor: pointer;
     }
     /*Fin Menu Hamburger*/
-
     /*Footer*/
     .row{display: none;}
-
-    .sport-tiles {
-        width: 50%;
-        padding-bottom: 25vw;
-    }
 }
 
 
