@@ -3,17 +3,28 @@
     <head>
         <meta charset = "utf-8">
         <title> Association Sportive de l'Insa Toulouse | Accueil </title>
-        <link rel="stylesheet" type="text/css" href="Site/style/style.css"> 
+        <link rel="stylesheet" type="text/css" href="Site/style/style.css">
         <link rel="shortcut icon" href="Data/logo_as_insa.ico">
-				<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">  
+		<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="Site/js/main.js"></script>
+        <script src="Site/js/jquery-2.1.3.min.js"></script>
+        <script src="Site/js/jquery.cycle2.min.js/"></script>
+        <script src="Site/js/sports.js"></script>
     </head>
-    
-    
+
+
     <body>
         <div id="fullcontainer">
             <div id="container">
+
+            		<div class="btn-navigation">
+						<div class="barre"></div>
+						<div class="barre"></div>
+						<div class="barre"></div>
+					</div>
+
 							<header id="header">
 								<div class="menu-ordi">
 									<img class="logo_as" src="Data/logo_as.jpg" alt="">
@@ -23,20 +34,20 @@
 									<div class="recherche">
 										<form action="/search" id="searchthis" method="get">
 											<div id="reseaux">
-												<ul> 
-													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li> 
-													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>  
-													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>  
-													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>  
-													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li> 
+												<ul>
+													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
 												</ul>
 											</div>
 											<!-- Fin Barre de recherche et réseaux sociaux-->
 											<img class="separateur" src="Data/separateur.jpg" alt=""/>
 											<input id="search-btn" type="submit" value="" />
-											<input id="search" name="" type="text" placeholder="Rechercher" />   
+											<input id="search" name="" type="text" placeholder="Rechercher" />
 										</form>
-									</div>				
+									</div>
 									<br>
 									 <!-- Début Barre de navigation--> 
 									<ul id="nav">
@@ -57,22 +68,23 @@
 									<div class="recherche">
 										<form action="/search" id="searchthis" method="get">
 											<div id="reseaux">
-												<ul> 
-													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li> 
-													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>  
-													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>  
-													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>  
-													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li> 
+												<ul>
+													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
 												</ul>
 											</div>
 											<!-- Fin Barre de recherche et réseaux sociaux-->
 											<img class="separateur" src="Data/separateur.jpg" alt=""/>
 											<input id="search-btn" type="submit" value="" />
-											<input id="search" name="" type="text" placeholder="Rechercher" />   
+											<input id="search" name="" type="text" placeholder="Rechercher" />
 										</form>
-									</div>				
+									</div>
 									<br>
-									 <!-- Début Barre de navigation--> 
+									 <!-- Début Barre de navigation-->
+
 									<ul id="nav">
 										<li><a href="index.html">Accueil</a></li>        
 										<li><a href="#">Sports</a></li>         
@@ -81,40 +93,71 @@
 										<li><a href="#">Calendrier</a></li> 
 										<li><a href="contact.html">Contact</a></li>    
 									</ul>
-									<!-- Fin Barre de navigation-->  
+
+									<!-- Fin Barre de navigation-->
 								</div>
-								
+
 								<div class="menu-portable">
 									<img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
-										<img class="menu-respo" src="Data/menu-responsif.png">
+
 									<div class="recherche">
 										<form action="/search" id="searchthis" method="get">
 											<input id="search-btn" type="submit" value="" />
 											<!--<input id="search" name="" type="text" placeholder="Rechercher" />   -->
 										</form>
 									</div>
-								
+
+								</div>
+								<div class="menu-hamburger">
+									<nav class="hamburger">
+										<form action="/search" id="searchthis" method="get">
+											<input id="search-btn" type="submit1" value="" />
+										</form>
+										<ul>
+											<li><a href="#">Accueil</a></li>
+											<li><a href="#">Sports</a></li>
+											<li><a href="#">Résultats</a></li>
+											<li><a href="#">Galerie</a></li>
+											<li><a href="#">Calendrier</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
 								</div>
 							</header>
 
 							<main>
                     <div id="wrapscarousel">
-		        <div class="carousel" id="slider">
+		                    <div class="carousel" id="slider">
                             <ul class="slides">
-                                <li class="slide slide1">slide1</li>
-                                <li class="slide slide2">slide2</li>
-                                <li class="slide slide3">slide3</li>
-                                <li class="slide slide4">slide4</li>
-                                <li class="slide slide5">slide5</li>
-                                <li class="slide slide1">slide1</li>
-                            </ul>
-                        </div> 
-	            </div>
+                                <li class="slide slide1"><img src="http://2.bp.blogspot.com/-yN3cOrsJMi8/T1InyN9mHDI/AAAAAAAAACg/DHLIRRMGQxk/s1600/SpringFlwrs7.jpg"/></li>
+                                <li class="slide slide2"><img src="http://www.designbysamgray.com/images/galeries/flowers/fullsize/HHI_bee+flower_20070512_041_fs.jpg"/></li>
+                                <li class="slide slide3"><img src="http://www.prewedphotography.com/photo/2011075352wedding-flower-gallery.jpg"/></li>
+                                <li class="slide slide4"><img src="http://www.mooseyscountrygarden.com/flower-picture-gallery/gallery-gazanias.jpg"/></li>
+                                <li class="slide slide5"><img src="http://abacus.bates.edu/~sross/flowers2007/straw01big.jpg"/></li>
+                                <li class="slide slide1"><img src="http://2.bp.blogspot.com/-yN3cOrsJMi8/T1InyN9mHDI/AAAAAAAAACg/DHLIRRMGQxk/s1600/SpringFlwrs7.jpg"/></li>
+                            </ul
+    	                    </div>
+                          <div class="arrows" id="arrow-left"><p>&lt</p></div>
+                          <div class="arrows" id="arrow-right"><p>&gt</p></div>
+                        </div>
 
 	            <section>
 		        <article>
 		            <h1 id="nos_sports">Nos Sports</h1>
 		        </article>
+                        <div id="infos_sports">
+                            <div id="sport-control">
+                                <div id="sport-button-l" class="sport-button">
+                                    <p class="arrow-sports"><</p>
+                                                                 </div>
+                                <div id="sport-button-r" class="sport-button">
+                                    <p class="arrow-sports">></p>
+                                </div>
+			        <input id="sport-search" name="" type="text" placeholder="Rechercher" />
+                            </div>
+                            <div id="sport-list">
+                            </div>
+                        </div>
 	            </section>
 
 	            <section>
@@ -151,23 +194,23 @@
             </div>
             <footer>
                 <div class="row">
-                    
+
                         <div class="Colonne1"><h4>A propos</h4><p> L'association sportive permet de découvrir ou d'approfondir une quarataine de sports avec une seule licence. Elle encadre les licenciés dans des entraînements collectifs réguliers, leur permettant de participer à l'ensemble des compétitions universitaires. Elle organise également un certain nombre d'évènements : InterPromos, Aprem Sport, High Five...</p></div>
-                   
+
                         <div class="Colonne2"><h4>Vous êtes perdu ?</h4><a href="#">Lien 1</a> - <a href="#">Lien 2</a> - <a href="#">Lien 3</a> - <a href="#">Lien 4</a> - <a href="#">Lien 5</a> - <a href="#">Lien 6</a> - <a href="#">Lien 7</a> - <a href="#">Lien 8</a> - <a href="#">Lien 9</a> - <a href="#">Lien 10</a></div>
-                        
+
                         <div class="Colonne3"><h4>Contactez-nous</h4><p class="clear">AS INSA <br>135 avenue de Rangueil<br>31400 TOULOUSE </p></div>
-                       
-                    
+
+
                 </div>
-		        <ul id="mentions">       
+		        <ul id="mentions">
                 <li>2017 © <a href="#">INSA de Toulouse</a></li>
 		            <li>Conception : <a href="#">NERDRUM Henrik</a> - <a href="#">NESIC Stefan</a> - <a href="#">TRAN Kim-Anh</a> - <a href="#">VU Diep</a></li> <!-- pour mettre vos sites-cv-linkedin-mail si jamais il y a besoin de nous contacter-->
 		            <li><a href="#">Plan d'accès</a></li>
-		            <li class="last"><a href="#">Mentions légales</a></li>		       
+		            <li class="last"><a href="#">Mentions légales</a></li>
 		        </ul>
 	        </footer>
-            </div>
+        </div>
     </body>
 
 </html>
