@@ -27,9 +27,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-ol, ul {
-    list-style: none;
-}
 
 blockquote, q {
     quotes: none;
@@ -37,8 +34,8 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-	      content: '';
-	      content: none;
+          content: '';
+          content: none;
           }
 
 table {
@@ -69,46 +66,14 @@ html {
     font-family: 'Roboto', 'Oswald', sans-serif;
 }
 
-.carousel {
+.resultats {
     height:100px;
-    width:100px;
-    border-radius:5px;
+    width:100%;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    font-family: Verdana, Arial, Sans-Serif;
-    margin-right:5px;
 }
 
-#slider {
-    width: 100%;
-    height: 0;
-    padding-bottom: 50%;
-    overflow: hidden;
-}
-
-#slider .slides {
-    display: block;
-    width: 600%;
-    height: 0;
-    padding-bottom: 50%;
-    margin: 0;
-    padding: 0;
-}
-
-#slider .slide {
-    float: left;
-    list-style-type: none;
-    width: 16.66%;
-    height: 0;
-    padding-bottom: 50%;
-}
-
-.slide1 {background: red;}
-.slide2 {background: blue;}
-.slide3 {background: green;}
-.slide4 {background: purple;}
-.slide5 {background: pink;}
 
 
 #header, #content ,#footer {
@@ -117,13 +82,13 @@ html {
 
 /*Barre de navigation Debut*/
 #nav {
-	margin-top: 40px;
-	padding: 0;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	list-style: none ;
-	text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    list-style: none ;
+    text-align: center;
 }
 
 #nav li {
@@ -139,7 +104,6 @@ html {
 #nav a:hover {
     color: #f00;
 }
-
 /*Barre de navigation Fin*/
 
 
@@ -172,11 +136,11 @@ html {
 
 /* Autres éléments du header*/
 .insa {
-	float:right;
-	font-size: 18px;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	font-weight: bold;
-	margin-right: 20px;
+    float:right;
+    font-size: 18px;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .separateur {
@@ -186,18 +150,18 @@ html {
 
 .logo_as{
     float:left;
-		margin-left: 20px;
-		margin-bottom: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
 }
 
 .logo_asbis{
     float:left;
-		margin-bottom: 2%;
+        margin-bottom: 2%;
 }
 
 .menu-respo{
-	float:right;
-	margin: 25px 0px 0px 10px;
+    float:right;
+    margin: 25px 0px 0px 10px;
 }
 
 /*Barre de recherche Debut*/
@@ -232,25 +196,95 @@ input[type="submit"] {
 
 /*Fin du Header*/
 
-#description
-{
-    position: absolute;
-    list-style-type: none;
-    bottom:1px;
-    padding-bottom: 10px;
-    padding-left:130px;
-    border-radius: 0px 0px 5px 5px;
-    width: 86.5%;
-    height: 33px;
-    color: white;
+
+
+
+/********************************************************Résultats**********************************************************/
+#resultats {
+    background-color: black;
+    background-image: url(../../Data/bulle.png);
+}
+
+#annees{
+    position: relative;
+    padding: 80px 0px 0px 0px;
+
+}
+
+#annee {
+    text-align: left;
     font-size: 2em;
-    background-color: rgba(24,24,24,0.8);
+    padding: 0px 0px 50px 0px;
+    color: red;
+}
+section article h3{
+    font-size: 2em;
+
 }
 
-#nos_sports {
-    background-color: red;
+#annees ul li:before {
+    content: ' ';
+    background-image: url(../../Data/images/puce.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 16px;
+    height:14px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 50px;
 
 }
+
+#annees ul li{
+    padding: 15px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 1em;
+    color: rgb(117,117,117);
+}
+
+
+#annees .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+figcaption a{
+    text-decoration: none;
+    float: right;
+    color: rgb(117,117,117);
+}
+
+figcaption a:hover{
+    color: red;
+}
+figcaption a:after{
+    content: ' ';
+    color: rgb(117,117,117);
+    background-image: url(../../Data/images/arrowright.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height:14px;
+}
+figcaption a:hover::after{
+    background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
+}
+
+#annees h4{
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    bottom: 50px;
+}
+#annees .barre{
+    margin: 20px 0px 20px 0px;
+    border: 1px black solid;
+    width: 100%;
+    position: relative;
+}
+/********************************************************Fin Résultats**********************************************************/
 
 
 
@@ -265,12 +299,7 @@ h1 {
     z-index: 1;
 }
 
-#Facebook
-{
-    background-color: #3b5998; /*#6d84b4*/
-    width: 100%;
 
-}
 /* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 section article h2
 {
@@ -349,10 +378,10 @@ footer ul li {
 
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
-	/*Header*/
-	.menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
-	
-	/*Footer*/
+    /*Header*/
+    .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
+    
+    /*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -380,13 +409,13 @@ footer ul li {
    
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
-	/*Header*/
-	.menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
-	#nav {
-		font-size: 22px;
-	}
+    /*Header*/
+    .menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
+    #nav {
+        font-size: 22px;
+    }
 
-	/*Footer*/
+    /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -413,11 +442,11 @@ footer ul li {
 
 @media all and (max-width: 720px){ /*Portable*/
 /*Header*/
-	.menu-ordi,.menu-tablette{display:none;}
-	.menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
-	input[type="submit"] {margin: 22px 0px 0px 5px;}
+    .menu-ordi,.menu-tablette{display:none;}
+    .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
+    input[type="submit"] {margin: 22px 0px 0px 5px;}
 
-	.recherche #search-btn{margin: 25px 12px 0px 6px;}
+    .recherche #search-btn{margin: 25px 12px 0px 6px;}
 /*Début Menu Hamburger*/
     #fullcontainer
     {
@@ -433,7 +462,7 @@ footer ul li {
         right:0;
         /*left:0;*/
 
-		background-color: rgba(85,85,85,1);
+        background-color: rgba(85,85,85,1);
         min-width: 32%;
         width: 32%;/*100%*/
         /*text-align: center;*/
@@ -578,7 +607,7 @@ footer ul li {
     }
 
     .menu-hamburger #search-btn{
-    	position: absolute;
+        position: absolute;
         margin: 37px 0px 0px -50px;
 
     }
@@ -630,7 +659,7 @@ footer ul li {
 }
 /*Fin Menu Hamburger*/
 
-		/*Footer*/
+        /*Footer*/
     .row{display: none;}
 }
 
@@ -646,13 +675,4 @@ footer ul li {
 
 #secpart div {
     margin: auto;
-}
-
-#pluginFB2 {
-    margin: auto;
-    display: block;
-}
-
-#FacebookWrap {
-    background-color: rgba(20,20,20,0.8);
 }

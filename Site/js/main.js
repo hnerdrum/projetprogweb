@@ -48,7 +48,11 @@ $(function() {
 
 $(document).ready(function(){
     $('.btn-navigation').click(function(){
-        $(this).find('.barre').toggleClass('white');
+        $(this).find('.barre1').toggleClass('white');
+        $(this).find('.barre2').toggleClass('white');
+        $(this).find('.barre3').toggleClass('white');
+        $(this).find('.svg').toggleClass('On');
         $('.hamburger').toggleClass('isOpen');
+        $('.hamburger-overlay').toggleClass('isOpen');
     });
 });
