@@ -248,16 +248,14 @@ input[type="text"] {
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-
+		margin: 2px 0px 0px 5px;
     width: 30px;
     height: 25px;
     border-style:none;
     cursor: pointer;
+	
 }
 
-.recherche #search-btn{
-    margin: 3px 12px 0px 6px;
-}
 /*Barre de recherche Fin*/
 
 
