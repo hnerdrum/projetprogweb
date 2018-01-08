@@ -11,6 +11,7 @@ $(function() {
     var $slides = $('.slide', $slider);
     var $arrow_left = $('#arrow-right');
     var $arrow_right = $('#arrow-left');
+    var $arrows = $('.arrows');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
 
