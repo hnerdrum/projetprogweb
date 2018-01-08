@@ -100,7 +100,7 @@ html {
 }
 
 .slides img {
-  width: 100%;
+  width: 70%;
 }
 
 .arrows {
@@ -112,15 +112,16 @@ html {
   position: absolute;
   top: 40%;
   padding: 0.5%;
-  opacity: 0.8;
+  opacity: 0;
   z-index: 1;
   display: block;
   text-align: center;
+  visibility: visible;
 }
+
 
 .arrows:hover {
   cursor: pointer;
-  opacity: 1;
 }
 
 .arrows p {

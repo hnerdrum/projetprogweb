@@ -12,7 +12,6 @@ $(function() {
     var $arrow_left = $('#arrow-left');
     var $arrow_right = $('#arrow-right');
     var $arrows = $('.arrows');
-    var $sld = $('.sld');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
 
@@ -55,9 +54,9 @@ $(function() {
       $arrows.css('opacity', '1');
     }, function() {
       // on mouseout, reset the background colour
-      $arrows.css('opacity', '0');
+      $arrows.css('opacity', '0.8');
     });
-});
+  });
 
     $arrows
         .on('mouseenter', pauseSlider,)
