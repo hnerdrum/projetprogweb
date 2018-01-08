@@ -172,6 +172,7 @@ html {
 #nav a:hover {
     color: #f00;
 }
+
 /*Barre de navigation Fin*/
 
 
@@ -286,7 +287,7 @@ input[type="submit"] {
 
 
 
-/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
+
 h1 {
     color:white;
     position: relative;
@@ -303,12 +304,7 @@ h1 {
     width: 100%;
 
 }
-/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
-section article h2
-{
-    text-align: center;
-    font-weight: bold;
-}
+
 
 #partenaires_logo
 {
@@ -381,11 +377,12 @@ footer ul li {
 
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
-    /*Header*/
-    .menu-portable,.menu-tablette,.menu-hamburger{display: none}
 
-    /*Footer*/
-    .clear {clear: both ;}
+	/*Header*/
+	.menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
+	
+	/*Footer*/
+    .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
     .row{
@@ -399,7 +396,7 @@ footer ul li {
         margin-left: 20px ;
     }
     .Colonne1,.Colonne2 {width: 370px ; }
-
+    
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
@@ -416,11 +413,13 @@ footer ul li {
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
-    /*Header*/
-    .menu-portable,.menu-ordi,.menu-hamburger{display: none}
-    #nav {
-	font-size: 22px;
-    }
+
+	/*Header*/
+	.menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
+	#nav {
+		font-size: 22px;
+	}
+
 
     /*Footer*/
     .clear {clear: both ;}
@@ -433,7 +432,7 @@ footer ul li {
         width: 500px
     }
     .row div{
-        width: 100% ;
+        width: 100% ; 
         margin-bottom: 20px;
     }
     .row h4, .row p, .Colonne2 a{
@@ -442,7 +441,7 @@ footer ul li {
         padding: 10px 20px;
         line-height: 18px;
         text-align: justify ;
-    }
+    }   
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
     .sport-tiles {
@@ -450,19 +449,23 @@ footer ul li {
         padding-bottom: 12.5vw;
     }
 }
+
 @media all and (max-width: 720px){ /*Portable*/
-    /*Header*/
-    .menu-ordi,.menu-tablette{display: none;}
-    .menu-portable, .menu-hamburger{display: inline;}
-    input[type="submit"] {margin: 22px 0px 0px 5px;}
+
+/*Header*/
+	.menu-ordi,.menu-tablette{display:none;}
+	.menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
+	input[type="submit"] {margin: 22px 0px 0px 5px;}
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
+
     /*Début Menu Hamburger*/
     #fullcontainer
     {
         width: auto;
         height: 100%;
     }
+
 
     .hamburger
     {
@@ -471,9 +474,11 @@ footer ul li {
         top:0;
         right:0;
         /*left:0;*/
-	background-color: rgba(85,85,85,1);
-        min-width: 20%;
-        width: 20%;/*100%*/
+
+		background-color: rgba(85,85,85,1);
+        min-width: 32%;
+        width: 32%;/*100%*/
+
         /*text-align: center;*/
         height: 100%;
         padding: 0px 0px 0px 70px; /*0px 0px 0px 280px*/
@@ -490,7 +495,22 @@ footer ul li {
     .hamburger.isOpen{
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
+        
+    }
 
+    .hamburger-overlay{
+        display:none; 
+        position: fixed;
+        z-index: 18;
+        top:0;
+        left:0;
+        width:100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .hamburger-overlay.isOpen{
+        display: block;
     }
 
     header nav ul
@@ -498,7 +518,7 @@ footer ul li {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 40px 0px 0px -50px;
+        margin: 40px 0px 0px -67px;
         position: absolute;
         top: 50%;
         font-size: 1.7em;
@@ -512,13 +532,25 @@ footer ul li {
     {
         padding-bottom: 10px;
         display: inline ;
-        margin: 0 1.30% ;
+        margin: 20 1.30% ;
     }
 
-    header nav a:hover
-                     {
-                         border-bottom: 2px solid red;
-                     }
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
+
+    header nav ul li:before{
+        content: ' ';
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin: 0px 10px 0px 0px;
+ 
+    }
+
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
 
     .menu-hamburger nav ul li a
     {
@@ -529,27 +561,81 @@ footer ul li {
 
     .btn-navigation{
         position: fixed;
-        right: 30px;
-        top: 30px;
+        right: 20px;
+        top: 20px;
         z-index: 20;
         cursor: pointer;
-        transition: background .6s ease-in-out;
-        -webkit-transition: background .6s ease-in-out;
+        height: 54px;
+        width:54px;
+        border: 2px solid white;
+        border-radius:50%; /*5px 50% effet stylé*/
+        color: #fff;
+        
+        background-color:rgba(85,85,85,0.8);
+
     }
 
-    .btn-navigation .barre{
+    .btn-navigation .barre2{
+        margin:3px 0px 3px 0px;
+        -webkit-transition: transform 0.5s linear;
+        transition: background 0.5s linear;
+
+    }
+    .btn-navigation .barre1,.barre2,.barre3{
+        position: relative;
+        top:30%;
+        left:23%;
+
         width: 30px;
         height: 6px;
-        background:#858585;
-        margin-top: 3px;
-        border: 1px solid black;
+        background:#fff;
+        margin-top: 0px;
+
+        /*border-color: white;
+        border-radius: 50%;*/
+
+
+        transition: transform .3s;
+        -webkit-transition: transform .3s;
     }
+
     .menu-hamburger #search-btn{
     	position: absolute;
         margin: 37px 0px 0px -50px;
+
     }
-    .btn-navigation .barre.white{
-        background: #FFFFFF;
+
+
+    .btn-navigation .barre1.white{
+        border-color: white;
+        border-radius: 50%;
+
+
+        transform: translateY(150%) rotate(225deg);
+        -webkit-transform: translateY(150%) rotate(225deg);
+
+        transition: transform .5s ;
+        -webkit-transition: transform .5s ;
+
+    }
+    .btn-navigation .barre3.white{
+        border-color: white;
+        border-radius: 50%;
+
+
+        transform: translateY(-150%) rotate(-225deg);
+        -webkit-transform: translateY(-150%) rotate(-225deg);
+        transition: transform .5s ;
+        -webkit-transition: transform .5s ;
+
+    }
+
+
+    .btn-navigation .barre2.white{
+
+        background: transparent;
+        -webkit-transition: transform 0.5s linear;
+        transition: background 0.5s linear;
     }
 
     input[type="submit1"] {
@@ -560,10 +646,8 @@ footer ul li {
         cursor: pointer;
     }
     /*Fin Menu Hamburger*/
-
     /*Footer*/
     .row{display: none;}
-
     .sport-tiles {
         width: 50%;
         padding-bottom: 25vw;

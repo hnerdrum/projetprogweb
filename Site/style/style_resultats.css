@@ -27,9 +27,6 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
-ol, ul {
-    list-style: none;
-}
 
 blockquote, q {
     quotes: none;
@@ -37,9 +34,15 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-	      content: '';
-	      content: none;
+          content: '';
+          content: none;
           }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 
 body {
     background: #FFF;
@@ -63,19 +66,29 @@ html {
     font-family: 'Roboto', 'Oswald', sans-serif;
 }
 
+.resultats {
+    height:100px;
+    width:100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+
 #header, #content ,#footer {
     padding: 2% ;
 }
 
 /*Barre de navigation Debut*/
 #nav {
-	margin-top: 40px;
-	padding: 0;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	list-style: none ;
-	text-align: center;
+    margin-top: 40px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    list-style: none ;
+    text-align: center;
 }
 
 #nav li {
@@ -123,11 +136,11 @@ html {
 
 /* Autres éléments du header*/
 .insa {
-	float:right;
-	font-size: 18px;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	font-weight: bold;
-	margin-right: 20px;
+    float:right;
+    font-size: 18px;
+    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 .separateur {
@@ -137,18 +150,18 @@ html {
 
 .logo_as{
     float:left;
-		margin-left: 20px;
-		margin-bottom: 30px;
+        margin-left: 20px;
+        margin-bottom: 30px;
 }
 
 .logo_asbis{
     float:left;
-		margin-bottom: 2%;
+        margin-bottom: 2%;
 }
 
 .menu-respo{
-	float:right;
-	margin: 25px 0px 0px 10px;
+    float:right;
+    margin: 25px 0px 0px 10px;
 }
 
 /*Barre de recherche Debut*/
@@ -167,132 +180,159 @@ input[type="text"] {
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-    margin: 2px 0px 0px 5px;
+
     width: 30px;
     height: 25px;
     border-style:none;
     cursor: pointer;
 }
+
+.recherche #search-btn{
+    margin: 3px 12px 0px 6px;
+}
 /*Barre de recherche Fin*/
+
+
 
 /*Fin du Header*/
 
 
+
+
+/********************************************************Résultats**********************************************************/
+#resultats {
+    background-color: black;
+    background-image: url(../../Data/bulle.png);
+}
+
+#annees{
+    position: relative;
+    padding: 80px 0px 0px 0px;
+
+}
+
+#annee {
+    text-align: left;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    color: red;
+}
+section article h3{
+    font-size: 2em;
+
+}
+
+#annees ul li:before {
+    content: ' ';
+    background-image: url(../../Data/images/puce.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 16px;
+    height:14px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 50px;
+
+}
+
+#annees ul li{
+    padding: 15px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 1em;
+    color: rgb(117,117,117);
+}
+
+
+#annees .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+figcaption a{
+    text-decoration: none;
+    float: right;
+    color: rgb(117,117,117);
+}
+
+figcaption a:hover{
+    color: red;
+}
+figcaption a:after{
+    content: ' ';
+    color: rgb(117,117,117);
+    background-image: url(../../Data/images/arrowright.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height:14px;
+}
+figcaption a:hover::after{
+    background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
+}
+
+#annees h4{
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    bottom: 50px;
+}
+#annees .barre{
+    margin: 20px 0px 20px 0px;
+    border: 1px black solid;
+    width: 100%;
+    position: relative;
+}
+/********************************************************Fin Résultats**********************************************************/
+
+
+
+/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
 h1 {
     color:white;
     position: relative;
     text-align:center;
-    font-size: 60px;
-	padding: 20px;
-	padding-bottom: 0;
-}
-
-.contact{
-	background-color: #434343;
-	padding-bottom: 1px;
-	padding-top: 30px;
-}
-
-.contact a{
-	color: red;
-}
-.mini-container {
-	height: 270px;
-	background-image: url(../../Data/bg%20contact%20as.png);
-	background-color:  white;
-  width: 100% ;   
-
-	border-spacing: 17px ;
+    font-size: 2em;
+    padding: 2%;
+    margin-top: 20px;
+    z-index: 1;
 }
 
 
-#as_contact_container{
-	width: 70%;
-	padding: 35px;
-  margin: 0 auto;
-	
-  overflow: hidden;
-	color:#B3B3B3
+/* Note de Kimi : TRES MAUVAIS POUR LE REFERENCEMENT*/
+section article h2
+{
+    text-align: center;
+    font-weight: bold; 
 }
 
-
-table {
-	font-size: 20px;
-	margin : auto;
-	background-color: white;	
-	margin: 45px auto;
-	border-collapse:collapse;
-}
-
-
-td{
-	border-color: #737373;
-	border-width:1px;
-	border-style:solid; 
-	padding: 12px;
-}
-
-th{
-	background-color: #777;
-	color: white;
-	padding: 7px;
-}
-
-#entetecontact{
-	height: 75px;
-	width: 100%;
-}
-
-#title{
-	background-color: #434343;
-	width: 55%;
-	float: left;
-	box-shadow: 1px 2px 12px #434343;
-}
-
-#entetetxt{
-	margin: 12px;
-}
-
-.contactfb{
-	background-color: #2F56A8;
-	margin-left: 55px;
-	font-size: 2vw;
-	width: 30%;
-	float: left;
-	color: white;
-	text-align: center;
-}
-
-.contactfbportable{
-	width: 30%;
-	float: left;
-	text-align: center;
-}
-
-#arrowbuttonfb{
-	    padding: 9px;
-}
-#partenaires_logo{
+#partenaires_logo
+{
     display: flex;
     flex-wrap: wrap;
 }
-.actia{
+
+.actia
+{
     position: relative;
     margin-top: 25px;
     opacity: 0.6;
 }
-.viveris{
+
+.viveris
+{
     position: relative;
     bottom: 10px;
     opacity: 0.6;
 }
+
 .assystem, .lesaffre, .alten{opacity: 0.6;}
 .assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover{opacity: 1;}
 
 footer
 {
-    background-color: #434343;
+    background-color: rgba(20,20,20,0.8);
     width:100%;
     display: table;
     height: 1px;
@@ -338,21 +378,10 @@ footer ul li {
 
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
-	/*Header*/
-		.menu-portable,.menu-tablette,.menu-hamburger,#ascodebanniereportable,#textportable,.contactfbportable,.btn-navigation{display: none}
-	
-		/*Bannière bureau AS*/
-		#bureau_as_title{
-			font-size: 2.5vw;
-			margin: 15px 250px 25px
-		}
-
-		#bureau_as_text{
-			margin: 25px 250px 35px;
-			font-size: 1.5vw;
-		}
-	
-	/*Footer*/
+    /*Header*/
+    .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
+    
+    /*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -380,25 +409,13 @@ footer ul li {
    
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
-		/*Header*/
-		.menu-portable,.menu-ordi,.menu-hamburger,#ascodebanniereportable,#textportable,.contactfbportable,.btn-navigation{display: none}
-		#nav {
-			font-size: 22px;
-	}
-	
-		/*Bannière bureau AS*/
-		#bureau_as_title{
-			font-size: 5vw;
-			margin-bottom: 35px;
-		}
+    /*Header*/
+    .menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
+    #nav {
+        font-size: 22px;
+    }
 
-		#bureau_as_text{
-			font-size: 2.5vw;
-			margin-right: 220px;
-		}
-		#aslogobanniere{display: none;}
-	
-		/*Footer*/
+    /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -422,32 +439,20 @@ footer ul li {
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
 }
-@media all and (max-width: 720px){ /*Portable*/
-		/*Header*/
-		.menu-ordi,.menu-tablette,#bureau_as_title,#bureau_as_text,#ascodebanniere,#aslogobanniere,.contactfb{display: none;}
-		.menu-portable, .menu-hamburger{display: inline;}
-		input[type="submit"] {margin: 22px 0px 0px 5px;}
-	
-		/*Bannière bureau AS*/
-	#textportable{ 
-		font-size: 34px;		
-		text-align: center;
-		margin-bottom: 10px;
-	}
-	#as_contact_container{padding: 15px;}
-		#ascodebanniereportable{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
 
-    /*Début Menu Hamburger*/
+@media all and (max-width: 720px){ /*Portable*/
+/*Header*/
+    .menu-ordi,.menu-tablette{display:none;}
+    .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
+    input[type="submit"] {margin: 22px 0px 0px 5px;}
+
+    .recherche #search-btn{margin: 25px 12px 0px 6px;}
+/*Début Menu Hamburger*/
     #fullcontainer
     {
         width: auto;
         height: 100%;
     }
-
 
     .hamburger
     {
@@ -460,7 +465,6 @@ footer ul li {
         background-color: rgba(85,85,85,1);
         min-width: 32%;
         width: 32%;/*100%*/
-
         /*text-align: center;*/
         height: 100%;
         padding: 0px 0px 0px 70px; /*0px 0px 0px 280px*/
@@ -517,7 +521,8 @@ footer ul li {
         margin: 20 1.30% ;
     }
 
-    header nav a:hover{
+    header nav a:hover
+    {
         border-bottom: 2px solid red;
     }
 
@@ -538,7 +543,7 @@ footer ul li {
     {
         letter-spacing: 0.05em;
         color: #FFFFFF ;
-        text-decoration: none ;
+        text-decoration: none ; 
     }
 
     .btn-navigation{
@@ -620,19 +625,23 @@ footer ul li {
         transition: background 0.5s linear;
     }
 
-    input[type="submit1"] {
-        background: url(../../Data/loupe1.png) no-repeat ;
-        width: 23px;
-        height: 20px;
-        border-style:none;
-        cursor: pointer;
+
+
+    .svg.On{
+        stroke-dashoffset:0;
     }
-    /*Fin Menu Hamburger*/
-		/*Footer*/
+    input[type="submit1"] {
+    background: url(../../Data/loupe1.png) no-repeat ;
+    width: 23px;
+    height: 20px;
+    border-style:none;
+    cursor: pointer;
+    }
+/*Fin Menu Hamburger*/
+
+        /*Footer*/
     .row{display: none;}
-
 }
-
 
 
 

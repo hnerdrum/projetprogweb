@@ -9,8 +9,8 @@ $(function() {
     var $slider = $('#slider');
     var $slideContainer = $('.slides', $slider);
     var $slides = $('.slide', $slider);
-    var $arrow_left = $('#arrow-left');
-    var $arrow_right = $('#arrow-right');
+    var $arrow_left = $('#arrow-right');
+    var $arrow_right = $('#arrow-left');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
 
@@ -75,7 +75,10 @@ $(function() {
 
 $(document).ready(function(){
     $('.btn-navigation').click(function(){
-        $(this).find('.barre').toggleClass('white');
+        $(this).find('.barre1').toggleClass('white');
+        $(this).find('.barre2').toggleClass('white');
+        $(this).find('.barre3').toggleClass('white');
         $('.hamburger').toggleClass('isOpen');
+        $('.hamburger-overlay').toggleClass('isOpen');
     });
 });
