@@ -9,8 +9,8 @@ $(function() {
     var $slider = $('#slider');
     var $slideContainer = $('.slides', $slider);
     var $slides = $('.slide', $slider);
-    var $arrow_left = $('#arrow-right');
-    var $arrow_right = $('#arrow-left');
+    var $arrow_left = $('#arrow-left');
+    var $arrow_right = $('#arrow-right');
     var $arrows = $('.arrows');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
@@ -63,7 +63,7 @@ $(function() {
         .on('mouseleave', startSlider);
 
 
-    $arrow_left.on('click', function() {
+    $arrow_right.on('click', function() {
       $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
           if (++currentSlide === $slides.length) {
               currentSlide = 1;
@@ -72,7 +72,7 @@ $(function() {
       });
     });
 
-    $arrow_right.on('click', function() {
+    $arrow_left.on('click', function() {
       if (currentSlide != 1) {
         $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function() {
             if (--currentSlide === $slides.length) {
@@ -80,6 +80,11 @@ $(function() {
                 $slideContainer.css('margin-left', 0);
             }
         });
+      }
+      else {
+        $slideContainer.animate({'margin-left': '-='+width*($slides.length-2)}, animationSpeed/100, function() {
+          currentSlide = $slides.length - 1;
+        })
       }
     });
 
