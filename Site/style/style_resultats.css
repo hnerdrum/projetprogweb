@@ -26,7 +26,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
-
+ol, ul {
+    list-style: none;
+}
 
 blockquote, q {
     quotes: none;
@@ -394,7 +396,7 @@ footer ul li {
 @media all and (min-width: 1000px){ /*Ordi*/
     /*Header*/
     .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
-    
+
     /*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
@@ -428,7 +430,17 @@ footer ul li {
     #nav {
         font-size: 22px;
     }
-
+    #annees .images{
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	#annees .images img{
+		margin-top: 25px;
+		vertical-align: middle;
+	}
     /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
@@ -456,11 +468,25 @@ footer ul li {
 
 @media all and (max-width: 720px){ /*Portable*/
 /*Header*/
-    .menu-ordi,.menu-tablette{display:none;}
+    .menu-ordi,.menu-tablette, #navbar ul{display:none;}
     .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
     input[type="submit"] {margin: 22px 0px 0px 5px;}
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
+
+    #annees .images{
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	#annees .images img{
+		margin-top: 25px;
+		vertical-align: middle;
+	}
+
+
 /*Début Menu Hamburger*/
     #fullcontainer
     {
