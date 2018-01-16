@@ -218,11 +218,28 @@ section article h3{
 
 }
 
-.column {
+.columnleft1 {
   float: left;
   width: 25%;
-  padding-left: 2%;
-  padding-right: 2%;
+  margin-right: 3%;
+}
+
+.columnright1 {
+  float: left;
+  width: 25%;
+  margin-left: 1.5%;
+}
+
+.columnleft2 {
+  float: left;
+  width: 25%;
+  margin-right: 1.5%;
+}
+
+.columnright2 {
+  float: left;
+  width: 25%;
+  margin-left: 3%;
 }
 
 .row1 {
