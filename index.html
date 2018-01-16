@@ -17,23 +17,15 @@
 
     <body>
         <div id="fullcontainer">
-            <div id="container">
-
-            		<div class="btn-navigation">
-						<div class="barre1"></div>
-						<div class="barre2"></div>
-						<div class="barre3"></div>
-						
-					</div>
-
+						<div class="boxheaderfixe">
 							<header id="header">
+								<div class="boxheader">
 								<div class="menu-ordi">
 									<img class="logo_as" src="Data/logo_as.jpg" alt="">
 									<p class="insa">INSA Toulouse</p>
 									<br>
 									<!-- Début Barre de recherche et réseaux sociaux-->
 									<div class="recherche">
-										<form action="/search" id="searchthis" method="get">
 											<div id="reseaux">
 												<ul>
 													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
@@ -45,17 +37,26 @@
 											</div>
 											<!-- Fin Barre de recherche et réseaux sociaux-->
 											<img class="separateur" src="Data/separateur.jpg" alt=""/>
-											<input id="search-btn" type="submit" value="" />
-											<input id="search" name="" type="text" placeholder="Rechercher" />
-										</form>
-									</div>
+											<div id=boxsearch><script>
+												(function() {
+													var cx = '010306975847166784054:ydthdjij1f4';
+													var gcse = document.createElement('script');
+													gcse.type = 'text/javascript';
+													gcse.async = true;
+													gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+													var s = document.getElementsByTagName('script')[0];
+													s.parentNode.insertBefore(gcse, s);
+												})();
+												</script>
+<gcse:search></gcse:search></div>
+							</div>
+									
 									<br>
 									 <!-- Début Barre de navigation--> 
-
 									<ul id="nav">
 										<li><a href="index.html">Accueil</a></li>        
 										<li><a href="#">Sports</a></li>         
-										<li><a href="resultats.html">Résultats</a></li>        
+										<li><a href="#">Résultats</a></li>        
 										<li><a href="#">Galerie</a></li> 
 										<li><a href="#">Calendrier</a></li> 
 										<li><a href="contact.html">Contact</a></li>    
@@ -68,7 +69,6 @@
 									<br>
 									<!-- Début Barre de recherche et réseaux sociaux-->
 									<div class="recherche">
-										<form action="/search" id="searchthis" method="get">
 											<div id="reseaux">
 												<ul>
 													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
@@ -80,9 +80,18 @@
 											</div>
 											<!-- Fin Barre de recherche et réseaux sociaux-->
 											<img class="separateur" src="Data/separateur.jpg" alt=""/>
-											<input id="search-btn" type="submit" value="" />
-											<input id="search" name="" type="text" placeholder="Rechercher" />
-										</form>
+												<div id=boxsearch><script>
+												(function() {
+													var cx = '010306975847166784054:ydthdjij1f4';
+													var gcse = document.createElement('script');
+													gcse.type = 'text/javascript';
+													gcse.async = true;
+													gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+													var s = document.getElementsByTagName('script')[0];
+													s.parentNode.insertBefore(gcse, s);
+												})();
+												</script>
+<gcse:search></gcse:search></div>
 									</div>
 									<br>
 									 <!-- Début Barre de navigation-->
@@ -90,7 +99,7 @@
 									<ul id="nav">
 										<li><a href="index.html">Accueil</a></li>        
 										<li><a href="#">Sports</a></li>         
-										<li><a href="resultats.html">Résultats</a></li>        
+										<li><a href="#">Résultats</a></li>        
 										<li><a href="#">Galerie</a></li> 
 										<li><a href="#">Calendrier</a></li> 
 										<li><a href="contact.html">Contact</a></li>    
@@ -102,10 +111,119 @@
 								<div class="menu-portable">
 									<img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
 
+								<!--	<div class="recherche">
+										<form action="https://etud.insa-toulouse.fr/~katran/Prog_Web/recherche.html" id="searchthis" method="get">
+											<input id="search-btn" type="submit" value="" />
+											<input id="search" name="" type="text" placeholder="Rechercher" />   
+										</form>
+									</div>-->
+
+								</div>
+								<div class="menu-hamburger">
+									<nav class="hamburger">
+										<form action="/search" id="searchthis" method="get">
+											<input id="search-btn" type="submit" value="" />
+										</form>
+										<ul>
+											<li><a href="#">Accueil</a></li>
+											<li><a href="#">Sports</a></li>
+											<li><a href="#">Résultats</a></li>
+											<li><a href="#">Galerie</a></li>
+											<li><a href="#">Calendrier</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</nav>
+							</div></div>
+						</header></div>
+            <div id="container">
+
+          <div class="btn-navigation">
+						<div class="barre1"></div>
+						<div class="barre2"></div>
+						<div class="barre3"></div>
+						
+					</div>
+
+					<!--		<header id="header">
+								<div class="menu-ordi">
+									<img class="logo_as" src="Data/logo_as.jpg" alt="">
+									<p class="insa">INSA Toulouse</p>
+									<br>
+									<!-- Début Barre de recherche et réseaux sociaux
+									<div class="recherche">
+										<form action="/search" id="searchthis" method="get">
+											<div id="reseaux">
+												<ul>
+													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+												</ul>
+											</div>
+											<!-- Fin Barre de recherche et réseaux sociaux
+											<img class="separateur" src="Data/separateur.jpg" alt=""/>
+											<input id="search-btn" type="submit" value="" />
+											<input id="search" name="" type="text" placeholder="Rechercher" />
+										</form>
+									</div>
+									<br>
+									 <!-- Début Barre de navigation
+
+									<ul id="nav">
+										<li><a href="index.html">Accueil</a></li>        
+										<li><a href="#">Sports</a></li>         
+										<li><a href="resultats.html">Résultats</a></li>        
+										<li><a href="#">Galerie</a></li> 
+										<li><a href="#">Calendrier</a></li> 
+										<li><a href="contact.html">Contact</a></li>    
+									</ul>
+									<!-- Fin Barre de navigation  
+								</div>
+								<div class="menu-tablette">
+									<img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
+									<p class="insa">INSA Toulouse</p>
+									<br>
+									<!-- Début Barre de recherche et réseaux sociaux
+									<div class="recherche">
+										<form action="/search" id="searchthis" method="get">
+											<div id="reseaux">
+												<ul>
+													<li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+													<li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+													<li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+													<li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+													<li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+												</ul>
+											</div>
+											<!-- Fin Barre de recherche et réseaux sociaux
+											<img class="separateur" src="Data/separateur.jpg" alt=""/>
+											<input id="search-btn" type="submit" value="" />
+											<input id="search" name="" type="text" placeholder="Rechercher" />
+										</form>
+									</div>
+									<br>
+									 <!-- Début Barre de navigation
+
+									<ul id="nav">
+										<li><a href="index.html">Accueil</a></li>        
+										<li><a href="#">Sports</a></li>         
+										<li><a href="resultats.html">Résultats</a></li>        
+										<li><a href="#">Galerie</a></li> 
+										<li><a href="#">Calendrier</a></li> 
+										<li><a href="contact.html">Contact</a></li>    
+									</ul>
+
+									<!-- Fin Barre de navigation
+								</div>
+
+								<div class="menu-portable">
+									<img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
+
 									<div class="recherche">
 										<form action="/search" id="searchthis" method="get">
 											<input id="search-btn" type="submit" value="" />
-											<!--<input id="search" name="" type="text" placeholder="Rechercher" />   -->
+											<!--<input id="search" name="" type="text" placeholder="Rechercher" />   
 										</form>
 									</div>
 
@@ -129,7 +247,7 @@
 									</nav>
 									<div class="hamburger-overlay"></div>
 								</div>
-							</header>
+							</header>-->
 
 				<main>
                     <div id="wrapscarousel">
