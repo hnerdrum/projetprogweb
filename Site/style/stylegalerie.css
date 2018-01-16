@@ -191,7 +191,7 @@ input[type="submit"] {
 
 /********************************************************Galerie**********************************************************/
 .resultats {
-    height:100px;
+    height: 50%;
     width: 100%;
     display: inline-block;
     text-align: center;
@@ -203,10 +203,6 @@ input[type="submit"] {
     background-image: url(../../Data/bulle.png);
 }
 
-.resultats section {
-  padding-left: 2em;
-}
-
 section article h3{
     font-size: 2em;
 }
@@ -215,28 +211,26 @@ section article h3{
   box-sizing: border-box;
 }
 
-.row > .column {
-  padding: 2em 1em;
-}
 
-.row:after {
+.row1:after {
   content: "";
   display: table;
-  clear: both;
+
 }
 
 .column {
   float: left;
   width: 25%;
-  margin-right: -5em;
-  left: 5em;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-.row {
+.row1 {
+  position: relative;
   width: inherit;
   display: flex;
   justify-content: space-between;
-  left: -em;
+  margin-top: 3%;
 }
 
 /* The Modal (background) */
@@ -244,8 +238,8 @@ section article h3{
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 50px;
-  margin-bottom: 100px;
+  padding-top: 3em;
+  margin-bottom: 20em;
   left: 0;
   top: 0;
   width: 100%;
@@ -259,7 +253,7 @@ section article h3{
   position: relative;
   background-color: #fefefe;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 3em;
   width: 90%;
   max-width: 1200px;
 }
