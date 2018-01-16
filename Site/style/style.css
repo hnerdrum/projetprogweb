@@ -531,7 +531,7 @@ footer ul li {
     header nav li
     {
         padding-bottom: 10px;
-        display: inline ;
+        display: inline-block ;
         margin: 20 1.30% ;
     }
 
