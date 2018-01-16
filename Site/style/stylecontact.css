@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -83,9 +83,9 @@ html {
     margin: 0 1.30% ;
 }
 
-#nav a { 
+#nav a {
     color: #323232 ;
-    text-decoration: none ; 
+    text-decoration: none ;
 }
 
 #nav a:hover {
@@ -111,11 +111,11 @@ html {
     text-decoration: none ;
     background: url(../../Data/social-sprite.png) no-repeat ;
     background-size: 96%;
-    padding: 25px 0px 0px 25px ;  
+    padding: 25px 0px 0px 25px ;
 }
 
 #reseaux #fb{background-position:0 -275px;}
-#reseaux #twitter{background-position:0 -50px;} 
+#reseaux #twitter{background-position:0 -50px;}
 #reseaux #it{background-position:0 -150px;}
 #reseaux #insta{background-position:0 -175px;}
 #reseaux #yt{background-position:0 0;}
@@ -200,7 +200,7 @@ h1 {
 	height: 270px;
 	background-image: url(../../Data/bg%20contact%20as.png);
 	background-color:  white;
-  width: 100% ;   
+  width: 100% ;
 
 	border-spacing: 17px ;
 }
@@ -210,7 +210,7 @@ h1 {
 	width: 70%;
 	padding: 35px;
   margin: 0 auto;
-	
+
   overflow: hidden;
 	color:#B3B3B3
 }
@@ -219,7 +219,7 @@ h1 {
 table {
 	font-size: 20px;
 	margin : auto;
-	background-color: white;	
+	background-color: white;
 	margin: 45px auto;
 	border-collapse:collapse;
 }
@@ -228,7 +228,7 @@ table {
 td{
 	border-color: #737373;
 	border-width:1px;
-	border-style:solid; 
+	border-style:solid;
 	padding: 12px;
 }
 
@@ -340,7 +340,7 @@ footer ul li {
 @media all and (min-width: 1000px){ /*Ordi*/
 	/*Header*/
 		.menu-portable,.menu-tablette,.menu-hamburger,#ascodebanniereportable,#textportable,.contactfbportable,.btn-navigation{display: none}
-	
+
 		/*Bannière bureau AS*/
 		#bureau_as_title{
 			font-size: 2.5vw;
@@ -351,9 +351,9 @@ footer ul li {
 			margin: 25px 250px 35px;
 			font-size: 1.5vw;
 		}
-	
+
 	/*Footer*/
-    .clear {clear: both ;} 
+    .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
     .row{
@@ -367,7 +367,7 @@ footer ul li {
         margin-left: 20px ;
     }
     .Colonne1,.Colonne2 {width: 370px ; }
-    
+
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
@@ -376,8 +376,8 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;}  
-   
+    .row p,.Colonne2 a {font-size: 12px ;}
+
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 		/*Header*/
@@ -385,7 +385,7 @@ footer ul li {
 		#nav {
 			font-size: 22px;
 	}
-	
+
 		/*Bannière bureau AS*/
 		#bureau_as_title{
 			font-size: 5vw;
@@ -397,7 +397,7 @@ footer ul li {
 			margin-right: 220px;
 		}
 		#aslogobanniere{display: none;}
-	
+
 		/*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
@@ -409,7 +409,7 @@ footer ul li {
         width: 500px
     }
     .row div{
-        width: 100% ; 
+        width: 100% ;
         margin-bottom: 20px;
     }
     .row h4, .row p, .Colonne2 a{
@@ -418,7 +418,7 @@ footer ul li {
         padding: 10px 20px;
         line-height: 18px;
         text-align: justify ;
-    }   
+    }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
 }
@@ -427,10 +427,10 @@ footer ul li {
 		.menu-ordi,.menu-tablette,#bureau_as_title,#bureau_as_text,#ascodebanniere,#aslogobanniere,.contactfb{display: none;}
 		.menu-portable, .menu-hamburger{display: inline;}
 		input[type="submit"] {margin: 22px 0px 0px 5px;}
-	
+
 		/*Bannière bureau AS*/
-	#textportable{ 
-		font-size: 34px;		
+	#textportable{
+		font-size: 34px;
 		text-align: center;
 		margin-bottom: 10px;
 	}
@@ -477,11 +477,11 @@ footer ul li {
     .hamburger.isOpen{
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
-        
+
     }
 
     .hamburger-overlay{
-        display:none; 
+        display:none;
         position: fixed;
         z-index: 18;
         top:0;
@@ -527,7 +527,7 @@ footer ul li {
         width: 15px;
         height: 15px;
         margin: 0px 10px 0px 0px;
- 
+
     }
 
     header nav a:hover{
@@ -552,7 +552,7 @@ footer ul li {
         border: 2px solid white;
         border-radius:50%; /*5px 50% effet stylé*/
         color: #fff;
-        
+
         background-color:rgba(85,85,85,0.8);
 
     }
@@ -633,17 +633,8 @@ footer ul li {
 
 }
 
+#secpart { padding: 2%; }
 
+#secpart img { margin: 20px; }
 
-
-#secpart {
-    padding: 2%;
-}
-
-#secpart img {
-    margin: 20px;   
-}
-
-#secpart div {
-    margin: auto;
-}
+#secpart div { margin: auto; }

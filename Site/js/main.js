@@ -9,8 +9,9 @@ $(function() {
     var $slider = $('#slider');
     var $slideContainer = $('.slides', $slider);
     var $slides = $('.slide', $slider);
-    var $arrow_left = $('#arrow-right');
-    var $arrow_right = $('#arrow-left');
+    var $arrow_left = $('#arrow-left');
+    var $arrow_right = $('#arrow-right');
+    var $arrows = $('.arrows');
 
     var width = parseInt(window.getComputedStyle(document.getElementById('slider')).width, 10);
 
@@ -39,13 +40,31 @@ $(function() {
         clearInterval(interval);
     }
 
-    $('.arrows')
-        .on('mouseenter', pauseSlider)
+    $(function() {
+      $slideContainer.hover(function() {
+        $arrows.css('opacity', '0.8');
+      }, function() {
+        // on mouseout, reset the background colour
+        $arrows.css('opacity', '0');
+      });
+  });
+
+  $(function() {
+    $arrows.hover(function() {
+      $arrows.css('opacity', '1');
+    }, function() {
+      // on mouseout, reset the background colour
+      $arrows.css('opacity', '0.8');
+    });
+  });
+
+    $arrows
+        .on('mouseenter', pauseSlider,)
         .on('mouseleave', startSlider);
 
 
-    $arrow_left.on('click', function() {
-      $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+    $arrow_right.on('click', function() {
+      $slideContainer.animate({'margin-left': '-='+width}, animationSpeed/100, function() {
           if (++currentSlide === $slides.length) {
               currentSlide = 1;
               $slideContainer.css('margin-left', 0);
@@ -53,14 +72,19 @@ $(function() {
       });
     });
 
-    $arrow_right.on('click', function() {
+    $arrow_left.on('click', function() {
       if (currentSlide != 1) {
-        $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function() {
+        $slideContainer.animate({'margin-left': '+='+width}, animationSpeed/100, function() {
             if (--currentSlide === $slides.length) {
                 currentSlide = 1;
                 $slideContainer.css('margin-left', 0);
             }
         });
+      }
+      else {
+        $slideContainer.animate({'margin-left': '-='+width*($slides.length-2)}, animationSpeed/100, function() {
+          currentSlide = $slides.length - 1;
+        })
       }
     });
 
