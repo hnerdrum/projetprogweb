@@ -64,7 +64,7 @@ $(function() {
 
 
     $arrow_right.on('click', function() {
-      $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+      $slideContainer.animate({'margin-left': '-='+width}, animationSpeed/100, function() {
           if (++currentSlide === $slides.length) {
               currentSlide = 1;
               $slideContainer.css('margin-left', 0);
@@ -74,7 +74,7 @@ $(function() {
 
     $arrow_left.on('click', function() {
       if (currentSlide != 1) {
-        $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function() {
+        $slideContainer.animate({'margin-left': '+='+width}, animationSpeed/100, function() {
             if (--currentSlide === $slides.length) {
                 currentSlide = 1;
                 $slideContainer.css('margin-left', 0);

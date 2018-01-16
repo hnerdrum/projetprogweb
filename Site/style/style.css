@@ -110,10 +110,10 @@ html {
 }
 
 .arrows {
-    background-color: #696a77;
-    color: #191a21;
-    width: 6%;
-    height: 10%;
+    background-color: transparent;
+    color: black;
+    width: 4%;
+    height: 8%;
     border-radius: 50%;
     position: absolute;
     top: 40%;
@@ -129,19 +129,19 @@ html {
     opacity: 1;
 }
 
-.arrows p {
-    font-size: 3vw;
+.arrows img {
+    background-color: black;
     top: 20%;
-    left: 30%;
+    left: 10%;
     position: absolute;
 }
 
 #arrow-left {
-    left: 15%;
+    left: 5%;
 }
 
 #arrow-right {
-    right: 15%;
+    right: 5%;
 }
 
 #header, #content ,#footer {

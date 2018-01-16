@@ -3,12 +3,12 @@
     <head>
         <meta charset = "utf-8">
         <title> Association Sportive de l'Insa Toulouse | Accueil </title>
-        <link rel="stylesheet" type="text/css" href="Site/style/style_resultats.css">
+        <link rel="stylesheet" type="text/css" href="Site/style/stylegalerie.css">
         <link rel="shortcut icon" href="Data/logo_as_insa.ico">
 		<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="Site/js/main.js"></script>
+        <script src="Site/js/galerie.js"></script>
     </head>
 
 
@@ -127,31 +127,83 @@
 							</header>
 
 							<main>
-                    <div id="galerie">
-		        					<div class="galerie">
-		        						<section>
-		        							<article>
-		        								<h1 id="resultats">Galerie</h1>
-		        							</article>
-		        						</section>
-                			</div>
-  				           </div>
 
-	            						<br>
-	            					<figure class="images">
-	            						<img class="imgtype1" src="Data/images/resultats1.jpg" />
-	            						<img class="imgtype2" src="Data/images/resultats2.jpg" />
-	            						<img class="imgtype1" src="Data/images/resultats3.jpg" />
-                          <img class="imgtype2" src="Data/images/resultats3.jpg" />
-	            					</figure>
+                <div id="RESULTATS">
+            <div class="resultats" id="slider">
+              <section>
+                <article>
+                  <h1 id="resultats">Galerie</h1>
+                </article>
+              </section>
+            </div>
+                 </div>
 
-	            						<br>
-	            					<figure class="images">
-	            						<img class="imgtype1" src="Data/images/resultats1.jpg" />
-	            						<img class="imgtype2" src="Data/images/resultats2.jpg" />
-	            						<img class="imgtype1" src="Data/images/resultats3.jpg" />
-                          <img class="imgtype2" src="Data/images/resultats3.jpg" />
-	            					</figure>
+                <div class="images">
+                <div class="row" style="width: inherit">
+                  <div class="column">
+                    <img src="Data/images/resultats1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                  </div>
+                </div>
+
+                <div class="row" style="width: inherit">
+                  <div class="column">
+                    <img src="Data/images/resultats1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                  </div>
+                  <div class="column">
+                    <img src="Data/images/resultats4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                  </div>
+                </div>
+              </div>
+
+                <div id="myModal" class="modal">
+                  <img class="close cursor" onclick="closeModal()" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/window-close-symbolic.svg" />
+                  <div class="modal-content">
+
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 4</div>
+                      <img src="Data/images/resultats1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 4</div>
+                      <img src="Data/images/resultats2.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 4</div>
+                      <img src="Data/images/resultats3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                      <div class="numbertext">4 / 4</div>
+                      <img src="Data/images/resultats4.jpg" style="width:100%">
+                    </div>
+
+                    <img class="prev" onclick="plusSlides(-1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-previous-symbolic.svg" />
+                    <img class="next" onclick="plusSlides(1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-next-symbolic.svg" />
+
+                    <div class="caption-container">
+                      <p id="caption"></p>
+                    </div>
+                  </div>
+                </div>
+
+
 	            <br>
 	            <section id="secpart">
 		        <article>
@@ -195,6 +247,7 @@
 		        </ul>
 	        </footer>
         </div>
+
     </body>
 
 </html>
