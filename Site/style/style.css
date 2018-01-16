@@ -411,6 +411,7 @@ footer ul li {
         padding-bottom: 5vw;
     }
 
+
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 
@@ -448,6 +449,7 @@ footer ul li {
         width: 25%;
         padding-bottom: 12.5vw;
     }
+
 }
 
 @media all and (max-width: 720px){ /*Portable*/
@@ -652,6 +654,7 @@ footer ul li {
         width: 50%;
         padding-bottom: 25vw;
     }
+
 }
 
 
@@ -668,10 +671,7 @@ footer ul li {
     margin: auto;
 }
 
-#pluginFB2 {
-    margin: auto;
-    display: block;
-}
+
 
 #FacebookWrap {
     background-color: rgba(20,20,20,0.8);
@@ -732,9 +732,6 @@ footer ul li {
     position: relative;
 }
 
-.sport-tiles:hover {
-    background-color: #CD290C;
-}
 .sport-title {
     text-align: center;
     background-color: white;
@@ -749,3 +746,14 @@ footer ul li {
     text-align: center;
     cursor: pointer;
 }
+
+#pluginFB2 {
+    margin: auto;
+    display: block;
+}
+
+.not-clicked-sport:hover {
+    background-color: #CD290C;
+    cursor:pointer;    
+}
+
