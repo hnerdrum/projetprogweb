@@ -136,15 +136,15 @@ height: 20vh;
 }
 
 .arrows {
-    background-color: #696a77;
-    color: #191a21;
-    width: 6%;
-    height: 10%;
+    background-color: transparent;
+    color: black;
+    width: 4%;
+    height: 8%;
     border-radius: 50%;
     position: absolute;
     top: 40%;
     padding: 0.5%;
-    opacity: 0.8;
+    opacity: 0;
     z-index: 1;
     display: block;
     text-align: center;
@@ -155,19 +155,19 @@ height: 20vh;
     opacity: 1;
 }
 
-.arrows p {
-    font-size: 3vw;
+.arrows img {
+    background-color: black;
     top: 20%;
-    left: 30%;
+    left: 10%;
     position: absolute;
 }
 
 #arrow-left {
-    left: 15%;
+    left: 5%;
 }
 
 #arrow-right {
-    right: 15%;
+    right: 5%;
 }
 
 #content ,#footer {
@@ -409,9 +409,9 @@ footer ul li {
 
 	/*Header*/
 	.menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
-	
+
 	/*Footer*/
-    .clear {clear: both ;} 
+    .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
     .row{
@@ -425,7 +425,7 @@ footer ul li {
         margin-left: 20px ;
     }
     .Colonne1,.Colonne2 {width: 370px ; }
-    
+
     .row h4, .row p, .Colonne2 a{
         color: #FFF;
         margin-top: 0 ;
@@ -439,6 +439,7 @@ footer ul li {
         width: 20%;
         padding-bottom: 5vw;
     }
+
 
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
@@ -461,7 +462,7 @@ footer ul li {
         width: 500px
     }
     .row div{
-        width: 100% ; 
+        width: 100% ;
         margin-bottom: 20px;
     }
     .row h4, .row p, .Colonne2 a{
@@ -470,13 +471,14 @@ footer ul li {
         padding: 10px 20px;
         line-height: 18px;
         text-align: justify ;
-    }   
+    }
     .row h4 {font-size: 18px ;}
     .row p,.Colonne2 a {font-size: 12px ;}
     .sport-tiles {
         width: 25%;
         padding-bottom: 12.5vw;
     }
+
 }
 
 @media all and (max-width: 720px){ /*Portable*/
@@ -524,11 +526,11 @@ footer ul li {
     .hamburger.isOpen{
         transform: translateX(0%);
         -webkit-transform: translateX(0%);
-        
+
     }
 
     .hamburger-overlay{
-        display:none; 
+        display:none;
         position: fixed;
         z-index: 18;
         top:0;
@@ -542,7 +544,7 @@ footer ul li {
         display: block;
     }
 
-    header nav ul
+    header nav .liste1
     {
         display: flex;
         flex-direction: column;
@@ -557,29 +559,26 @@ footer ul li {
         -webkit-transform: translateY(-50%);
 
     }
-    header nav li
+    header nav .liste1 li 
     {
         padding-bottom: 10px;
         display: inline ;
         margin: 20 1.30% ;
     }
 
-    header nav a:hover{
+    header nav .liste1 li a:hover{
         border-bottom: 2px solid red;
     }
 
-    header nav ul li:before{
+    header nav .liste1 li:before{
         content: ' ';
         display: inline-block;
         width: 15px;
         height: 15px;
         margin: 0px 10px 0px 0px;
- 
+
     }
 
-    header nav a:hover{
-        border-bottom: 2px solid red;
-    }
 
     .menu-hamburger nav ul li a
     {
@@ -599,8 +598,14 @@ footer ul li {
         border: 2px solid white;
         border-radius:50%; /*5px 50% effet stylé*/
         color: #fff;
-        
+
         background-color:rgba(85,85,85,0.8);
+
+    }
+    .btn-navigation:hover{
+        background-color: #000;
+        -webkit-transition: transform 0.3s linear;
+        transition: background 0.3s linear;
 
     }
 
@@ -674,6 +679,17 @@ footer ul li {
         border-style:none;
         cursor: pointer;
     }
+
+    header nav #reseaux{
+        justify-content: center;
+        top:100%;
+        margin: 0px 0px 0px -70px;
+        position: absolute;
+
+
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
     /*Fin Menu Hamburger*/
     /*Footer*/
     .row{display: none;}
@@ -681,6 +697,7 @@ footer ul li {
         width: 50%;
         padding-bottom: 25vw;
     }
+
 }
 
 
@@ -696,11 +713,11 @@ footer ul li {
 #secpart div {
     margin: auto;
 }
-
-#pluginFB2 {
-    margin: auto;
-    display: block;
+#secpart h2{
+    text-align: center;
 }
+
+
 
 #FacebookWrap {
     background-color: rgba(20,20,20,0.8);
@@ -761,9 +778,6 @@ footer ul li {
     position: relative;
 }
 
-.sport-tiles:hover {
-    background-color: #CD290C;
-}
 .sport-title {
     text-align: center;
     background-color: white;
@@ -778,3 +792,77 @@ footer ul li {
     text-align: center;
     cursor: pointer;
 }
+
+
+/*Bouton Go to the top*/
+
+.arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 11;
+    cursor: pointer;
+    height: 54px;
+    width:54px;
+}
+
+
+.arrow .arrow1{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(25%) translateY(50%) rotate(-45deg);
+    -webkit-transform: translateX(25%) translateY(50%) rotate(-45deg);
+
+
+}
+.arrow .arrow3{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(76%) translateY(-52%) rotate(45deg);
+    -webkit-transform: translateX(76%) translateY(-52%) rotate(45deg);
+
+}
+
+#topBtn .arrow .arrow1,.arrow2,.arrow3{
+    position: relative;
+    top:30%;
+    left:23%;
+    background:#fff;
+    margin-top: 0px;
+}
+
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 12px;
+    z-index: 17;
+    border: none;
+    background-color:rgba(85,85,85,0.5);
+    cursor: pointer; 
+    padding: 29px;
+    border: 2px solid white;
+    border-radius: 50%; /*5px 50%*/
+    color: #fff;
+
+}
+
+#topBtn:hover {
+    background-color: #000;
+    -webkit-transition: transform 0.3s linear;
+    transition: background 0.3s linear;
+
+}
+
+/*Fin Bouton Go to the top*/
+#pluginFB2 {
+    margin: auto;
+    display: block;
+}
+
+.not-clicked-sport:hover {
+    background-color: #CD290C;
+    cursor:pointer;    
+}
+

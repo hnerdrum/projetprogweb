@@ -128,7 +128,7 @@ function gen_elems_sports () {
         elem = document.createElement("div");
         elem.setAttribute("class", "sport-tiles");
         if (scroll_sports*nb_elems_sports+i < sports.length) {
-            elem.setAttribute("class", "sport-tiles not-empty-sport");
+            elem.setAttribute("class", "sport-tiles not-empty-sport not-clicked-sport");
             content = document.createElement("p");
             content.setAttribute("class", "sport-title");
             content.appendChild(document.createTextNode(sports[scroll_sports*nb_elems_sports+i]));
@@ -155,6 +155,9 @@ function add_click_action(j, tile) {
                 }
                 i++;
             };
+            // on enleve les actions de hover de la case clique
+            elems.item(j).style["cursor"] = "default";
+            elems.item(j).setAttribute("class", "sport-tiles not-empty-sport"); 
             // on remplit toute la section avec cet élément
             tile.style["width"]="100%";
             tile.style["padding-bottom"]="30vw";

@@ -199,17 +199,27 @@ input[type="submit"] {
 /*Fin du Header*/
 
 
-
-
-/********************************************************Résultats**********************************************************/
+/********************************************************Plan d'accès**********************************************************/
 #resultats {
     background-color: black;
 }
 
 #annees{
     position: relative;
-    padding: 80px 0px 0px 0px;
+    padding: 80px 0px 0px 100px;
 
+}
+#annees h1{
+    color:black;
+    text-align: left;
+    padding: 0px 0px 50px 0px;
+    text-decoration: underline;
+}
+#annees p{
+    margin-bottom: 10px;
+}
+#annees .tel{
+    margin-bottom: 50px;
 }
 
 #annee {
@@ -219,7 +229,7 @@ input[type="submit"] {
     color: red;
 }
 section article h3{
-    font-size: 2em;
+    font-size: 1.5em;
 
 }
 
@@ -250,41 +260,14 @@ section article h3{
     display: flex;
     justify-content: space-between;
 }
-figcaption a{
-    text-decoration: none;
-    float: right;
-    color: rgb(117,117,117);
-}
 
-figcaption a:hover{
-    color: red;
-}
-figcaption a:after{
-    content: ' ';
-    color: rgb(117,117,117);
-    background-image: url(../../Data/images/arrowright.png); /*300 x 300*/
-    display: inline-block;
-    background-repeat: no-repeat;
-    background-position:center;
-    width: 30px;
-    height:14px;
-}
-figcaption a:hover::after{
-    background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
-}
-
-#annees h4{
-    color: red;
-    font-size: 1.5em;
-    text-align: center;
-    bottom: 50px;
-}
 #annees .barre{
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px -50px;
     border: 1px black solid;
-    width: 100%;
+    width: 110%;
     position: relative;
 }
+
 #annees .download:after{
     content: '';
     display: inline-block;
@@ -294,13 +277,32 @@ figcaption a:hover::after{
     background-repeat: no-repeat;
     background-image:url('../../Data/download.png');
 }
-#annees .pdf{
-    text-align: center;
+#annees .mail, .external{
+    text-decoration: underline;
+    color: #000;
 }
-#annees .download:hover{
-    color: red;
+#annees .mail:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/mail.png');
+    background-position: 0px 2px;
 }
-/********************************************************Fin Résultats**********************************************************/
+#annees .external:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/external.png');
+    background-position: 0px 2.3px;
+}
+
+/********************************************************Fin Plan d'accès**********************************************************/
 
 
 
@@ -396,7 +398,7 @@ footer ul li {
 @media all and (min-width: 1000px){ /*Ordi*/
     /*Header*/
     .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
-
+    
     /*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
@@ -421,7 +423,7 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;}  
+    .row p,.Colonne2 a {font-size: 12px ;}
    
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
@@ -430,17 +432,7 @@ footer ul li {
     #nav {
         font-size: 22px;
     }
-    #annees .images{
-    	width: 100%;
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-items: center;
-	}
-	#annees .images img{
-		margin-top: 25px;
-		vertical-align: middle;
-	}
+
     /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
@@ -468,25 +460,11 @@ footer ul li {
 
 @media all and (max-width: 720px){ /*Portable*/
 /*Header*/
-    .menu-ordi,.menu-tablette, #navbar ul{display:none;}
+    .menu-ordi,.menu-tablette{display:none;}
     .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
     input[type="submit"] {margin: 22px 0px 0px 5px;}
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
-
-    #annees .images{
-    	width: 100%;
-    	display: flex;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-items: center;
-	}
-	#annees .images img{
-		margin-top: 25px;
-		vertical-align: middle;
-	}
-
-
 /*Début Menu Hamburger*/
     #fullcontainer
     {
@@ -671,11 +649,6 @@ footer ul li {
         transition: background 0.5s linear;
     }
 
-
-
-    .svg.On{
-        stroke-dashoffset:0;
-    }
     input[type="submit1"] {
     background: url(../../Data/loupe1.png) no-repeat ;
     width: 23px;
