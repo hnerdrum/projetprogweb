@@ -556,6 +556,11 @@ footer ul li {
         background-color:rgba(85,85,85,0.8);
 
     }
+    .btn-navigation:hover {
+        background-color: #000;
+        -webkit-transition: transform 0.3s linear;
+        transition: background 0.3s linear;
+    }
 
     .btn-navigation .barre2{
         margin:3px 0px 3px 0px;
@@ -638,3 +643,83 @@ footer ul li {
 #secpart img { margin: 20px; }
 
 #secpart div { margin: auto; }
+
+#secpart {
+    padding: 2%;
+}
+
+#secpart img {
+    margin: 20px;   
+}
+
+#secpart div {
+    margin: auto;
+}
+#secpart h2{
+    text-align: center;
+}
+
+
+
+/*Bouton Go to the top*/
+
+.arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 11;
+    cursor: pointer;
+    height: 54px;
+    width:54px;
+}
+
+
+.arrow .arrow1{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(25%) translateY(50%) rotate(-45deg);
+    -webkit-transform: translateX(25%) translateY(50%) rotate(-45deg);
+
+
+}
+.arrow .arrow3{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(76%) translateY(-52%) rotate(45deg);
+    -webkit-transform: translateX(76%) translateY(-52%) rotate(45deg);
+
+}
+
+#topBtn .arrow .arrow1,.arrow2,.arrow3{
+    position: relative;
+    top:30%;
+    left:23%;
+    background:#fff;
+    margin-top: 0px;
+}
+
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 12px;
+    z-index: 17;
+    border: none;
+    background-color:rgba(85,85,85,0.5);
+    cursor: pointer; 
+    padding: 29px;
+    border: 2px solid white;
+    border-radius: 50%; /*5px 50%*/
+    color: #fff;
+
+}
+
+#topBtn:hover {
+    background-color: #000;
+    -webkit-transition: transform 0.3s linear;
+    transition: background 0.3s linear;
+
+}
+
+/*Fin Bouton Go to the top*/

@@ -97,6 +97,9 @@ $(function() {
 
 });
 
+
+/*Menu Hamburger et Bouton Go to the top*/
+
 $(document).ready(function(){
     $('.btn-navigation').click(function(){
         $(this).find('.barre1').toggleClass('white');
@@ -105,4 +108,21 @@ $(document).ready(function(){
         $('.hamburger').toggleClass('isOpen');
         $('.hamburger-overlay').toggleClass('isOpen');
     });
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 20) {
+            $('#topBtn').fadeIn();
+        } else {
+            $('#topBtn').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('#topBtn').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
 });
+
+/*Fin Menu Hamburger & Go to the top button*/
+

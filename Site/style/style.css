@@ -515,7 +515,7 @@ footer ul li {
         display: block;
     }
 
-    header nav ul
+    header nav .liste1
     {
         display: flex;
         flex-direction: column;
@@ -530,18 +530,18 @@ footer ul li {
         -webkit-transform: translateY(-50%);
 
     }
-    header nav li
+    header nav .liste1 li 
     {
         padding-bottom: 10px;
         display: inline ;
         margin: 20 1.30% ;
     }
 
-    header nav a:hover{
+    header nav .liste1 li a:hover{
         border-bottom: 2px solid red;
     }
 
-    header nav ul li:before{
+    header nav .liste1 li:before{
         content: ' ';
         display: inline-block;
         width: 15px;
@@ -550,9 +550,6 @@ footer ul li {
 
     }
 
-    header nav a:hover{
-        border-bottom: 2px solid red;
-    }
 
     .menu-hamburger nav ul li a
     {
@@ -574,6 +571,12 @@ footer ul li {
         color: #fff;
 
         background-color:rgba(85,85,85,0.8);
+
+    }
+    .btn-navigation:hover{
+        background-color: #000;
+        -webkit-transition: transform 0.3s linear;
+        transition: background 0.3s linear;
 
     }
 
@@ -647,6 +650,17 @@ footer ul li {
         border-style:none;
         cursor: pointer;
     }
+
+    header nav #reseaux{
+        justify-content: center;
+        top:100%;
+        margin: 0px 0px 0px -70px;
+        position: absolute;
+
+
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+    }
     /*Fin Menu Hamburger*/
     /*Footer*/
     .row{display: none;}
@@ -669,6 +683,9 @@ footer ul li {
 
 #secpart div {
     margin: auto;
+}
+#secpart h2{
+    text-align: center;
 }
 
 
@@ -747,6 +764,69 @@ footer ul li {
     cursor: pointer;
 }
 
+
+/*Bouton Go to the top*/
+
+.arrow{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+    z-index: 11;
+    cursor: pointer;
+    height: 54px;
+    width:54px;
+}
+
+
+.arrow .arrow1{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(25%) translateY(50%) rotate(-45deg);
+    -webkit-transform: translateX(25%) translateY(50%) rotate(-45deg);
+
+
+}
+.arrow .arrow3{
+    width: 30px;
+    height: 8.5px;
+    transform: translateX(76%) translateY(-52%) rotate(45deg);
+    -webkit-transform: translateX(76%) translateY(-52%) rotate(45deg);
+
+}
+
+#topBtn .arrow .arrow1,.arrow2,.arrow3{
+    position: relative;
+    top:30%;
+    left:23%;
+    background:#fff;
+    margin-top: 0px;
+}
+
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 16px;
+    right: 12px;
+    z-index: 17;
+    border: none;
+    background-color:rgba(85,85,85,0.5);
+    cursor: pointer; 
+    padding: 29px;
+    border: 2px solid white;
+    border-radius: 50%; /*5px 50%*/
+    color: #fff;
+
+}
+
+#topBtn:hover {
+    background-color: #000;
+    -webkit-transition: transform 0.3s linear;
+    transition: background 0.3s linear;
+
+}
+
+/*Fin Bouton Go to the top*/
 #pluginFB2 {
     margin: auto;
     display: block;
