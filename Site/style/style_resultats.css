@@ -47,6 +47,7 @@ section article h3{
     display: flex;
     justify-content: space-between;
 }
+
 figcaption a{
     text-decoration: none;
     float: right;
@@ -67,10 +68,6 @@ figcaption a:after{
     width: 30px;
     height:14px;
 }
-/*
-figcaption a:hover::after{
-    background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
-}*/
 
 #annees h4{
     color: red;
