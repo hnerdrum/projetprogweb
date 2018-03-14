@@ -69,6 +69,32 @@ html {
     font-family: 'Roboto', 'Oswald', sans-serif;
 }
 
+
+#header{
+	background-color: white;
+
+	width: 100%;
+	display:table;
+	position: fixed;
+	z-index: 20;
+}
+
+.boxheader{
+
+	margin: auto;
+	width: 80%;
+		padding: 2%;
+}
+.boxheaderfixe{
+height: 20vh;
+}
+.menu-ordi{
+
+	z-index: 20;
+	background: #FFF;
+
+}
+
 .carousel {
     height:100px;
     width:100px;
@@ -144,7 +170,7 @@ html {
     right: 5%;
 }
 
-#header, #content ,#footer {
+#content ,#footer {
     padding: 2% ;
 }
 
@@ -234,31 +260,35 @@ html {
 }
 
 /*Barre de recherche Debut*/
-input {
+/*input {
     float:right;
-}
+}*/
 
 input[type="text"] {
     background: #EEEDEB;
     border-style:none;
     padding: 5px;
-    max-width: 20%;
+ /*   max-width: 20%;*/
     width:100%;
     height: 100%;
 }
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-
-    width: 30px;
+		margin: 2px 0px 0px 5px;
+    width: 150px;
     height: 25px;
     border-style:none;
     cursor: pointer;
+	
 }
 
-.recherche #search-btn{
-    margin: 3px 12px 0px 6px;
+#boxsearch{
+float: right;
+margin-top: -17px;
+	width: 25%;
 }
+
 /*Barre de recherche Fin*/
 
 
@@ -515,7 +545,8 @@ footer ul li {
         display: block;
     }
 
-    header nav .liste1
+  
+    header nav ul
     {
         display: flex;
         flex-direction: column;
@@ -530,26 +561,29 @@ footer ul li {
         -webkit-transform: translateY(-50%);
 
     }
-    header nav .liste1 li 
+    header nav li
     {
         padding-bottom: 10px;
         display: inline ;
         margin: 20 1.30% ;
     }
 
-    header nav .liste1 li a:hover{
+    header nav a:hover{
         border-bottom: 2px solid red;
     }
 
-    header nav .liste1 li:before{
+    header nav ul li:before{
         content: ' ';
         display: inline-block;
         width: 15px;
         height: 15px;
         margin: 0px 10px 0px 0px;
-
+ 
     }
 
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
 
     .menu-hamburger nav ul li a
     {
@@ -557,6 +591,7 @@ footer ul li {
         color: #FFFFFF ;
         text-decoration: none ;
     }
+
 
     .btn-navigation{
         position: fixed;

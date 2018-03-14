@@ -1,4 +1,4 @@
-/* CSS RESET Source: http://cssreset.com/scripts/eric-meyer-reset-css/ */
+﻿/* CSS RESET Source: http://cssreset.com/scripts/eric-meyer-reset-css/ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -65,46 +65,60 @@ body {
 
 /* font universel pour le site */
 html {
-    font-family: 'Roboto', 'Oswald', sans-serif;
+  font-family: 'Roboto', 'Oswald', sans-serif;
 }
 
-.resultats {
-    height:100px;
-    width:100%;
-    display: inline-block;
-    text-align: center;
-    vertical-align: middle;
+#content ,#footer {
+  padding: 2% ;
 }
 
+#header{
+  background-color: white;
 
+  width: 100%;
+  display:table;
+  position: fixed;
+  z-index: 20;
+}
 
-#header, #content ,#footer {
-    padding: 2% ;
+.boxheader{
+margin: auto;
+  width: 80%;
+  padding: 2%;
+}
+.boxheaderfixe{
+  height: 25vh;
+}
+.menu-ordi{
+
+  z-index: 20;
+  background: #FFF;
+
 }
 
 /*Barre de navigation Debut*/
 #nav {
-    margin-top: 40px;
-    padding: 0;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-    list-style: none ;
-    text-align: center;
+  margin-top: 40px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+  list-style: none ;
+  text-align: center;
 }
 
 #nav li {
-    display: inline ;
-    margin: 0 1.30% ;
+  display: inline ;
+  margin: 0 1.30% ;
 }
 
 #nav a { 
-    color: #323232 ;
-    text-decoration: none ; 
+  color: #323232 ;
+  text-decoration: none ; 
 }
 
 #nav a:hover {
-    color: #f00;
+  color: #f00;
 }
 /*Barre de navigation Fin*/
 
@@ -112,21 +126,21 @@ html {
 /*Reseaux sociaux Debut*/
 #reseaux {margin-top:10px;}
 #reseaux ul {
-    list-style-type: none ;
-    margin: 0;
+  list-style-type: none ;
+  margin: 0;
 }
 
 #reseaux li{
-    float: right ;
-    margin-left: 0.4%;
+  float: right ;
+  margin-left: 0.4%;
 }
 
 #reseaux a {
-    display: block ;
-    text-decoration: none ;
-    background: url(../../Data/social-sprite.png) no-repeat ;
-    background-size: 96%;
-    padding: 25px 0px 0px 25px ;  
+  display: block ;
+  text-decoration: none ;
+  background: url(../../Data/social-sprite.png) no-repeat ;
+  background-size: 96%;
+  padding: 25px 0px 0px 25px ;  
 }
 
 #reseaux #fb{background-position:0 -275px;}
@@ -138,88 +152,80 @@ html {
 
 /* Autres éléments du header*/
 .insa {
-    float:right;
-    font-size: 18px;
-    font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-    font-weight: bold;
-    margin-right: 20px;
+  float:right;
+  font-size: 18px;
+  font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
+  font-weight: bold;
+  margin-right: 20px;
 }
 
 .separateur {
-    float:right;
-    margin: -5px 10px 0;
+  float:right;
+  margin: -5px 10px 0;
 }
 
 .logo_as{
-    float:left;
-        margin-left: 20px;
-        margin-bottom: 30px;
+  float:left;
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 .logo_asbis{
-    float:left;
-        margin-bottom: 2%;
+  float:left;
+  margin-bottom: 2%;
 }
 
 .menu-respo{
-    float:right;
-    margin: 25px 0px 0px 10px;
+  float:right;
+  margin: 25px 0px 0px 10px;
 }
 
 /*Barre de recherche Debut*/
-input {
-    float:right;
-}
+/*input {
+float:right;
+}*/
 
 input[type="text"] {
-    background: #EEEDEB;
-    border-style:none;
-    padding: 5px;
-    max-width: 20%;
-    width:100%;
-    height: 100%;
+  background: #EEEDEB;
+  border-style:none;
+  padding: 5px;
+  /*max-width: 20%;*/
+  width:100%;
+  height: 100%;
 }
 
 input[type="submit"] {
-    background: url(../../Data/loupe.png) no-repeat ;
+  background: url(../../Data/loupe.png) no-repeat ;
+  margin: 2px 0px 0px 5px;
+  width: 150px;
+  height: 25px;
+  border-style:none;
+  cursor: pointer;
 
-    width: 30px;
-    height: 25px;
-    border-style:none;
-    cursor: pointer;
 }
 
-.recherche #search-btn{
-    margin: 3px 12px 0px 6px;
+#boxsearch{
+  float: right;
+  margin-top: -17px;
+  width: 25%;
 }
+
 /*Barre de recherche Fin*/
-
-
 
 /*Fin du Header*/
 
 
-/********************************************************Plan d'accès**********************************************************/
+
+
+/********************************************************Résultats**********************************************************/
 #resultats {
     background-color: black;
 }
 
 #annees{
     position: relative;
-    padding: 80px 0px 0px 100px;
+    padding: 80px 0px 0px 0px;
 
-}
-#annees h1{
-    color:black;
-    text-align: left;
-    padding: 0px 0px 50px 0px;
-    text-decoration: underline;
-}
-#annees p{
-    margin-bottom: 10px;
-}
-#annees .tel{
-    margin-bottom: 50px;
 }
 
 #annee {
@@ -229,7 +235,7 @@ input[type="submit"] {
     color: red;
 }
 section article h3{
-    font-size: 1.5em;
+    font-size: 2em;
 
 }
 
@@ -260,14 +266,41 @@ section article h3{
     display: flex;
     justify-content: space-between;
 }
-
-#annees .barre{
-    margin: 20px 0px 20px -50px;
-    border: 1px black solid;
-    width: 110%;
-    position: relative;
+figcaption a{
+    text-decoration: none;
+    float: right;
+    color: rgb(117,117,117);
 }
 
+figcaption a:hover{
+    color: red;
+}
+figcaption a:after{
+    content: ' ';
+    color: rgb(117,117,117);
+    background-image: url(../../Data/images/arrowright.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height:14px;
+}
+figcaption a:hover::after{
+    background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
+}
+
+#annees h4{
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    bottom: 50px;
+}
+#annees .barre{
+    margin: 20px 0px 20px 0px;
+    border: 1px black solid;
+    width: 100%;
+    position: relative;
+}
 #annees .download:after{
     content: '';
     display: inline-block;
@@ -277,32 +310,13 @@ section article h3{
     background-repeat: no-repeat;
     background-image:url('../../Data/download.png');
 }
-#annees .mail, .external{
-    text-decoration: underline;
-    color: #000;
+#annees .pdf{
+    text-align: center;
 }
-#annees .mail:after{
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: 0px 0px 0px 5px;
-    background-repeat: no-repeat;
-    background-image:url('../../Data/mail.png');
-    background-position: 0px 2px;
+#annees .download:hover{
+    color: red;
 }
-#annees .external:after{
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: 0px 0px 0px 5px;
-    background-repeat: no-repeat;
-    background-image:url('../../Data/external.png');
-    background-position: 0px 2.3px;
-}
-
-/********************************************************Fin Plan d'accès**********************************************************/
+/********************************************************Fin Résultats**********************************************************/
 
 
 
@@ -398,7 +412,7 @@ footer ul li {
 @media all and (min-width: 1000px){ /*Ordi*/
     /*Header*/
     .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
-    
+
     /*Footer*/
     .clear {clear: both ;} 
     .row p.clear{padding-top: 0;}
@@ -423,7 +437,7 @@ footer ul li {
         text-decoration: none;
     }
     .row h4 {font-size: 18px ;}
-    .row p,.Colonne2 a {font-size: 12px ;}
+    .row p,.Colonne2 a {font-size: 12px ;}  
    
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
@@ -432,7 +446,17 @@ footer ul li {
     #nav {
         font-size: 22px;
     }
-
+    #annees .images{
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	#annees .images img{
+		margin-top: 25px;
+		vertical-align: middle;
+	}
     /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
@@ -460,20 +484,25 @@ footer ul li {
 
 @media all and (max-width: 720px){ /*Portable*/
 /*Header*/
-    .menu-ordi,.menu-tablette{display:none;}
+    .menu-ordi,.menu-tablette, #navbar ul{display:none;}
     .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
     input[type="submit"] {margin: 22px 0px 0px 5px;}
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
-    #annees h1{
-        text-align: center;
-    }
-    #annee, #annees{
-        text-align: center;
-    }
-    #annees{
-    	padding: 0px 0px 0px 0px;
-    }
+
+    #annees .images{
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+	}
+	#annees .images img{
+		margin-top: 25px;
+		vertical-align: middle;
+	}
+
+
 /*Début Menu Hamburger*/
     #fullcontainer
     {
@@ -658,6 +687,11 @@ footer ul li {
         transition: background 0.5s linear;
     }
 
+
+
+    .svg.On{
+        stroke-dashoffset:0;
+    }
     input[type="submit1"] {
     background: url(../../Data/loupe1.png) no-repeat ;
     width: 23px;
