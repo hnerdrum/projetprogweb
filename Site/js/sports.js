@@ -15,10 +15,18 @@ var sport_width;
 
 var sports = ["Aviron", "Basket", "Football", "Handball",
               "Hockey", "Rugby", "Volley", "Aérobic",
-              "Musculation", "Judo", "Karaté", "Badminton",
+              "Musculation", "Judo", "Karaté", 
               "Badminton", "Tennis", "Tennis de table",
               "Pelote Basque", "Danse", "Gym", "Équitation",
               "Escalade", "Golf", "Natation"];
+
+// on garde tous les sports et on ne modifie pas cette variable
+var all_sports = ["Aviron", "Basket", "Football", "Handball",
+                  "Hockey", "Rugby", "Volley", "Aérobic",
+                  "Musculation", "Judo", "Karaté", 
+                  "Badminton", "Tennis", "Tennis de table",
+                  "Pelote Basque", "Danse", "Gym", "Équitation",
+                  "Escalade", "Golf", "Natation"];
 
 function can_scroll_sports () {
     return (scroll_sports+1)*nb_elems_sports <= sports.length;
@@ -123,7 +131,6 @@ function gen_elems_sports () {
 
 
     menu_sports = document.getElementById("sport-list");
-
     for (i = 0; i < nb_elems_sports; i++) {
         elem = document.createElement("div");
         elem.setAttribute("class", "sport-tiles");
@@ -141,10 +148,10 @@ function gen_elems_sports () {
 
 // definir evenement de clique pour chaque sport
 function add_click_action(j, tile) {
-    elems = document.getElementsByClassName("sport-tiles");
+    elems = document.getElementsByClassName("not-empty-sport");
     tile.addEventListener('click', opensport, true);
 
-     function opensport() {
+    function opensport() {
         if (sport_clicked == 0) {
             sport_clicked = 1;
             i = 0;
@@ -208,22 +215,31 @@ function add_sport_actions() {
 };
 
 
-function myFunction() {
-    // Declare variables
+function sport_search() {
+    // on remet sports à tous les sports
+    sports = all_sports.slice();
+    
     var input, filter,list, listtiles, ad, index;
     input = document.getElementById("sport-search");
-    filter = input.value.toUpperCase();
-		list = document.getElementById("sport-list")
-    listtiles = list.getElementsByClassName("sport-tiles");
+    filter = input.value.toLowerCase();
 
-    // parcours la liste et affiche ou non selon saisie
-    for (index = 0; index < listtiles.length; index++) {
-        ad = listtiles.item(index);
-        if (ad.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            listtiles.item(index).style.display = "";
+    r = new RegExp("^"+filter);
+    console.log(r);
+    for (i = 0; i < all_sports.length; i++) {
+        if (all_sports[i].toLowerCase().match(r) !== null) {
+            console.log(all_sports[i]);
         } else {
-            listtiles.item(index).style.display = "none";
+            console.log("non"+all_sports.length);
+            index_sport = sports.indexOf(all_sports[i]);
+            sports.splice(index_sport, 1);
         }
     }
+
+    if (sports.length == 0)
+        alert("Pas de résultats");
+
+    remove_sports();
+    gen_elems_sports();
+    control_sport_buttons();
 }
 
