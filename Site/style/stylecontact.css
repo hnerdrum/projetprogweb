@@ -24,7 +24,6 @@
     width: 70%;
     padding: 35px;
     margin: 0 auto;
-    
     overflow: hidden;
     color:#B3B3B3
 }
@@ -140,4 +139,49 @@
 }
 
 
+#cdesaps {
+    width: 200px;
+    text-align: center;
+    padding-top: 5%;
+    margin: auto;
+    font-size: 200%;
+    color: black;
+}
 
+#cdesaps a {
+    text-decoration: none;
+    margin: auto;
+}
+
+#cdesaps {
+
+    width: 200px;
+    text-align: center;
+    padding-top: 5%;
+    margin: auto;
+    font-size: 200%;
+    color: black;
+}
+
+#autres_contacts {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+#autres_contacts a {
+    margin: auto;    
+}
+
+#autres_contacts a img {
+    width: 200px;
+    height: 190px;
+}
+
+#p_autres_contacts {
+    text-align: center;
+    font-size: 200%;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
