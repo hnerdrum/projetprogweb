@@ -13,20 +13,19 @@ var sport_clicked = 0;
 var sport_height;
 var sport_width;
 
-var sports = ["Aviron", "Basket", "Football", "Handball",
-              "Hockey", "Rugby", "Volley", "Aérobic",
-              "Musculation", "Judo", "Karaté", 
-              "Badminton", "Tennis", "Tennis de table",
-              "Pelote Basque", "Danse", "Gym", "Équitation",
-              "Escalade", "Golf", "Natation"];
+var sports = ["Athlétisme", "Aviron", "Badminton", "Basket", "Multi-Box",
+              "Équitation", "Escalade", "Step", "Zumba", "Pilate", "Football", "Golf",
+              "Gymnastique", "Handball", "Hockey", "Jazz (moderne)", "Judo", "Karaté",
+              "Lutte", "Musculation", "Natation", "Raid", "Rugby", "Tennis", "Tennis de table",
+              "Volley", "Tir à l'arc"];
+
 
 // on garde tous les sports et on ne modifie pas cette variable
-var all_sports = ["Aviron", "Basket", "Football", "Handball",
-                  "Hockey", "Rugby", "Volley", "Aérobic",
-                  "Musculation", "Judo", "Karaté", 
-                  "Badminton", "Tennis", "Tennis de table",
-                  "Pelote Basque", "Danse", "Gym", "Équitation",
-                  "Escalade", "Golf", "Natation"];
+var all_sports = ["Athlétisme", "Aviron", "Badminton", "Basket", "Multi-Box",
+              "Équitation", "Escalade", "Step", "Zumba", "Pilate", "Football", "Golf",
+              "Gymnastique", "Handball", "Hockey", "Jazz (moderne)", "Judo", "Karaté",
+              "Lutte", "Musculation", "Natation", "Raid", "Rugby", "Tennis", "Tennis de table",
+              "Volley", "Tir à l'arc"];
 
 function can_scroll_sports () {
     return (scroll_sports+1)*nb_elems_sports <= sports.length;

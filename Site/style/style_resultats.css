@@ -45,7 +45,8 @@ section article h3{
 #annees .images{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 figcaption a{
@@ -95,4 +96,12 @@ figcaption a:after{
 }
 #annees .download:hover{
     color: red;
+}
+
+.images a img {
+    width: 250px;
+}
+
+.images {
+    margin: 0 auto;
 }
