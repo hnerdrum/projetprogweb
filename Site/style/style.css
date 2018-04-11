@@ -872,3 +872,27 @@ footer ul li {
     cursor:pointer;    
 }
 
+.s_table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(50%);    
+}
+
+.s_table tr, th, td {
+    border: 2px solid black;
+}
+
+.s_table th {
+    font-size: 100%;
+    background-color: white;
+}
+
+.s_table tr {
+    font-size: 100%;
+}
+
+.s_table td {
+    word-wrap: break-word;
+}

@@ -13,6 +13,78 @@ var sport_clicked = 0;
 var sport_height;
 var sport_width;
 
+// stocker les informations pour la section sports
+
+var sport_content = [];
+
+sport_content.push({Nom: "Athlétisme", Jour: ["Lundi"], Horaire:["18 h 30 - 20 h 00"], Lieu:["Synthétique"], Commentaires: ""});
+sport_content.push({Nom: "Aviron", Jour: ["Jeudi"], Horaire:["14 h 00 - 16 h 00"], Lieu:["TUC (inter U)"], Commentaires: ""});
+sport_content.push({Nom: "Badminton", Jour: ["Mercredi", "Dimanche"], Horaire:["21 h 30 - 23 h 00", "16 h 00 - 18 h 00"], Lieu:["Gymnase"], Commentaires: ""});
+
+var basket = [];
+basket.push({Nom: "Basket Féminin", Jour: ["Jeudi"], Horaire:["13 h 30 - 15 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+basket.push({Nom: "Basket Masculin", Jour: ["Mardi", "Mercredi"], Horaire:["18 h 30 - 20 h 00", "20 h 00 - 21 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+sport_content.push(basket);
+
+sport_content.push({Nom: "Multi-Box", Jour: ["Mercredi", "Dimanche"], Horaire:["20 h 30 - 22 h 30", "18 h 00 - 20 h 00"], Lieu:["Dojo - Gymnase"], Commentaires: ""});
+sport_content.push({Nom: "Équitation", Jour: ["Jeudi"], Horaire:["13 h 30 - 15 h 30"], Lieu:["À déterminer"], Commentaires: "plateau d'équitation organisé par l'Université du Mirail"});
+sport_content.push({Nom: "Escalade", Jour: ["Lundi", "Jeudi"], Horaire:["18 h 00 - 20 h 00", "15 h 00 - 17 h 00"], Lieu:["SCUAPS"], Commentaires: ""});
+sport_content.push({Nom: "Step", Jour: ["Mercredi"], Horaire:["18 h 45 - 19 h 30"], Lieu:["Salle de danse"], Commentaires: ""});
+sport_content.push({Nom: "Zumba", Jour: ["Jeudi"], Horaire:["14 h 30 - 15 h 30"], Lieu:["Salle de danse"], Commentaires: ""});
+sport_content.push({Nom: "Pilate", Jour: ["Jeudi", "Jeudi"], Horaire:["13 h 00 - 14 h 30", "14 h 30 - 15 h 30"], Lieu:["Salle de danse"], Commentaires: ""});
+
+var foot = [];
+foot.push({Nom: "Football Masculin", Jour: ["Mardi", "Jeudi"], Horaire:["18 h 30 - 20 h 00", "13 h 30 - 15 h 30"], Lieu:["Synthétique"], Commentaires: ""});
+foot.push({Nom: "Football Féminin", Jour: ["Mercredi"], Horaire:["18 h 30 - 20 h 00"], Lieu:["Synthétique"], Commentaires: ""});
+sport_content.push(foot);
+
+sport_content.push({Nom: "Golf", Jour: ["Jeudi"], Horaire:["13 h 30 - 16 h 30"], Lieu:["La Ramée"], Commentaires: ""});
+sport_content.push({Nom: "Gymnastique", Jour: ["Jeudi"], Horaire:["14 h 00 - 15 h 45"], Lieu:["COSEC + Inter U"], Commentaires: "Sans intervenant"});
+
+var hand = [];
+hand.push({Nom: "Handball Masculin", Jour: ["Lundi"], Horaire:["20 h 15 - 22 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+hand.push({Nom: "Handball Féminin", Jour: ["Mardi"], Horaire:["20 h 00 - 21 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+hand.push({Nom: "Handball Mixte", Jour: ["Jeudi"], Horaire:["17 h 30 - 19 h 00"], Lieu:["Gymnase"], Commentaires: ""});
+sport_content.push(hand);
+
+sport_content.push({Nom: "Hockey", Jour: ["Mardi"], Horaire:["20 h 00 - 21 h 30", "21 h 30 - 23 h 00"], Lieu:["Synthétique", "Gymnase"], Commentaires: ""});
+sport_content.push({Nom: "Jazz (moderne)", Jour: ["Lundi"], Horaire:["18 h 30 - 20 h 00", "20 h 00 - 21 h 30"], Lieu:["Salle de danse"], Commentaires: "Débutants et intermédiaires (Séance 1), Intermédiaires et Confirmés (Séance 2)"});
+sport_content.push({Nom: "Judo", Jour: ["Mardi", "Jeudi"], Horaire:["18 h 30 - 20 h 00", "18 h 00 - 20 h 00"], Lieu:["Combat"], Commentaires: ""});
+sport_content.push({Nom: "Karaté", Jour: ["Mardi", "Jeudi"], Horaire:["20 h 00 - 22 h 00", "14 h 30 - 16 h 00"], Lieu:["Combat"], Commentaires: ""});
+sport_content.push({Nom: "Lutte", Jour: ["Lundi"], Horaire:["20 h 00 - 22 h 00"], Lieu:["Combat"], Commentaires: ""});
+sport_content.push({Nom: "Musculation", Jour: ["Mardi"], Horaire:["18 h 30 - 20 h 30"], Lieu:["Gardiennage du gymnase"], Commentaires: "Exclusivité aux licenciés AS"});
+sport_content.push({Nom: "Natation", Jour: ["Mardi", "Jeudi"], Horaire:["19 h 00 - 20 h 00", "19 h 00 - 20 h 00"], Lieu:["Sup Aéro"], Commentaires: ""});
+sport_content.push({Nom: "Raid", Jour: ["Mardi", "Jeudi"], Horaire:["18 h 00 - 20 h 00", "14 h 00 - 16 h 00"], Lieu:["Gymnase"], Commentaires: ""});
+
+var rugby = [];
+rugby.push({Nom: "Rugby Féminin", Jour: ["Jeudi"], Horaire:["15 h 30 - 17 h 30"], Lieu:["Synthétique"], Commentaires: ""});
+rugby.push({Nom: "Rugby Féminin (repli)", Jour: ["Lundi"], Horaire:["18 h 00 - 20 h 00"], Lieu:["Salle de combat"], Commentaires: ""});
+rugby.push({Nom: "Rugby Masculin Équipe 1", Jour: ["Jeudi"], Horaire:["12 h 00 - 13 h 30"], Lieu:["Synthétique"], Commentaires: ""});
+rugby.push({Nom: "Rugby Masculin Équipe 2, 3, 4", Jour: ["Jeudi"], Horaire:["15 h 30 - 17 h 30"], Lieu:["Synthétique"], Commentaires: ""});
+sport_content.push(rugby);
+
+sport_content.push({Nom: "Tennis", Jour: ["Jeudi"], Horaire:["13 h 00 - 15 h 30"], Lieu:["Lasbordes"], Commentaires: ""});
+sport_content.push({Nom: "Tennis de table", Jour: ["Mercredi", "Vendredi"], Horaire:["12 h 30 - 13 h 30", "18 h 00 - 19 h 30"], Lieu:["Gymnase"], Commentaires: "Créneau partagé avec le badminton du personnel"});
+
+var volley = [];
+volley.push({Nom: "Volley Féminin Équipe 1", Jour: ["Jeudi"], Horaire:["15 h 30 - 17 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+volley.push({Nom: "Volley Féminin Équipe 2 + 4x4 Mixte", Jour: ["Lundi"], Horaire:["18 h 30 - 20 h 15"], Lieu:["Gymnase"], Commentaires: ""});
+volley.push({Nom: "Volley Masculin Équipe 1", Jour: ["Jeudi"], Horaire:["15 h 30 - 17 h 30"], Lieu:["Gymnase"], Commentaires: ""});
+volley.push({Nom: "Volley Masculin Équipe 2, 3", Jour: ["Mercredi"], Horaire:["18 h 30 - 20 h 00"], Lieu:["Gymnase"], Commentaires: ""});
+sport_content.push(volley);
+
+sport_content.push({Nom: "Tir à l'arc", Jour: [""], Horaire:[""], Lieu:["Stand UPS"], Commentaires: ""});
+
+
+
+
+
+
+
+
+
+
+
 var sports = ["Athlétisme", "Aviron", "Badminton", "Basket", "Multi-Box",
               "Équitation", "Escalade", "Step", "Zumba", "Pilate", "Football", "Golf",
               "Gymnastique", "Handball", "Hockey", "Jazz (moderne)", "Judo", "Karaté",
@@ -146,8 +218,8 @@ function gen_elems_sports () {
 };
 
 // definir evenement de clique pour chaque sport
-function add_click_action(j, tile) {
-    elems = document.getElementsByClassName("not-empty-sport");
+function add_click_action(j, tile, numero) {
+    elems = document.getElementsByClassName("sport-tiles");
     tile.addEventListener('click', opensport, true);
 
     function opensport() {
@@ -172,6 +244,10 @@ function add_click_action(j, tile) {
             ferme.setAttribute("id", "close-sport");
             ferme.appendChild(document.createTextNode("X"));
             tile.appendChild(ferme);
+
+            // on ajoute une table avec les informations
+            gen_sport_table(tile, numero);
+            
             // on definit le comportement du bouton
 
             ferme.addEventListener('click', function () {
@@ -208,7 +284,7 @@ function add_sport_actions() {
     elems = document.getElementsByClassName("not-empty-sport");
     j = 0;
     while (j < elems.length) {
-        add_click_action(j, elems.item(j));
+        add_click_action(j, elems.item(j), scroll_sports*nb_elems_sports+j);
         j++;
     };
 };
@@ -242,3 +318,108 @@ function sport_search() {
     control_sport_buttons();
 }
 
+/* fonction qui génére un tableau rempli d'informations concernant le sport à l'ouverture 
+   et l'affiche sur la case qui a été ouverte (param)
+
+*/
+
+function gen_sport_table(opened, numero) {
+    s_table = document.createElement("table");
+    s_table.setAttribute("class", "s_table");
+
+    // creation du header de la table
+    
+    s_theader = document.createElement("th");
+    s_theader.appendChild(document.createTextNode("Lieu"));
+    s_table.appendChild(s_theader);
+    
+    s_theader = document.createElement("th");
+    s_theader.appendChild(document.createTextNode("Jour"));
+    s_table.appendChild(s_theader);
+
+    s_theader = document.createElement("th");
+    s_theader.appendChild(document.createTextNode("Horaire"));
+    s_table.appendChild(s_theader);
+
+    s_theader = document.createElement("th");
+    s_theader.appendChild(document.createTextNode("Commentaires"));
+    s_table.appendChild(s_theader);
+
+    // on recupere les informations du sport et on remplit la table
+
+    // on recupere l'objet qui contient les infos
+
+    content = sport_content[numero];
+    
+    // si le contenu est un tableau
+    if (Array.isArray(content) === true) {
+
+        for (entry of content) {
+
+            for (v = 0; v < Math.max(entry.Jour.length, entry.Horaire.length, entry.Lieu.length); v++) {
+                s_trow = document.createElement("tr");
+
+                s_tdata = document.createElement("td");
+
+                if (v < entry.Jour.length)
+                    s_tdata.appendChild(document.createTextNode(entry.Jour[v]));
+                else
+                    s_tdata.appendChild(document.createTextNode(entry.Jour[0]));
+                s_trow.appendChild(s_tdata);
+
+                
+                s_tdata = document.createElement("td");
+                if (v < entry.Horaire.length)
+                    s_tdata.appendChild(document.createTextNode(entry.Horaire[v]));
+                else
+                    s_tdata.appendChild(document.createTextNode(entry.Horaire[0]));
+                s_trow.appendChild(s_tdata);
+
+                s_tdata = document.createElement("td");
+                if (v < entry.Lieu.length)
+                    s_tdata.appendChild(document.createTextNode(entry.Lieu[v]));
+                else
+                    s_tdata.appendChild(document.createTextNode(entry.Lieu[0]));
+                s_trow.appendChild(s_tdata);
+
+                s_tdata = document.createElement("td");
+                s_tdata.appendChild(document.createTextNode(entry.Nom));
+
+                s_trow.appendChild(s_tdata);
+
+                s_table.appendChild(s_trow);
+            }
+        }
+        
+    } else { // si le contenu est une seule entrée
+
+        s_trow = document.createElement("tr");
+        
+        s_tdata = document.createElement("td");
+        s_tdata.appendChild(document.createTextNode(content.Jour[0]));
+        s_trow.appendChild(s_tdata);
+        
+        s_tdata = document.createElement("td");
+        s_tdata.appendChild(document.createTextNode(content.Horaire[0]));
+        s_trow.appendChild(s_tdata);
+
+        s_tdata = document.createElement("td");
+        s_tdata.appendChild(document.createTextNode(content.Lieu[0]));
+        s_trow.appendChild(s_tdata);
+
+        s_tdata = document.createElement("td");
+        if (content.Commentaire != undefined) 
+            s_tdata.appendChild(document.createTextNode(content.Commentaire));
+        s_trow.appendChild(s_tdata);
+
+        s_table.appendChild(s_trow);
+    }
+
+ 
+
+    // on insere la table dans le tile
+
+    opened.appendChild(s_table);
+    
+    
+}

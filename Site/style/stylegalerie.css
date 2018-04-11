@@ -11,13 +11,12 @@
     background-image: url(../../Data/bulle.png);
 }
 
+
+
 section article h3{
     font-size: 2em;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 
 .row1:after {
