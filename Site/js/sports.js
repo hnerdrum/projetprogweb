@@ -75,16 +75,6 @@ sport_content.push(volley);
 
 sport_content.push({Nom: "Tir à l'arc", Jour: [""], Horaire:[""], Lieu:["Stand UPS"], Commentaires: ""});
 
-
-
-
-
-
-
-
-
-
-
 var sports = ["Athlétisme", "Aviron", "Badminton", "Basket", "Multi-Box",
               "Équitation", "Escalade", "Step", "Zumba", "Pilate", "Football", "Golf",
               "Gymnastique", "Handball", "Hockey", "Jazz (moderne)", "Judo", "Karaté",
@@ -299,12 +289,8 @@ function sport_search() {
     filter = input.value.toLowerCase();
 
     r = new RegExp("^"+filter);
-    console.log(r);
     for (i = 0; i < all_sports.length; i++) {
-        if (all_sports[i].toLowerCase().match(r) !== null) {
-            console.log(all_sports[i]);
-        } else {
-            console.log("non"+all_sports.length);
+        if (all_sports[i].toLowerCase().match(r) == null) {
             index_sport = sports.indexOf(all_sports[i]);
             sports.splice(index_sport, 1);
         }
@@ -314,6 +300,7 @@ function sport_search() {
         alert("Pas de résultats");
 
     remove_sports();
+    scroll_sports = 0;
     gen_elems_sports();
     control_sport_buttons();
 }
@@ -330,16 +317,17 @@ function gen_sport_table(opened, numero) {
     // creation du header de la table
     
     s_theader = document.createElement("th");
-    s_theader.appendChild(document.createTextNode("Lieu"));
-    s_table.appendChild(s_theader);
-    
-    s_theader = document.createElement("th");
     s_theader.appendChild(document.createTextNode("Jour"));
     s_table.appendChild(s_theader);
 
     s_theader = document.createElement("th");
     s_theader.appendChild(document.createTextNode("Horaire"));
     s_table.appendChild(s_theader);
+
+    s_theader = document.createElement("th");
+    s_theader.appendChild(document.createTextNode("Lieu"));
+    s_table.appendChild(s_theader);
+    
 
     s_theader = document.createElement("th");
     s_theader.appendChild(document.createTextNode("Commentaires"));
@@ -383,7 +371,10 @@ function gen_sport_table(opened, numero) {
                 s_trow.appendChild(s_tdata);
 
                 s_tdata = document.createElement("td");
-                s_tdata.appendChild(document.createTextNode(entry.Nom));
+                if (entry.Commentaires != undefined)
+                    s_tdata.appendChild(document.createTextNode(entry.Nom+"| "+entry.Commentaires));
+                else
+                    s_tdata.appendChild(document.createTextNode(entry.Nom));
 
                 s_trow.appendChild(s_tdata);
 
@@ -408,8 +399,8 @@ function gen_sport_table(opened, numero) {
         s_trow.appendChild(s_tdata);
 
         s_tdata = document.createElement("td");
-        if (content.Commentaire != undefined) 
-            s_tdata.appendChild(document.createTextNode(content.Commentaire));
+        if (content.Commentaires != undefined) 
+            s_tdata.appendChild(document.createTextNode(content.Commentaires));
         s_trow.appendChild(s_tdata);
 
         s_table.appendChild(s_trow);
