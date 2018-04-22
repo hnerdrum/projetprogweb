@@ -105,3 +105,11 @@ figcaption a:after{
 .images {
     margin: 0 auto;
 }
+
+@media all and (min-width: 1000px){ /*Ordi*/
+
+    #resultats {
+        margin-top: 80px;
+    }
+
+}

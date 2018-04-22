@@ -209,4 +209,11 @@ figcaption a:hover::after{
     background-image: url(../../Data/images/arrowright_hover.png); /*300 x 300*/
 }
 
+@media all and (min-width: 1000px){
+
+    #resultats {
+        margin-top: 80px;
+    }
+
+}
 

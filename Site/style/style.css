@@ -312,11 +312,12 @@ input[type="submit"] {
 
 #nos_sports {
     background-color: red;
-
 }
 
-
-
+#ancre{ /*Ancre pour nos sports*/
+    position: relative;
+    top: -180px;
+}
 
 h1 {
     color:white;
@@ -450,7 +451,10 @@ footer ul li {
     #nav {
 	font-size: 22px;
     }
-
+    #ancre { /*Ancre pour nos sports*/
+        position: relative;
+        top: -100px;
+    }
 
     /*Footer*/
     .clear {clear: both ;}
@@ -488,6 +492,11 @@ footer ul li {
     .menu-ordi,.menu-tablette{display:none;}
     .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
     input[type="submit"] {margin: 22px 0px 0px 5px;}
+
+    #ancre { /*Ancre pour nos sports*/
+        position: relative;
+        top: -80px;
+    }
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
 
@@ -597,7 +606,7 @@ footer ul li {
         position: fixed;
         right: 20px;
         top: 20px;
-        z-index: 20;
+        z-index: 21;
         cursor: pointer;
         height: 54px;
         width:54px;
