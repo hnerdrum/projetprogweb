@@ -1,0 +1,163 @@
+#resultats {
+    background-color: black;
+    top: 250px;
+    margin-top: -50px;
+}
+
+#annees{
+    position: relative;
+    padding: 80px 0px 0px 100px;
+
+}
+#annees h1{
+    color:black;
+    text-align: left;
+    padding: 0px 0px 50px 0px;
+    text-decoration: underline;
+}
+#annees p{
+    margin-bottom: 10px;
+}
+#annees .tel{
+    margin-bottom: 50px;
+}
+
+#annee {
+    text-align: left;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    color: red;
+}
+section article h3{
+    font-size: 1.5em;
+
+}
+
+#annees ul li:before {
+    content: ' ';
+    background-image: url(../../Data/images/puce.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 16px;
+    height:14px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 50px;
+
+}
+
+#annees ul li{
+    padding: 15px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 1em;
+    color: rgb(117,117,117);
+}
+
+
+#annees .images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#annees .barre{
+    margin: 20px 0px 20px -50px;
+    border: 1px black solid;
+    width: 110%;
+    position: relative;
+}
+
+#annees .download:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/download.png');
+}
+#annees .mail, .external{
+    text-decoration: underline;
+    color: #000;
+}
+#annees .mail:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/mail.png');
+    background-position: 0px 2px;
+}
+#annees .external:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/external.png');
+    background-position: 0px 2.3px;
+}
+
+
+
+/*Responsive*/
+@media all and (min-width: 1000px){ /*Ordi*/
+    .menu-ordi {
+        margin-top: 40px;
+    }
+
+    #reseaux a {
+        padding: 0px 0px 0px -25px;
+        margin: 0px;
+    }
+    #reseaux{
+        margin-right: 300px; 
+    }
+    .insa {
+        margin-right: 322px;
+    }
+    #nav {
+        margin: 43px 200px 40px 40px;
+        padding: 0;
+    }
+    #slider {
+        padding-bottom: 26%;
+    }
+
+}
+@media all and (min-width: 720px)and (max-width: 1000px){
+    .menu-tablette{
+        margin-top: 30px;
+    }
+    #reseaux{
+        margin-right: 100px; 
+    }
+    .insa {
+        margin-right: 118px;
+    }
+    #nav {
+        margin: 43px 30px 0px 0px;
+        padding: 20px;
+    }
+    #annees{
+        padding: 0px 0px 0px 0px;
+    }
+
+}
+
+@media all and (max-width: 720px){
+    #slider {
+        margin: -45px 0px 0px 0px;
+        height: 30px;
+    }
+    #annees{
+        padding: 10px 0px 0px 0px;
+    }
+    #resultats {
+        margin-top: -90px;
+    }
+}

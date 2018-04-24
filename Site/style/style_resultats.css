@@ -1,0 +1,115 @@
+﻿#resultats {
+    background-color: black;
+}
+
+#annees{
+    position: relative;
+    padding: 80px 0px 0px 0px;
+
+}
+
+#annee {
+    text-align: left;
+    font-size: 2em;
+    padding: 0px 0px 50px 0px;
+    color: red;
+}
+
+section article h3{
+    font-size: 2em;
+
+}
+
+#annees ul li:before {
+    content: ' ';
+    background-image: url(../../Data/images/puce.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 16px;
+    height:14px;
+    margin-right: 10px;
+    margin-left: 15px;
+    border-radius: 50px;
+
+}
+
+#annees ul li{
+    padding: 15px 0px 0px 0px;
+    font-weight: normal;
+    font-size: 1em;
+    color: rgb(117,117,117);
+}
+
+
+#annees .images{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figcaption a{
+    text-decoration: none;
+    float: right;
+    color: rgb(117,117,117);
+}
+
+figcaption a:hover{
+    color: red;
+}
+
+figcaption a:after{
+    content: ' ';
+    color: rgb(117,117,117);
+    background-image: url(../../Data/images/arrowright.png); /*300 x 300*/
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 30px;
+    height:14px;
+}
+
+#annees h4{
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    bottom: 50px;
+}
+#annees .barre{
+    margin: 20px 0px 20px 0px;
+    border: 1px black solid;
+    width: 100%;
+    position: relative;
+}
+#annees .download:after{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-image:url('../../Data/download.png');
+}
+#annees .pdf{
+    text-align: center;
+}
+#annees .download:hover{
+    color: red;
+}
+
+.images a img {
+    width: 250px;
+}
+
+.images {
+    margin: 0 auto;
+}
+
+@media all and (min-width: 1000px){ /*Ordi*/
+
+    #resultats {
+        margin-top: 80px;
+    }
+
+}
