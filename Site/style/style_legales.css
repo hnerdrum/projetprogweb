@@ -161,3 +161,17 @@ section article h3{
         margin-top: -90px;
     }
 }
+
+
+
+#sitemap td{
+	border: none;
+}
+
+#sitemap a:hover{
+	color: red;
+}
+
+#sitemap a{
+	text-decoration: none;
+}
