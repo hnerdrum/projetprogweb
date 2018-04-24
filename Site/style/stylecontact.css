@@ -3,182 +3,6 @@
 }
 
 
-<<<<<<< HEAD
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	      content: '';
-	      content: none;
-          }
-
-body {
-    background: #FFF;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
-}
-
-/* Fin CSS RESET */
-
-/* centrer la page */
-
-#container {
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-/* font universel pour le site */
-html {
-    font-family: 'Roboto', 'Oswald', sans-serif;
-}
-
-#header, #content ,#footer {
-    padding: 2% ;
-}
-
-/*Barre de navigation Debut*/
-#nav {
-	margin-top: 40px;
-	padding: 0;
-	font-size: 30px;
-	font-weight: bold;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	list-style: none ;
-	text-align: center;
-}
-
-#nav li {
-    display: inline ;
-    margin: 0 1.30% ;
-}
-
-#nav a {
-    color: #323232 ;
-    text-decoration: none ;
-}
-
-#nav a:hover {
-    color: #f00;
-}
-/*Barre de navigation Fin*/
-
-
-/*Reseaux sociaux Debut*/
-#reseaux {margin-top:10px;}
-#reseaux ul {
-    list-style-type: none ;
-    margin: 0;
-}
-
-#reseaux li{
-    float: right ;
-    margin-left: 0.4%;
-}
-
-#reseaux a {
-    display: block ;
-    text-decoration: none ;
-    background: url(../../Data/social-sprite.png) no-repeat ;
-    background-size: 96%;
-    padding: 25px 0px 0px 25px ;
-}
-
-#reseaux #fb{background-position:0 -275px;}
-#reseaux #twitter{background-position:0 -50px;}
-#reseaux #it{background-position:0 -150px;}
-#reseaux #insta{background-position:0 -175px;}
-#reseaux #yt{background-position:0 0;}
-/*Reseaux sociaux Fin*/
-
-/* Autres éléments du header*/
-.insa {
-	float:right;
-	font-size: 18px;
-	font-family: roboto, 'Oswald', verdana, arial, sans-serif ;
-	font-weight: bold;
-	margin-right: 20px;
-}
-
-.separateur {
-    float:right;
-    margin: -5px 10px 0;
-}
-
-.logo_as{
-    float:left;
-		margin-left: 20px;
-		margin-bottom: 30px;
-}
-
-.logo_asbis{
-    float:left;
-		margin-bottom: 2%;
-}
-
-.menu-respo{
-	float:right;
-	margin: 25px 0px 0px 10px;
-}
-
-/*Barre de recherche Debut*/
-input[type="text"] {
-    background: #EEEDEB;
-    border-style:none;
-    padding: 5px;
- /*   max-width: 20%;*/
-    width:100%;
-    height: 100%;
-}
-
-input[type="submit"] {
-    background: url(../../Data/loupe.png) no-repeat ;
-		margin: 2px 0px 0px 5px;
-    width: 150px;
-    height: 25px;
-    border-style:none;
-    cursor: pointer;
-	
-}
-
-#boxsearch{
-float: right;
-margin-top: -17px;
-	width: 25%;
-}
-
-/*Barre de recherche Fin*/
-
-/*Fin du Header*/
-
-
-h1 {
-    color:white;
-    position: relative;
-    text-align:center;
-    font-size: 60px;
-	padding: 20px;
-	padding-bottom: 0;
-}
-main{
-	margin: 0 auto;
-	width: 80%;
-}
-=======
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 .contact{
     padding-bottom: 1px;
     padding-top: 30px;
@@ -205,28 +29,6 @@ main{
 }
 
 
-<<<<<<< HEAD
-.contact table {
-	font-size: 20px;
-	margin : auto;
-	background-color: white;
-	margin: 45px auto;
-	border-collapse:collapse;
-}
-
-
-.listesports td{
-	border-color: #737373;
-	border-width:1px;
-	border-style:solid;
-	padding: 12px;
-}
-
-.listesports th{
-	background-color: #777;
-	color: white;
-	padding: 7px;
-=======
 
 .listesports td{
     font-size: 20px;
@@ -244,7 +46,6 @@ main{
     background-color: #777;
     color: white;
     padding: 7px;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 }
 
 #entetecontact{
@@ -264,61 +65,12 @@ main{
 }
 
 .contactfb{
-<<<<<<< HEAD
-	background-color: #2F56A8;
-	margin-left: 30px;
-	font-size: 1.55vw;
-	width: 30%;
-	float: left;
-	color: white;
-	text-align: center;
-}
-
-.contactfbportable{
-	width: 30%;
-	float: left;
-	text-align: center;
-}
-
-#arrowbuttonfb{
-	    padding: 9px;
-}
-#partenaires_logo{
-    display: flex;
-    flex-wrap: wrap;
-}
-.actia{
-    position: relative;
-    margin-top: 25px;
-    opacity: 0.6;
-}
-.viveris{
-    position: relative;
-    bottom: 10px;
-    opacity: 0.6;
-}
-.assystem, .lesaffre, .alten{opacity: 0.6;}
-.assystem:hover, .lesaffre:hover, .alten:hover, .actia:hover, .viveris:hover{opacity: 1;}
-
-footer
-{
-    background-color: #434343;
-    width:100%;
-    display: table;
-    height: 1px;
-}
-
-footer ul
-{
-    list-style-type: none;
-=======
     background-color: #2F56A8;
     margin-left: 55px;
     font-size: 2vw;
     width: 30%;
     float: left;
     color: white;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
     text-align: center;
 }
 

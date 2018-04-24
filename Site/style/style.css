@@ -71,38 +71,16 @@ html {
 
 
 #header{
-<<<<<<< HEAD
-	background-color: white;
-
-	width: 100%;
-	display:table;
-	position: fixed;
-	z-index: 20;
-=======
     background-color: white;
 
     width: 100%;
     display:table;
     position: fixed;
     z-index: 20;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 }
 
 .boxheader{
 
-<<<<<<< HEAD
-	margin: auto;
-	width: 80%;
-		padding: 2%;
-}
-.boxheaderfixe{
-height: 20vh;
-}
-.menu-ordi{
-
-	z-index: 20;
-	background: #FFF;
-=======
     margin: auto;
     width: 80%;
     padding: 2%;
@@ -114,7 +92,6 @@ height: 20vh;
 
     z-index: 20;
     background: #FFF;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 
 }
 
@@ -291,35 +268,18 @@ input[type="text"] {
     background: #EEEDEB;
     border-style:none;
     padding: 5px;
-<<<<<<< HEAD
- /*   max-width: 20%;*/
-=======
     /*   max-width: 20%;*/
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
     width:100%;
     height: 100%;
 }
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-<<<<<<< HEAD
-		margin: 2px 0px 0px 5px;
-=======
     margin: 2px 0px 0px 5px;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
     width: 150px;
     height: 25px;
     border-style:none;
     cursor: pointer;
-<<<<<<< HEAD
-	
-}
-
-#boxsearch{
-float: right;
-margin-top: -17px;
-	width: 25%;
-=======
     
 }
 
@@ -327,7 +287,6 @@ margin-top: -17px;
     float: right;
     margin-top: -17px;
     width: 25%;
->>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 }
 
 /*Barre de recherche Fin*/
