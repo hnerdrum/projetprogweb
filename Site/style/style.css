@@ -71,16 +71,26 @@ html {
 
 
 #header{
+<<<<<<< HEAD
 	background-color: white;
 
 	width: 100%;
 	display:table;
 	position: fixed;
 	z-index: 20;
+=======
+    background-color: white;
+
+    width: 100%;
+    display:table;
+    position: fixed;
+    z-index: 20;
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 }
 
 .boxheader{
 
+<<<<<<< HEAD
 	margin: auto;
 	width: 80%;
 		padding: 2%;
@@ -92,6 +102,19 @@ height: 20vh;
 
 	z-index: 20;
 	background: #FFF;
+=======
+    margin: auto;
+    width: 80%;
+    padding: 2%;
+}
+.boxheaderfixe{
+    height: 20vh;
+}
+.menu-ordi{
+
+    z-index: 20;
+    background: #FFF;
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 
 }
 
@@ -268,18 +291,27 @@ input[type="text"] {
     background: #EEEDEB;
     border-style:none;
     padding: 5px;
+<<<<<<< HEAD
  /*   max-width: 20%;*/
+=======
+    /*   max-width: 20%;*/
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
     width:100%;
     height: 100%;
 }
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
+<<<<<<< HEAD
 		margin: 2px 0px 0px 5px;
+=======
+    margin: 2px 0px 0px 5px;
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
     width: 150px;
     height: 25px;
     border-style:none;
     cursor: pointer;
+<<<<<<< HEAD
 	
 }
 
@@ -287,6 +319,15 @@ input[type="submit"] {
 float: right;
 margin-top: -17px;
 	width: 25%;
+=======
+    
+}
+
+#boxsearch{
+    float: right;
+    margin-top: -17px;
+    width: 25%;
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
 }
 
 /*Barre de recherche Fin*/
@@ -312,11 +353,12 @@ margin-top: -17px;
 
 #nos_sports {
     background-color: red;
-
 }
 
-
-
+#ancre{ /*Ancre pour nos sports*/
+    position: relative;
+    top: -180px;
+}
 
 h1 {
     color:white;
@@ -408,10 +450,11 @@ footer ul li {
 /*Responsive*/
 @media all and (min-width: 1000px){ /*Ordi*/
 
-	/*Header*/
-	.menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
+    /*Header*/
+    .menu-portable,.menu-tablette,.menu-hamburger,.btn-navigation{display:none;}
+    
 
-	/*Footer*/
+    /*Footer*/
     .clear {clear: both ;}
     .row p.clear{padding-top: 0;}
     .row br{margin:0;}
@@ -445,12 +488,15 @@ footer ul li {
 }
 @media all and (min-width: 720px)and (max-width: 1000px){ /*Tablette*/
 
-	/*Header*/
-	.menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
-	#nav {
-		font-size: 22px;
-	}
-
+    /*Header*/
+    .menu-portable,.menu-ordi,.menu-hamburger,.btn-navigation{display:none;}
+    #nav {
+	font-size: 22px;
+    }
+    #ancre { /*Ancre pour nos sports*/
+        position: relative;
+        top: -120px;
+    }
 
     /*Footer*/
     .clear {clear: both ;}
@@ -484,10 +530,15 @@ footer ul li {
 
 @media all and (max-width: 720px){ /*Portable*/
 
-/*Header*/
-	.menu-ordi,.menu-tablette{display:none;}
-	.menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
-	input[type="submit"] {margin: 22px 0px 0px 5px;}
+    /*Header*/
+    .menu-ordi,.menu-tablette{display:none;}
+    .menu-portable, .menu-hamburger,.btn-navigation{display: inline;}
+    input[type="submit"] {margin: 22px 0px 0px 5px;}
+
+    #ancre { /*Ancre pour nos sports*/
+        position: relative;
+        top: -80px;
+    }
 
     .recherche #search-btn{margin: 25px 12px 0px 6px;}
 
@@ -507,7 +558,7 @@ footer ul li {
         right:0;
         /*left:0;*/
 
-		background-color: rgba(85,85,85,1);
+	background-color: rgba(85,85,85,1);
         min-width: 32%;
         width: 32%;/*100%*/
 
@@ -545,7 +596,8 @@ footer ul li {
         display: block;
     }
 
-    header nav .liste1
+    
+    header nav ul
     {
         display: flex;
         flex-direction: column;
@@ -560,26 +612,29 @@ footer ul li {
         -webkit-transform: translateY(-50%);
 
     }
-    header nav .liste1 li 
+    header nav li
     {
         padding-bottom: 10px;
         display: inline ;
         margin: 20 1.30% ;
     }
 
-    header nav .liste1 li a:hover{
+    header nav a:hover{
         border-bottom: 2px solid red;
     }
 
-    header nav .liste1 li:before{
+    header nav ul li:before{
         content: ' ';
         display: inline-block;
         width: 15px;
         height: 15px;
         margin: 0px 10px 0px 0px;
-
+        
     }
 
+    header nav a:hover{
+        border-bottom: 2px solid red;
+    }
 
     .menu-hamburger nav ul li a
     {
@@ -588,11 +643,12 @@ footer ul li {
         text-decoration: none ;
     }
 
+
     .btn-navigation{
         position: fixed;
         right: 20px;
         top: 20px;
-        z-index: 20;
+        z-index: 21;
         cursor: pointer;
         height: 54px;
         width:54px;
@@ -867,3 +923,27 @@ footer ul li {
     cursor:pointer;    
 }
 
+.s_table {
+    table-layout: fixed;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    transform: translateY(50%);    
+}
+
+.s_table tr, th, td {
+    border: 2px solid black;
+}
+
+.s_table th {
+    font-size: 100%;
+    background-color: white;
+}
+
+.s_table tr {
+    font-size: 100%;
+}
+
+.s_table td {
+    word-wrap: break-word;
+}

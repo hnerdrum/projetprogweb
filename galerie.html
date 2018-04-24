@@ -2,20 +2,127 @@
 <html>
     <head>
         <meta charset = "utf-8">
-        <title> Association Sportive de l'Insa Toulouse | Accueil </title>
+        <title> Galerie | Association Sportive de l'Insa Toulouse</title>
         <link rel="stylesheet" type="text/css" href="Site/style/stylegalerie.css">
+        <link rel="stylesheet" type="text/css" href="Site/style/style.css">        
         <link rel="shortcut icon" href="Data/logo_as_insa.ico">
-		<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script src="Site/js/galerie.js"></script>
+        <script src="Site/js/main.js"></script>
     </head>
-
 
     <body>
         <div id="fullcontainer">
+            <div class="boxheaderfixe">
+                <header id="header">
+                    <div class="boxheader">
+                        <div class="menu-ordi">
+                            <img class="logo_as" src="Data/logo_as.jpg" alt="">
+                            <p class="insa">INSA Toulouse</p>
+                            <br>
+                            <!-- Début Barre de recherche et réseaux sociaux-->
+                            <div class="recherche">
+                                <div id="reseaux">
+                                    <ul>
+                                        <li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+                                        <li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+                                        <li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+                                        <li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+                                        <li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Fin Barre de recherche et réseaux sociaux-->
+                            </div>
+
+                            <br>
+                            <!-- Début Barre de navigation--> 
+                            <ul id="nav">
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="index.html#ancre">Sports</a></li>
+                                <li><a href="resultats.html">Résultats</a></li>
+                                <li><a href="galerie.html">Galerie</a></li>
+                                <li><a href="calendrier.html">Calendrier</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                            <!-- Fin Barre de navigation-->  
+                        </div>
+                        <div class="menu-tablette">
+                            <img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
+                            <p class="insa">INSA Toulouse</p>
+                            <br>
+                            <!-- Début Barre de recherche et réseaux sociaux-->
+                            <div class="recherche">
+                                <div id="reseaux">
+                                    <ul>
+                                        <li><a id="yt" href="https://www.youtube.com/user/InsaToulouse" target="_blank" alt=""> </a></li>
+                                        <li><a id="insta" href="https://www.instagram.com/insatoulouse/" target="_blank" alt="" ></a></li>
+                                        <li><a id="it" href="http://www.scoop.it/u/insa-toulouse-communication" target="_blank" alt="" ></a></li>
+                                        <li><a id="twitter" href="https://twitter.com/insatoulouse" target="_blank" alt="" ></a></li>
+                                        <li><a id="fb" href="https://www.facebook.com/INSAToulouse" target="_blank" alt="" ></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Fin Barre de recherche et réseaux sociaux-->
+                                <img class="separateur" src="Data/separateur.jpg" alt=""/>
+                                <div id=boxsearch><script>
+                                        (function() {
+                                        var cx = '010306975847166784054:ydthdjij1f4';
+                                        var gcse = document.createElement('script');
+                                        gcse.type = 'text/javascript';
+                                        gcse.async = true;
+                                        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                        var s = document.getElementsByTagName('script')[0];
+                                        s.parentNode.insertBefore(gcse, s);
+                                        })();
+                                    </script>
+                                    <gcse:search></gcse:search></div>
+                            </div>
+                            <br>
+                            <!-- Début Barre de navigation-->
+
+                            <ul id="nav">
+                                <li><a href="index.html">Accueil</a></li>
+                                <li><a href="index.html#ancre">Sports</a></li>
+                                <li><a href="resultats.html">Résultats</a></li>
+                                <li><a href="galerie.html">Galerie</a></li>
+                                <li><a href="calendrier.html">Calendrier</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+                            <!-- Fin Barre de navigation-->
+                        </div>
+
+                        <div class="menu-portable">
+                            <img class="logo_asbis" src="Data/logo_as_bis.png" alt="">
+
+                            <!--  <div class="recherche">
+                                  <form action="https://etud.insa-toulouse.fr/~katran/Prog_Web/recherche.html" id="searchthis" method="get">
+                                      <input id="search-btn" type="submit" value="" />
+                                      <input id="search" name="" type="text" placeholder="Rechercher" />   
+                                  </form>
+                            </div>-->
+
+                        </div>
+                        <div class="menu-hamburger">
+                            <nav class="hamburger">
+                                <form action="/search" id="searchthis" method="get">
+                                    <input id="search-btn" type="submit" value="" />
+                                </form>
+                                <ul>
+                                    <li><a href="index.html">Accueil</a></li>
+                                    <li><a href="index.html#ancre">Sports</a></li>
+                                    <li><a href="resultats.html">Résultats</a></li>
+                                    <li><a href="galerie.html">Galerie</a></li>
+                                    <li><a href="calendrier.html">Calendrier</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                    </div></div>
+            </header></div>
             <div id="container">
 
+<<<<<<< HEAD
             		<div class="btn-navigation">
 						<div class="barre1"></div>
 						<div class="barre2"></div>
@@ -167,69 +274,183 @@
                   <div class="columnright2">
                     <img src="Data/images/resultats4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
                   </div>
+=======
+                <div class="btn-navigation">
+                    <div class="barre1"></div>
+                    <div class="barre2"></div>
+                    <div class="barre3"></div>
+
+>>>>>>> 0d53519d07e27d048823fd41f2022d6b7b81efb5
                 </div>
-              </div>
+		<main>
 
-                <div id="myModal" class="modal">
-                  <img class="close cursor" onclick="closeModal()" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/window-close-symbolic.svg" />
-                  <div class="modal-content">
-
-                    <div class="mySlides">
-                      <div class="numbertext">1 / 4</div>
-                      <img src="Data/images/resultats1.jpg" style="width:100%">
+                    <div id="RESULTATS">
+                        <div class="resultats" id="slider1">
+                            <section>
+                                <article>
+                                    <h1 id="resultats">Galerie</h1>
+                                </article>
+                            </section>
+                        </div>
                     </div>
 
-                    <div class="mySlides">
-                      <div class="numbertext">2 / 4</div>
-                      <img src="Data/images/resultats2.jpg" style="width:100%">
-                    </div>
+                    <div class="images">
+                        <div class="row1" style="width: inherit">
+                            <div class="columnleft1">
+                                <img src="Data/images/basketball_f_05_12_2017.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnleft2">
+                                <img src="Data/images/basketball_f_18_01_2018.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright1">
+                                <img src="Data/images/basketball_f_18_12_2017.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright2">
+                                <img src="Data/images/basketball_f_25_01_2018.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                            </div>
+                        </div>
 
-                    <div class="mySlides">
-                      <div class="numbertext">3 / 4</div>
-                      <img src="Data/images/resultats3.jpg" style="width:100%">
-                    </div>
+                        <div class="row1" style="width: inherit">
+                            <div class="columnleft1">
+                                <img src="Data/images/handball_f_15_02_2018.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnleft2">
+                                <img src="Data/images/handball_f_21_12_2017.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright1">
+                                <img src="Data/images/natation_01_12_2017.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright2">
+                                <img src="Data/images/natation_08_02_2018.png" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+                            </div>
+                        </div>
 
-                    <div class="mySlides">
-                      <div class="numbertext">4 / 4</div>
-                      <img src="Data/images/resultats4.jpg" style="width:100%">
-                    </div>
+                        <div class="row1" style="width: inherit">
+                            <div class="columnleft1">
+                                <img src="Data/images/rugby_f_01_02_2018.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnleft2">
+                                <img src="Data/images/rugby_m_18_01_2018.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright1">
+                                <img src="Data/images/tir_a_larc_21_12_2017.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+                            </div>
+                            <div class="columnright2">
+                                <img src="Data/images/tir_a_larc_31_01_2018.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+                            </div>
+                        </div>
+                        <div class="row1" style="width: inherit">
+                            <div class="columnleft1">
+                                <img src="Data/images/volleyball_m_30_11_2017.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+                            </div>
+                            
+                        </div>
 
-                    <img class="prev" onclick="plusSlides(-1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-previous-symbolic.svg" />
-                    <img class="next" onclick="plusSlides(1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-next-symbolic.svg" />
+                        <div id="myModal" class="modal">
+                            <img class="close cursor" onclick="closeModal()" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/window-close-symbolic.svg" />
+                            <div class="modal-content">
 
-                    <div class="caption-container">
-                      <p id="caption"></p>
-                    </div>
-                  </div>
-                </div>
+                                <div class="mySlides">
+                                    <div class="numbertext">1 / 13</div>
+                                    <img src="Data/images/basketball_f_05_12_2017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">2 / 13</div>
+                                    <img src="Data/images/basketball_f_18_01_2018.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">3 / 13</div>
+                                    <img src="Data/images/basketball_f_18_12_2017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">4 / 13</div>
+                                    <img src="Data/images/basketball_f_25_01_2018.png" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">5 / 13</div>
+                                    <img src="Data/images/handball_f_15_02_2018.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">6 / 13</div>
+                                    <img src="Data/images/handball_f_21_12_2017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">7 / 13</div>
+                                    <img src="Data/images/natation_01_12_2017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">8 / 13</div>
+                                    <img src="Data/images/natation_08_02_2018.png" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">9 / 13</div>
+                                    <img src="Data/images/rugby_f_01_02_2018.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">10 / 13</div>
+                                    <img src="Data/images/rugby_m_18_01_2018.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">11 / 13</div>
+                                    <img src="Data/images/tir_a_larc_21_12_2017.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">12 / 13</div>
+                                    <img src="Data/images/tir_a_larc_31_01_2018.jpg" style="width:100%">
+                                </div>
+
+                                <div class="mySlides">
+                                    <div class="numbertext">13 / 13</div>
+                                    <img src="Data/images/volleyball_m_30_11_2017.jpg" style="width:100%">
+                                </div>
+
+                                <img class="prev" onclick="plusSlides(-1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-previous-symbolic.svg" />
+                                <img class="next" onclick="plusSlides(1)" src="Data/breeze-icons-5.34.0/icons/actions/symbolic/go-next-symbolic.svg" />
+
+                                <div class="caption-container">
+                                    <p id="caption"></p>
+                                </div>
+                            </div>
+                        </div>
 
 
-	            <br>
-	            <section id="secpart">
-		        <article>
+	                <br>
+	                <section id="secpart">
+		            <article>
 
-		            <h2>NOS PARTENAIRES MAJEURS</h2>
-                            <br>
+		                <h2>NOS PARTENAIRES MAJEURS</h2>
+                                <br>
 
-		            <div id="partenaires">
-			        <nav id="partenaires_logo">
+		                <div id="partenaires">
+			            <nav id="partenaires_logo">
 
-			            <div class="assystem"><a href="http://www.assystem.com/fr/accueil.html" ><img src="Data/images/partenaires/assystem.png" alt="" title="Assystem" /></a></div>
-			            <div class="alten"><a href="http://www.alten.fr/" ><img src="Data/images/partenaires/alten.png" alt="" title="Alten" /></a></div>
-			            <div class="actia"><a href="http://actia.com/fr/" ><img src="Data/images/partenaires/actia.png" alt="" title="Actia" /></a></div>
-			            <div class="lesaffre"><a href="http://www.lesaffre.com/fr/" ><img src="Data/images/partenaires/lesaffre.png" alt="" title="Lesaffre" /></a></div>
-			            <div class="viveris"><a href="https://www.viveris.fr/" ><img src="Data/images/partenaires/viveris.png" alt="" title="Viveris" /></a></div>
+			                <div class="assystem"><a href="http://www.assystem.com/fr/accueil.html" ><img src="Data/images/partenaires/assystem.png" alt="" title="Assystem" /></a></div>
+			               
+			                <div class="actia"><a href="http://actia.com/fr/" ><img src="Data/images/partenaires/actia.png" alt="" title="Actia" /></a></div>
+			                <div class="lesaffre"><a href="http://www.lesaffre.com/fr/" ><img src="Data/images/partenaires/lesaffre.png" alt="" title="Lesaffre" /></a></div>
+			                <div class="viveris"><a href="https://www.viveris.fr/" ><img src="Data/images/partenaires/viveris.png" alt="" title="Viveris" /></a></div>
 
-			        </nav>
-		            </div>
-		        </article>
-	            </section>
+			            </nav>
+		                </div>
+		            </article>
+	                </section>
 
                 </main>
-            </div>
-            <footer>
+                </div>
+                <footer>
 
-                <div class="row">
+                    <div class="row">
 
                         <div class="Colonne1"><h4>A propos</h4><p> L'association sportive permet de découvrir ou d'approfondir une quarataine de sports avec une seule licence. Elle encadre les licenciés dans des entraînements collectifs réguliers, leur permettant de participer à l'ensemble des compétitions universitaires. Elle organise également un certain nombre d'évènements : InterPromos, Aprem Sport, High Five...</p></div>
 
@@ -238,16 +459,23 @@
                         <div class="Colonne3"><h4>Contactez-nous</h4><p class="clear">AS INSA <br>135 avenue de Rangueil<br>31400 TOULOUSE </p></div>
 
 
-                </div>
-		        <ul id="mentions">
-                <li>2017 © <a href="#">INSA de Toulouse</a></li>
-		            <li>Conception : <a href="#">NERDRUM Henrik</a> - <a href="#">NESIC Stefan</a> - <a href="#">TRAN Kim-Anh</a> - <a href="#">VU Diep</a></li> <!-- pour mettre vos sites-cv-linkedin-mail si jamais il y a besoin de nous contacter-->
-		            <li><a href="#">Plan d'accès</a></li>
-		            <li class="last"><a href="#">Mentions légales</a></li>
-		        </ul>
+                    </div>
+		    <ul id="mentions">
+                        <li>2017 © <a href="http://www.insa-toulouse.fr/fr/index.html">INSA de Toulouse</a></li>
+		        <li>Conception : <a href="#">NERDRUM Henrik</a> - <a href="#">NESIC Stefan</a> - <a href="#">TRAN Kim-Anh</a> - <a href="https://www.linkedin.com/in/diep-vu-35689214b/">VU Diep</a></li> <!-- pour mettre vos sites-cv-linkedin-mail si jamais il y a besoin de nous contacter-->
+		        <li><a href="plandacces.html">Plan d'accès</a></li>
+		        <li><a href="mentionslegales.html">Mentions légales</a></li>
+                <li class="last"><a href="https://ent.insa-toulouse.fr/render.userLayoutRootNode.uP">ENT</a></li>
+		    </ul>
 	        </footer>
-        </div>
+            </div>
+            <button id="topBtn" href="#" title="Go to top">
 
+                <div class="arrow">
+                    <div class="arrow1"></div>
+                    <div class="arrow3"></div>
+                </div>
+            </button>
     </body>
 
 </html>

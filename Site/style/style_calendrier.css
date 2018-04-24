@@ -1,3 +1,7 @@
+#resultats {
+    background-color: black;
+}
+
 .google-calendrier {
     top: 1.5vw;
     position: relative;
@@ -26,3 +30,10 @@
     vertical-align: middle;
 }
 
+@media all and (min-width: 1000px){
+
+    #resultats {
+        margin-top: 80px;
+    }
+
+}
