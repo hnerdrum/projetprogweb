@@ -217,3 +217,15 @@ figcaption a:hover::after{
 
 }
 
+
+#sitemap td{
+	border: none;
+}
+
+#sitemap a:hover{
+	color: red;
+}
+
+#sitemap a{
+	text-decoration: none;
+}

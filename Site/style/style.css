@@ -914,3 +914,7 @@ footer ul li {
 #sitemap a:hover{
 	color: red;
 }
+
+#sitemap a{
+	text-decoration: none;
+}

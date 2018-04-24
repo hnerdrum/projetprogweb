@@ -190,3 +190,16 @@
     margin-bottom: 5%;
     margin-top: 4%;
 }
+
+
+#sitemap td{
+	border: none;
+}
+
+#sitemap a:hover{
+	color: red;
+}
+
+#sitemap a{
+	text-decoration: none;
+}
