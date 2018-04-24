@@ -152,27 +152,31 @@ html {
 }
 
 /*Barre de recherche Debut*/
-input {
-    float:right;
-}
-
 input[type="text"] {
     background: #EEEDEB;
     border-style:none;
     padding: 5px;
-    max-width: 20%;
+ /*   max-width: 20%;*/
     width:100%;
     height: 100%;
 }
 
 input[type="submit"] {
     background: url(../../Data/loupe.png) no-repeat ;
-    margin: 2px 0px 0px 5px;
-    width: 30px;
+		margin: 2px 0px 0px 5px;
+    width: 150px;
     height: 25px;
     border-style:none;
     cursor: pointer;
+	
 }
+
+#boxsearch{
+float: right;
+margin-top: -17px;
+	width: 25%;
+}
+
 /*Barre de recherche Fin*/
 
 /*Fin du Header*/
@@ -186,7 +190,10 @@ h1 {
 	padding: 20px;
 	padding-bottom: 0;
 }
-
+main{
+	margin: 0 auto;
+	width: 80%;
+}
 .contact{
 	background-color: #434343;
 	padding-bottom: 1px;
@@ -216,7 +223,7 @@ h1 {
 }
 
 
-table {
+.contact table {
 	font-size: 20px;
 	margin : auto;
 	background-color: white;
@@ -225,14 +232,14 @@ table {
 }
 
 
-td{
+.listesports td{
 	border-color: #737373;
 	border-width:1px;
 	border-style:solid;
 	padding: 12px;
 }
 
-th{
+.listesports th{
 	background-color: #777;
 	color: white;
 	padding: 7px;
@@ -256,8 +263,8 @@ th{
 
 .contactfb{
 	background-color: #2F56A8;
-	margin-left: 55px;
-	font-size: 2vw;
+	margin-left: 30px;
+	font-size: 1.55vw;
 	width: 30%;
 	float: left;
 	color: white;

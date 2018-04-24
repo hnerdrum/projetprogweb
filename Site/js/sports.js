@@ -206,3 +206,24 @@ function add_sport_actions() {
         j++;
     };
 };
+
+
+function myFunction() {
+    // Declare variables
+    var input, filter,list, listtiles, ad, index;
+    input = document.getElementById("sport-search");
+    filter = input.value.toUpperCase();
+		list = document.getElementById("sport-list")
+    listtiles = list.getElementsByClassName("sport-tiles");
+
+    // parcours la liste et affiche ou non selon saisie
+    for (index = 0; index < listtiles.length; index++) {
+        ad = listtiles.item(index);
+        if (ad.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            listtiles.item(index).style.display = "";
+        } else {
+            listtiles.item(index).style.display = "none";
+        }
+    }
+}
+
