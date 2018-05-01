@@ -122,11 +122,11 @@ section article h3{
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
-  width: 10%;
-  height: 10%;
+  top: 20vw;
+  width: 3vw;
+  height: 4vw;
   padding: 16px;
-  margin-top: -50px;
+  /*margin-top: -50px;*/
   color: white;
   border-radius: 0 3px 3px 0;
   user-select: none;
